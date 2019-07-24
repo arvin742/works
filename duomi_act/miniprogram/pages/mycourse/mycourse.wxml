@@ -1,0 +1,41 @@
+<!--mycourse.wxml-->
+<view class='container'>
+
+  <view class='pieceTitle'>即将上课</view>
+
+  <view class='card' wx:for='{{courseInfo}}' wx:key=''>
+    <view class='piece courseInfo'>
+      <view class='c-tp'>
+        <text class='title'>{{item.title}}</text>
+        <text class='overSum'>（第{{item.lessonInfo.now}}节 / 共{{item.lessonInfo.sum}}节）</text>
+      </view>
+      <view class='c-mt'>
+        <view>
+          <text class='subTitle'><text class='fa fa-paint-brush'></text>{{item.lessonInfo.title}}</text>
+          <text class='time'><text class='fa fa-clock-o'></text>{{item.lessonInfo.time}}</text>
+        </view>
+        <view>
+          <text class='kidName'>{{item.kidName}}</text>
+          <image class='genderImg' src='{{genderImg[item.kidGender]}}'></image>
+        </view>
+      </view>
+      <view class='c-bt'>
+        <view>
+          <text class='fa fa-mortar-board'></text>
+          <text class='comingDate'>{{item.lessonInfo.date}}</text>
+        </view>
+        <view>
+          <text class='detail'>详情</text>
+          <text class='fa fa-angle-right'></text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='lastScroll'>
+    <view class='hr'></view>
+    <view class='text'>已经加载完毕啦</view>
+    <view class='hr'></view>
+  </view>
+
+</view>

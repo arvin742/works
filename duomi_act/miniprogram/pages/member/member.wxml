@@ -1,0 +1,8 @@
+<!--member.wxml-->
+<view class='container'>
+
+  <view class='member'>
+    <image src='{{memberImgUrl}}'></image>
+  </view>
+
+</view>

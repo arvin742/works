@@ -1,0 +1,101 @@
+<!--index.wxml-->
+<view class='container'>
+  
+  <view class='calendar'>
+    <view class='calendar_back'>
+      
+      <!-- 日历年月 -->
+      <view class='calendar_title'>
+        <view class='icon' bindtap='lastMonth'><i class='fa fa-angle-left'></i></view>
+        <view>{{year}}年{{month}}月</view>
+        <view class='icon' bindtap='nextMonth'><i class='fa fa-angle-right'></i></view>
+      </view>
+
+      <!-- 日历主体 -->
+      <view class='calendar_main'>
+        <!-- 日历星期 -->
+        <view class='week'>
+          <view wx:for='{{week}}' wx:key='' class='{{(index == todayIndex) && isTodayWeek ? "weekMark" : ""}}'>{{item}}</view>
+        </view>
+        <!-- 日历日期 -->
+        <view class='date-box'>
+          <block wx:for='{{dateArr}}' wx:key=''>
+            <view class='{{isToday == item.isToday ? "nowDay" : ""}} {{item.isToday === isActive ? "active" : ""}}'>
+              <view class='date-day' bindtap='actCourse' data-year='{{year}}' data-month='{{month}}' data-datenum='{{item.dateNum}}'>
+                <view>{{item.dateNum}}</view>
+                <view class='date-status {{item.isCourseTable.status}}' wx:if='{{item.isCourseTable}}'>{{item.isCourseTable.title}}</view>
+              </view>
+            </view>
+          </block>
+        </view>
+
+      </view>
+    
+    </view>
+
+    <!-- 日期对应的课程 -->
+    <view class='calendar_course'>
+
+      <view class='card' wx:for='{{courseInfo}}' wx:key=''>
+        <!-- 课程大小标题 -->
+        <view class='c-pt'>
+          <text class="title">{{item.lessonInfo.title}}</text>
+          <text class="subTitle">（{{item.title}}）</text>
+        </view>
+        <view class="c-mt">
+          <!-- 上课时间 -->
+          <view>
+            <text class="fa fa-calendar-check-o"></text>
+            <text class="lessionDate">{{item.lessonInfo.date}}</text>
+          </view>
+          <!-- 上课时长 -->
+          <view>
+            <text class="fa fa-clock-o"></text>
+            <text class="lessionTime">{{item.lessonInfo.time}}课时</text>
+          </view>
+          <!-- 课程班级 -->
+          <view>
+            <text class="fa fa-mortar-board"></text>
+            <text class="className">{{item.className}}</text>
+          </view>
+          <!-- 上课的小朋友 -->
+          <view>
+            <text class="fa fa-user"></text>
+            <text class="kidName">{{item.kidName}}</text>
+            <image class="genderImg" src="{{genderImg[item.kidGender]}}"></image>
+          </view>
+        </view>
+        <!-- 课程状态 -->
+        <view class="c-bt">
+          <!-- 还没有上课的 -->
+          <view wx:if='{{item.lessonInfo.status == 0}}'>
+            <view>
+              <text class='statusName {{item.lessonInfo.statusColor}}'>{{item.lessonInfo.statusName}}</text>
+            </view>
+            <!-- 签到按钮 -->
+            <view class='c-btn'>
+              <button class='btn'>签到</button>
+            </view>
+          </view>
+          <!-- 已经签到的 -->
+          <view wx:elif='{{item.lessonInfo.status == 1}}'>
+            <text class='statusName {{item.lessonInfo.statusColor}}'>{{item.lessonInfo.statusName}}</text>
+          </view>
+          <!-- 请假的 -->
+          <view wx:else>
+            <text class='statusName {{item.lessonInfo.statusColor}}'>{{item.lessonInfo.statusName}}</text>
+          </view>
+          
+        </view>
+      </view>
+
+    </view>
+  </view>
+
+  <view class='lastScroll'>
+    <view class='hr'></view>
+    <view class='text'>已经加载完毕啦</view>
+    <view class='hr'></view>
+  </view>
+
+</view>

@@ -1,0 +1,180 @@
+/**app.wxss**/
+@import './style/font-awesome.wxss';
+
+page{
+  font-size: 1rem;
+  background: #f6f6f6;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+input[type="text"]{
+  width: 100%;
+  color: #495057;
+	border: 1px solid #ced4da;
+	border-radius: 5px;
+	padding: .5rem .75rem;
+}
+
+button{
+  font-size: 1rem;
+  color: #333;
+  background: #ced4da;
+}
+button::after{
+  border: none;
+}
+
+.lastScroll{
+  margin: 30rpx 30rpx 60rpx;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+.lastScroll .hr{
+  width: 100rpx;
+  height: 1px;
+  background: #ccc;
+}
+.lastScroll .text{
+  color: #9a9a9a;
+  margin: 0 30rpx;
+}
+
+.fa{
+  color: #ccc;
+}
+.avatar{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  margin-right: 30rpx;
+}
+.genderImg{
+  width: 30rpx;
+  height: 30rpx;
+  background: #fff;
+}
+
+.card{
+  width: 100%;
+  background: #fff;
+  box-shadow: 1px 1px 3px rgba(0,0,0,.15);
+  margin-bottom: 40rpx;
+}
+.card .c-item{
+  line-height: 1.5;
+  border-bottom: 1px solid #e4e8ec;
+  padding: 30rpx 30rpx;
+  position: relative;
+}
+.card .c-item:last-of-type{
+  border: none;
+}
+.card .c-item .arrow{
+  width: 20rpx;
+  height: 20rpx;
+  border-top: 4rpx solid #9a9a9a;
+  border-right: 4rpx solid #9a9a9a;
+  position: absolute;
+  right: 30rpx;
+  top: 45rpx;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.rank{
+  width: 100%;
+  background: #fff;
+  box-shadow: 1px 1px 3px 1px rgba(0,0,0,.05);
+  margin-bottom: 30rpx;
+}
+
+.userInfo{
+  line-height: 1.5;
+  align-items: center;
+  display: flex;
+}
+.userInfo .userInfoMsg{
+  padding: 10rpx 0;
+}
+.userInfo .userInfoMsg .person{
+  align-items: center;
+  display: flex;
+}
+.userInfo .userInfoMsg .genderImg{
+  margin-left: 10rpx;
+}
+.userInfo .userInfoMsg .age{
+  color: #999;
+  margin-left: 10rpx;
+}
+.userInfo .userInfoMsg .area{
+  color: #999;
+}
+
+.pieceTitle{
+  color: #999;
+  margin: 30rpx;
+  align-self: flex-start;
+}
+.piece{
+  line-height: 1.5;
+  padding: 30rpx;
+}
+.piece text{
+  margin-right: 10rpx;
+}
+.piece .c-mt{
+  padding: 10rpx 0 20rpx;
+  justify-content: space-between;
+  display: flex;
+}
+.piece .c-bt{
+  border-top: 1px solid #ccc;
+  padding-top: 20rpx;
+  justify-content: space-between;
+  display: flex;
+}
+.piece .title{
+  font-size: 1.25rem;
+}
+.piece .overSum{
+  font-size: .875rem;
+  color: #999;
+}
+.piece .time{
+  color: #999;
+  margin-left: 30rpx;
+}
+.piece .comingDate{
+  color: #009688;
+}
+.piece .detail{
+  color: #666;
+}
+
+.piece button{
+  max-width: 5rem;
+  line-height: 1.2;
+  color: #fff;
+  background: #009688;
+  padding: .35rem .75rem;
+  display: inline-block;
+}
+.piece .c-btn{
+  text-align: right;
+  border-top: 1px solid #ccc;
+  padding-top: 20rpx;
+}
+.piece .c-btn button{
+  margin-left: 30rpx;
+}
+.piece .c-btn .leave{
+  background: #febe3a;
+}

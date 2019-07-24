@@ -1,0 +1,55 @@
+<!--userInfo.wxml-->
+
+<view class='continer'>
+
+  <view class='card'>
+
+    <view class='userInfo c-item'>
+
+      <image class='avatar' src='{{userInfo.avatarUrl}}'></image>
+
+      <view class='userInfoMsg'>
+        <view class='person'>
+          <text class='name'>{{userInfo.nickName}}</text>
+          <image class='genderImg' src='{{genderImg[userInfo.gender]}}'></image>
+        </view>
+        <view class='area'>多米艺术-鼎湖校区</view>
+      </view>
+
+    </view>
+
+  </view>
+
+  <view class='perInfo card'>
+
+    <view class='member c-item' bindtap='goMember'>
+      <view>会员中心</view>
+      <view class='arrow'></view>
+    </view>
+
+    <view class='family c-item' bindtap='goFamily'>
+      <view>家庭成员</view>
+      <view class='arrow'></view>
+    </view>
+
+  </view>
+
+  <view class='classInfo card'>
+
+    <view class='myClass c-item' bindtap='goMyCourse'>
+      <view>我的课程</view>
+      <view class='arrow'></view>
+    </view>
+
+  </view>
+
+  <view class='comInfo card'>
+
+    <view class='comment c-item'>
+      <view>我的评价</view>
+      <view class='arrow'></view>
+    </view>
+
+  </view>
+
+</view>

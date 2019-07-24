@@ -1,0 +1,72 @@
+<!--community.wxml-->
+<view class='container'>
+
+  <view class='community'>
+
+    <view class='circleList' wx:for='{{circleData}}' wx:key=''>
+      <view class='bodyView'>
+
+        <!-- 头像 -->
+        <view class='leftView'>
+          <image class='userImgUrl' src='{{item.userImgUrl}}'></image>
+        </view>
+
+        <view class='rightView'>
+          <!-- 昵称 -->
+          <view class='userName'>{{item.userName}}</view>
+          <!-- 内容 -->
+          <view class='userContent'>
+            <text selectable='true'>{{item.userContent}}</text>
+          </view>
+          <!-- 图片 -->
+          <view class='userImages'>
+            <view class='image' wx:for='{{item.userImages}}' wx:for-item='imgItem' wx:for-index="imgIndex" wx:key='' style='width: {{item.userImagesWidth}}px;height: {{item.userImagesWidth}}px;'>
+              <image bindtap='lookImage' data-index='{{index}}' data-image-url='{{imgItem}}' src='{{imgItem}}' style='width: {{item.userImagesWidth}}px;height: {{item.userImagesWidth}}px;'></image>
+            </view>
+          </view>
+          <!-- 地址 -->
+          <view class='userAddress'>{{item.userAddress}}</view>
+          <!-- 时间、删除、点赞和评论 -->
+          <view class='userTDD'>
+            <view class='TDD-date'>
+              <view class='date'>{{item.date}}</view>
+              <!-- <button class='btn'>删除</button> -->
+            </view>
+            <!-- 点赞和评论 -->
+            <view class='TDD-love {{item.actLovePoint ? "active" : ""}}'>
+              <!-- 点赞和评论弹出按钮 -->
+              <button class='btn lovePoint' data-index='{{index}}' bindtap='actLovePoint'>
+                <text class='fa fa-circle'></text>
+                <text class='fa fa-circle'></text>
+              </button>
+              <!-- 点赞和评论按钮 -->
+              <view class='loveGroup'>
+                <button class='btn loveBtn' bindtap='lovePoint'><text class='fa fa-heart-o'></text>点赞</button>
+                <button class='btn commentBtn' bindtap='commentPoint'><text class='fa fa-comment-o'></text>评论</button>
+              </view>
+            </view>
+          </view>
+          <!-- 点赞人和评论人内容 -->
+          <view class='userCommunity'>
+            <!-- 点赞人 -->
+            <view class='userLove'>
+              <text class='fa fa-heart-o'></text>
+              <view class='loveItem' wx:for='{{item.userLove}}' wx:key=''>{{item}}</view>
+            </view>
+            <!-- 评论人 -->
+            <view class='userComment'>
+              <view class='commentItem' wx:for='{{item.userComment}}' wx:key=''>
+                <view class='commentName'>{{item.name}}：</view>
+                <text class='commentContent' selectable='true'>{{item.content}}</text>
+              </view>
+            </view>
+
+          </view>
+        </view>
+
+      </view>
+    </view>
+
+  </view>
+
+</view>
