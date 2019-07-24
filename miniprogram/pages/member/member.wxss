@@ -1,0 +1,10 @@
+/**member.wxss**/
+
+.member{
+  padding: 60rpx 30rpx;
+}
+
+.member image{
+  width: 600rpx;
+  height: 380rpx;
+}
