@@ -50,23 +50,38 @@ Page({
   },
 
   loginSubmit: function (e) {
-    let phone = '15766227543';
-    let code = '7543';
+    let phoneValue = e.detail.value;
+    let dataUrl = 'http://localhost:8080/watch/api/duomiApi.php?action=login';
+
+    wx.request({
+      url: dataUrl,
+      method: "POST",
+      header: { "Content-Type": "application/x-www-form-urlencoded" },   //必填
+      data: {
+        phone: phoneValue,
+      },
+      success: function (res) {
+        console.log(res);
+      }
+    });
+
+    // let phone = '15766227543';
+    // let code = '7543';
     console.log(e.detail.value);
 
-    if (e.detail.value.phone == phone) {
-      wx.setStorageSync('user', 'admin');
-      wx.switchTab({
-        url: '../index/index',
-      })
-    } else{
-      wx.showToast({
-        title: '用户不存在',
-        icon: 'none',
-        mask: true,
-        duration: 2000
-      })
-    }
+    // if (e.detail.value.phone == phone) {
+    //   wx.setStorageSync('user', 'admin');
+    //   wx.switchTab({
+    //     url: '../index/index',
+    //   })
+    // } else{
+    //   wx.showToast({
+    //     title: '用户不存在',
+    //     icon: 'none',
+    //     mask: true,
+    //     duration: 2000
+    //   })
+    // }
     
   },
 
