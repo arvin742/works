@@ -16,7 +16,6 @@ Page({
   onLoad: function() {
     var that = this;
 
-    // wx.clearStorageSync();  //删除用户登录信息
     //初始化加载，先判断用户登录状态
     if (!wx.getStorageSync('user')) {
       if (app.isAuto()) {

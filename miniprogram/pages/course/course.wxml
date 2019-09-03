@@ -1,0 +1,6 @@
+<!--course.wxml-->
+<view class='container'>
+
+  <view class='course'></view>
+
+</view>

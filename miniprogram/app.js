@@ -16,8 +16,6 @@ App({
 
   isAuto: function () {
     let that = this;
-
-
     wx.showLoading({
       title: '加载中',
       mask: true,
@@ -55,8 +53,9 @@ App({
   },
 
   globalData: {
-    logoImgUrl: '../../images/logo.png',
+    logoImgUrl: 'cloud://arvin-jxy520.6172-arvin-jxy520-1258223218/my-image.png',
+    userImg: 'cloud://arvin-jxy520.6172-arvin-jxy520-1258223218/user-unlogin.png',
     userInfo: null,
-    genderImg: ['', '../../images/gender-1.png', '../../images/gender-0.png'],
+    genderImg: ['', 'cloud://arvin-jxy520.6172-arvin-jxy520-1258223218/gender-1.png', 'cloud://arvin-jxy520.6172-arvin-jxy520-1258223218/gender-0.png'],
   },
 })

@@ -4,7 +4,7 @@
   <view class='rank' wx:for='{{familyInfo}}' wx:key=''>
     <view class='family userInfo'>
 
-      <image class='avatar' src='{{item.familyImgUrl}}'></image>
+      <image class='avatar' src='{{item.avatarurl}}'></image>
 
       <view class='userInfoMsg'>
         <view class='person'>
@@ -12,7 +12,7 @@
           <image class='genderImg' src='{{genderImg[item.gender]}}'></image>
           <text class='age'>{{item.age}}</text>
         </view>
-        <view class='area'>多米艺术-鼎湖校区</view>
+        <view class='area'>{{item.classname}}</view>
       </view>
 
       <view class='edit'>编辑</view>

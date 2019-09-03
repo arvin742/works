@@ -52,4 +52,12 @@
 
   </view>
 
+  <view class='other card'>
+
+    <view class='c-item' bindtap='signOut'>
+      <view>退出登录</view>
+    </view>
+
+  </view>
+
 </view>

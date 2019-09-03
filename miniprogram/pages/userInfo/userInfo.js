@@ -3,10 +3,7 @@ const app = getApp()
 
 Page({
   data: {
-    userInfo: {
-      avatarUrl: '../../images/user-unlogin.png'
-    },
-    genderImg: [],
+    userInfo: {},
   },
 
 
@@ -14,8 +11,8 @@ Page({
     var that = this;
 
     that.setData({
+      genderImg: app.globalData.genderImg,
       userInfo: app.globalData.userInfo,
-      genderImg: app.globalData.genderImg
     });
 
     console.log(that.data.userInfo);
@@ -36,6 +33,21 @@ Page({
   goMyCourse: function () {
     wx.navigateTo({
       url: '../mycourse/mycourse',
+    })
+  },
+
+  signOut: function () {
+    wx.showModal({
+      title: '提示',
+      content: '确定退出该账号吗？',
+      success(res) {
+        if (res.confirm) {
+          wx.clearStorageSync();  //删除用户登录信息
+          wx.reLaunch({
+            url: '../login/login'
+          })
+        }
+      }
     })
   },
 

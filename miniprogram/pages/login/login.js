@@ -1,15 +1,13 @@
 //login.js
 const app = getApp()
+const db = wx.cloud.database()
 
 Page({
   data: {
-    logoImgUrl: '../../images/logo.png',
     codeBtn:{
       title: '获取验证码',
       disabled: false,
     },
-    userInfo: {},
-    user: {},
   },
 
   onLoad: function () {
@@ -50,23 +48,37 @@ Page({
   },
 
   loginSubmit: function (e) {
-    let phone = '15766227543';
-    let code = '7543';
-    console.log(e.detail.value);
+    wx.showLoading({
+      title: '加载中',
+      mask: true,
+    })
 
-    if (e.detail.value.phone == phone) {
-      wx.setStorageSync('user', 'admin');
-      wx.switchTab({
-        url: '../index/index',
-      })
-    } else{
-      wx.showToast({
-        title: '用户不存在',
-        icon: 'none',
-        mask: true,
-        duration: 2000
-      })
-    }
+    let phone = e.detail.value.phone;
+    let code = e.detail.value.code;
+    // console.log(e.detail.value);
+
+    db.collection('dm_art_parents').where({
+      phone: phone,
+      status: 1,
+    }).get({
+      success: function (res) {
+        if (res.data[0]) {
+          wx.setStorageSync('userid', res.data[0]._id);
+          wx.setStorageSync('user', res.data[0].phone);
+          wx.switchTab({
+            url: '../index/index',
+          })
+        } else {
+          wx.showToast({
+            title: '用户不存在',
+            icon: 'none',
+            mask: true,
+            duration: 2000
+          })
+        }
+        // console.log(res.data)
+      }
+    })
     
   },
 
