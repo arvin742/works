@@ -55,7 +55,6 @@ App({
   },
 
   globalData: {
-    apiUrl: 'http://morrich.cn/api',
     logoImgUrl: '../../images/logo.png',
     userInfo: null,
     genderImg: ['', '../../images/gender-1.png', '../../images/gender-0.png'],
