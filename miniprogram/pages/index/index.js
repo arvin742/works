@@ -1,5 +1,6 @@
 //index.js
 const app = getApp()
+const db = wx.cloud.database()
 
 Page({
   data: {
@@ -17,21 +18,12 @@ Page({
     var that = this;
 
     //初始化加载，先判断用户登录状态
-    if (!wx.getStorageSync('user')) {
-      if (app.isAuto()) {
-        app.isAuto()
-      } else {
-        app.isAutoCallback = () => {
-          app.isAuto()
-        }
+    if (app.isReady()) {
+      app.isReady()
+    } else {
+      app.isReadyCallback = () => {
+        app.isReady()
       }
-    } else{
-      wx.getUserInfo({
-        success: function (res) {
-          //用户已经授权过
-          app.globalData.userInfo = res.userInfo;
-        }
-      })
     }
 
     that.setData({
