@@ -107,8 +107,9 @@ Page({
               console.log(typeof res_c.data[0]._id);
 
               //查询孩子课程信息
-              db.collection('dm_art_class').where({
-                _id: res_c.data[0].classid,
+              db.collection('dm_art_parents').where({
+                phone: phone,
+                status: 1,
               }).get({
                 success: function (res_cc) {
                   console.log(res_cc.data);
