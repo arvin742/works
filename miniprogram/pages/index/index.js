@@ -12,6 +12,7 @@ Page({
     isActive: -1,
     isTodayWeek: false,
     todayIndex: 0,
+    nowStarus: [],
   },
 
   onLoad: function() {
@@ -30,23 +31,61 @@ Page({
       userInfo: app.globalData.userInfo,
       genderImg: app.globalData.genderImg
     });
-    
-    this.courseTableInit();
-    this.courseInfoInit();
 
     let now = new Date();
     let year = now.getFullYear();
     let month = now.getMonth() + 1;
     let today = '' + year + (month > 9 ? month : '0' + month) + (now.getDate() > 9 ? now.getDate() : '0' + now.getDate());
-    this.dateInit();
     this.setData({
       year: year,
       month: month,
       isToday: today,
       isActive: today,
     });
-
+    
+    this.courseTableInit();
+    this.courseInfoInit();
+    this.dateInit();
     // console.log(that.data);
+  },
+
+  /**
+   * 获取查询孩子课程信息
+   */
+  checkChildCourse: function(){
+    let that = this;
+    let now = new Date();
+    let firstDay = app.formatNumber('' + that.data.year + '/' + that.data.month + '/' + '01' + ' 00:00:00');
+    let lastDay = app.formatNumber('' + that.data.year + '/' + that.data.month + '/' + (new Date(that.data.year, that.data.month, 0).getDate()) + ' 24:00:00');
+    let nowStarus = [];
+    // console.log(firstDay, lastDay);
+    
+    //查询孩子课程信息
+    db.collection('dm_art_child_course').where({
+      child_id: app.globalData.child_id,
+      status: 1,
+    }).get({
+      success: function (res) {
+        // count = res.data[0].course_count;
+        // console.log(res.data);
+        db.collection('dm_art_course_season').where({
+          _id: res.data[0].course_season_id,
+        }).get({
+          success: function (res_c) {
+            let n = 0;
+            for (let i = 0; i < res_c.data[0].date.length; i++) {
+              if (res_c.data[0].date[i] >= firstDay && res_c.data[0].date[i] < lastDay){
+                nowStarus[n] = res_c.data[0].date[i];
+                n++;
+              }
+            }
+            return nowStarus;
+          }
+        })
+        return nowStarus;
+      }
+    })
+    console.log(nowStarus);
   },
 
   /**
@@ -55,7 +94,8 @@ Page({
   courseTableInit: function(date){
     let that = this;
     date = date ? date : '';
-    let table = '';
+    let table = [{}];
+    that.checkChildCourse();
 
     table = [
       {

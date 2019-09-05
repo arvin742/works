@@ -57,6 +57,32 @@ App({
     })
   },
 
+  //时间戳转时间
+  formatTime: function (number) {
+    let n = parseInt(number) * 1000;
+    let date = new Date(n);
+    let year = date.getFullYear() + '';
+    let month = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : '' + (date.getMonth() + 1));
+    let day = (date.getDate() < 10 ? '0' + date.getDate() : '' + date.getDate());
+    let hh = (date.getHours() < 10 ? '0' + date.getHours() : '' + date.getHours());
+    let mm = (date.getMinutes() < 10 ? '0' + date.getMinutes() : '' + date.getMinutes());
+    let ss = (date.getSeconds() < 10 ? '0' + date.getSeconds() : '' + date.getSeconds());
+    return {
+      year: year,
+      month: month,
+      day: day,
+      hh: hh,
+      mm: mm,
+      ss: ss
+    };
+  },
+
+  //时间转时间戳
+  formatNumber: function(time) {
+    let mixtime = new Date(time.replace(/-/g, "/")).getTime();
+    return (parseInt(mixtime) / 1000);
+  },
+
   onShow: function() {
     var that = this;
     if (!wx.clearStorageSync()){
