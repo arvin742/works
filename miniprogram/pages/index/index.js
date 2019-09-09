@@ -43,49 +43,10 @@ Page({
       isActive: today,
     });
     
-    this.courseTableInit();
+    // this.courseTableInit();
     this.courseInfoInit();
     this.dateInit();
     // console.log(that.data);
-  },
-
-  /**
-   * 获取查询孩子课程信息
-   */
-  checkChildCourse: function(){
-    let that = this;
-    let now = new Date();
-    let firstDay = app.formatNumber('' + that.data.year + '/' + that.data.month + '/' + '01' + ' 00:00:00');
-    let lastDay = app.formatNumber('' + that.data.year + '/' + that.data.month + '/' + (new Date(that.data.year, that.data.month, 0).getDate()) + ' 24:00:00');
-    let nowStarus = [];
-    // console.log(firstDay, lastDay);
-    
-    //查询孩子课程信息
-    db.collection('dm_art_child_course').where({
-      child_id: app.globalData.child_id,
-      status: 1,
-    }).get({
-      success: function (res) {
-        // count = res.data[0].course_count;
-        // console.log(res.data);
-        db.collection('dm_art_course_season').where({
-          _id: res.data[0].course_season_id,
-        }).get({
-          success: function (res_c) {
-            let n = 0;
-            for (let i = 0; i < res_c.data[0].date.length; i++) {
-              if (res_c.data[0].date[i] >= firstDay && res_c.data[0].date[i] < lastDay){
-                nowStarus[n] = res_c.data[0].date[i];
-                n++;
-              }
-            }
-            return nowStarus;
-          }
-        })
-        return nowStarus;
-      }
-    })
-    console.log(nowStarus);
   },
 
   /**
@@ -94,35 +55,79 @@ Page({
   courseTableInit: function(date){
     let that = this;
     date = date ? date : '';
-    let table = [{}];
-    that.checkChildCourse();
 
-    table = [
-      {
-        title: '签',
-        date: '20190703',
-        status: 's1',
-      },
-      {
-        title: '假',
-        date: '20190705',
-        status: 's2',
-      },
-      {
-        title: '课',
-        date: '20190716',
-        status: 's0',
-      },
-      {
-        title: '课',
-        date: '20190728',
-        status: 's0',
-      }
-    ];
+    let now = new Date();
+    let firstDay = app.formatNumber('' + that.data.year + '/' + that.data.month + '/' + '01' + ' 00:00:00');
+    let lastDay = app.formatNumber('' + that.data.year + '/' + that.data.month + '/' + (new Date(that.data.year, that.data.month, 0).getDate()) + ' 24:00:00');
+    let formatDate, table = [];
+    // console.log(firstDay, lastDay);
 
-    that.setData({
-      courseTable: table
-    });
+    //查询孩子课程信息
+    return new Promise(function (resolve, reject) {
+      db.collection('dm_art_child_course').where({
+        child_id: app.globalData.child_id,
+        status: 1,
+      }).get({
+        success: function (res) {
+          // console.log(res.data);
+          db.collection('dm_art_course_season').where({
+            _id: res.data[0].course_season_id,
+          }).get({
+            success: function (res_c) {
+              let n = 0;
+              for (let i = 0; i < res_c.data[0].date.length; i++) {
+                if (res_c.data[0].date[i] >= firstDay && res_c.data[0].date[i] < lastDay) {
+                  let ojb = {}
+                  if (res.data[0].course_info[i] == 2) {
+                    ojb.title = '假'; ojb.status = 's2';
+                  } else if (res.data[0].course_info[i] == 1) {
+                    ojb.title = '签'; ojb.status = 's1';
+                  } else {
+                    ojb.title = '课'; ojb.status = 's0';
+                  }
+                  formatDate = app.formatTime(res_c.data[0].date[i]);
+                  ojb.date = '' + formatDate.year + formatDate.month + formatDate.day;
+                  table[n] = ojb;
+                  n++;
+                }
+              }
+              resolve(table);
+              // console.log(table);
+            },
+            fail: () => {
+              reject("系统异常，请重试！")
+            }
+          })
+        }
+      })
+    })
+
+    // table = [
+    //   {
+    //     title: '签',
+    //     date: '20190703',
+    //     status: 's1',
+    //   },
+    //   {
+    //     title: '假',
+    //     date: '20190705',
+    //     status: 's2',
+    //   },
+    //   {
+    //     title: '课',
+    //     date: '20190716',
+    //     status: 's0',
+    //   },
+    //   {
+    //     title: '课',
+    //     date: '20190728',
+    //     status: 's0',
+    //   }
+    // ];
+
+    // that.setData({
+    //   courseTable: table
+    // });
   },
   /**
    * 获取选择日期课程信息
@@ -210,13 +215,17 @@ Page({
         let isCourseTableStatus = '';
 
         //把课程状态放在对应的日期
-        for (let j = 0; j < that.data.courseTable.length; j++){
-          isCourseTableStatus = '';
-          if (that.data.courseTable[j].date == today){
-            isCourseTableStatus = that.data.courseTable[j];
-            break;
+        that.courseTableInit().then((res) => {
+          for (let j = 0; j < res.length; j++) {
+            isCourseTableStatus = '';
+            if (res[j].date == today) {
+              isCourseTableStatus = res[j];
+            }
           }
-        }
+          // console.log(res)
+        }).catch((res) => {
+          console.log(res)
+        });
 
         obj = {
           isToday: today,
