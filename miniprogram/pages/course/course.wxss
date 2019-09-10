@@ -1,1 +1,47 @@
 /**course.wxss**/
+page{
+  background: #fff;
+}
+
+.course{
+  padding: 0 1rem;
+}
+
+.course .img{
+  width: 100%;
+  margin: .5rem 0 1rem;
+}
+
+.course .head{
+  margin-bottom: 1rem;
+  align-items: flex-end;
+  display: flex;
+}
+.course .head .title{
+  font-size: 1.5rem;
+}
+.course .head .subtitle{
+  font-size: 1rem;
+  color: #666;
+}
+
+.course .major{
+  margin-bottom: 1rem; 
+}
+.course .major .h{
+  font-size: 1.125rem;
+}
+.course .major text{
+  line-height: 1.5;
+}
+
+.course .content{
+  margin-bottom: 1rem; 
+}
+.course .content .h{
+  font-size: 1.125rem;
+}
+.course .content text{
+  line-height: 1.5; 
+  color: #666;
+}

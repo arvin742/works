@@ -23,7 +23,7 @@
             <view class='{{isToday == item.isToday ? "nowDay" : ""}} {{item.isToday === isActive ? "active" : ""}}'>
               <view class='date-day' bindtap='actCourse' data-year='{{year}}' data-month='{{month}}' data-datenum='{{item.dateNum}}'>
                 <view>{{item.dateNum}}</view>
-                <view class='date-status {{item.isCourseTable.status}}' wx:if='{{item.isCourseTable}}'>{{item.isCourseTable.title}}</view>
+                <view class='date-status {{item.courseTable.status}}' wx:if='{{item.courseTable.isStatus}}'>{{item.courseTable.title}}</view>
               </view>
             </view>
           </block>
@@ -36,7 +36,7 @@
     <!-- 日期对应的课程 -->
     <view class='calendar_course'>
 
-      <view class='card' wx:for='{{courseInfo}}' wx:key=''>
+      <view class='card' wx:for='{{courseInfo}}' wx:key='' bindtap='goCourseInfo'>
         <!-- 课程大小标题 -->
         <view class='c-pt'>
           <text class="title">{{item.lessonInfo.title}}</text>

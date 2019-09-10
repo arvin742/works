@@ -26,26 +26,23 @@ Page({
         app.isReady()
       }
     }
-
-    that.setData({
-      userInfo: app.globalData.userInfo,
-      genderImg: app.globalData.genderImg
-    });
-
+    
     let now = new Date();
     let year = now.getFullYear();
     let month = now.getMonth() + 1;
     let today = '' + year + (month > 9 ? month : '0' + month) + (now.getDate() > 9 ? now.getDate() : '0' + now.getDate());
     this.setData({
+      userInfo: app.globalData.userInfo,
+      genderImg: app.globalData.genderImg,
       year: year,
       month: month,
       isToday: today,
       isActive: today,
     });
     
-    // this.courseTableInit();
-    this.courseInfoInit();
     this.dateInit();
+    this.courseInfoInit();
+
     // console.log(that.data);
   },
 
@@ -101,33 +98,6 @@ Page({
         }
       })
     })
-
-    // table = [
-    //   {
-    //     title: '签',
-    //     date: '20190703',
-    //     status: 's1',
-    //   },
-    //   {
-    //     title: '假',
-    //     date: '20190705',
-    //     status: 's2',
-    //   },
-    //   {
-    //     title: '课',
-    //     date: '20190716',
-    //     status: 's0',
-    //   },
-    //   {
-    //     title: '课',
-    //     date: '20190728',
-    //     status: 's0',
-    //   }
-    // ];
-
-    // that.setData({
-    //   courseTable: table
-    // });
   },
   /**
    * 获取选择日期课程信息
@@ -210,36 +180,54 @@ Page({
       if (i >= startWeek) {
         num = i - startWeek + 1;
         num = num > 9 ? ('' + num) : ('0' + num);
-        let monthStr = (month + 1) > 9 ? ('' + month + 1) : ('0' + (month + 1));
+        let monthStr = (month + 1) > 9 ? ('' + (month + 1)) : ('0' + (month + 1));
         let today = '' + year + monthStr + num;
-        let isCourseTableStatus = '';
-
-        //把课程状态放在对应的日期
-        that.courseTableInit().then((res) => {
-          for (let j = 0; j < res.length; j++) {
-            isCourseTableStatus = '';
-            if (res[j].date == today) {
-              isCourseTableStatus = res[j];
-            }
-          }
-          // console.log(res)
-        }).catch((res) => {
-          console.log(res)
-        });
 
         obj = {
           isToday: today,
           dateNum: num,
-          isCourseTable: isCourseTableStatus,
         }
       } else {
         obj = {};
       }
       dateArr[i] = obj;
     }
+    // console.log(dateArr);
     this.setData({
       dateArr: dateArr,
+    }, function(){
+      // 把课程状态放在对应的日期
+      this.courseTableInit().then((res) => {
+        let num = 0, dateCount = dateArr;
+        // console.log(res)
+
+        for (let i = 0; i < dateCount.length; i++) {
+          let ojb = {
+            isStatus: false,
+            title: '',
+            status: ''
+          }
+
+          if (num < res.length) {
+            if (dateCount[i].isToday == res[num].date) {
+              ojb.isStatus = true;
+              ojb.title = res[num].title;
+              ojb.status = res[num].status;
+              num++;
+            }
+          }
+          dateCount[i].courseTable = ojb;
+        }
+
+        this.setData({
+          dateArr: dateCount
+        });
+        // console.log(res)
+      }).catch((res) => {
+        console.log(res)
+      });
     })
+    
     let nowDate = new Date();
     let nowYear = nowDate.getFullYear();
     let nowMonth = nowDate.getMonth() + 1;
@@ -323,5 +311,12 @@ Page({
     });
 
     console.log(date);
+  },
+
+  //查看课程详细信息
+  goCourseInfo: function () {
+    wx.navigateTo({
+      url: '../course/course',
+    })
   },
 })

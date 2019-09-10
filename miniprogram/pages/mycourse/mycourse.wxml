@@ -3,7 +3,7 @@
 
   <view class='pieceTitle'>即将上课</view>
 
-  <view class='card' wx:for='{{courseInfo}}' wx:key=''>
+  <view class='card' wx:for='{{courseInfo}}' wx:key='' bindtap="goCourseInfo">
     <view class='piece courseInfo'>
       <view class='c-tp'>
         <text class='title'>{{item.title}}</text>

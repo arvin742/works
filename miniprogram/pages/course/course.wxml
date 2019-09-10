@@ -1,6 +1,20 @@
 <!--course.wxml-->
 <view class='container'>
 
-  <view class='course'></view>
+  <view class='course'>
+    <image class='img' src='{{courseInfo.imgurl}}'></image>
+    <view class='head'>
+      <view class='title'>{{courseInfo.title}}</view>
+      <view class='subtitle'>{{courseInfo.type}}</view>
+    </view>
+    <view class='major'>
+      <view class="h">课程重点：</view>
+      <text>{{courseInfo.major}}</text>
+    </view>
+    <view class='content'>
+    <view class="h">课程内容：</view>
+      <text>{{courseInfo.content}}</text>
+    </view>
+  </view>
 
 </view>

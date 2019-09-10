@@ -44,4 +44,10 @@ Page({
     });
   },
 
+  //查看课程详细信息
+  goCourseInfo: function () {
+    wx.navigateTo({
+      url: '../course/course',
+    })
+  },
 })
