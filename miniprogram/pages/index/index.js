@@ -49,9 +49,8 @@ Page({
   /**
    * 获取当月课程信息
    */
-  courseTableInit: function(date){
+  courseTableInit: function(){
     let that = this;
-    date = date ? date : '';
 
     let now = new Date();
     let firstDay = app.formatNumber('' + that.data.year + '/' + that.data.month + '/' + '01' + ' 00:00:00');
@@ -104,57 +103,100 @@ Page({
    */
   courseInfoInit: function (date) {
     let that = this;
-    date = date ? date : '';
+    let now = new Date();
+    let reDate = date ? app.formatNumber(date) : (Date.parse(now) / 1000);
+    let kidName = '', kidGender = 0;
     let info = '';
+    // console.log(reDate)
 
-    info = [
-      {
-        title: '文化感知',
-        className: '启蒙A班',
-        lessonInfo: {
-          time: 1,
-          title: '宇宙星球',
-          date: '2019/07/17 18:00-19:00',
-          status: 0,
-          statusColor: 'black',
-          statusName: '未上课',
-        },
-        kidName: '小明',
-        kidGender: 1,
-      },
-      {
-        title: '文化感知',
-        className: '启蒙B班',
-        lessonInfo: {
-          time: 1,
-          title: '蒙德里安的格子——蜘蛛网',
-          date: '2019/07/17 18:00-19:00',
+    if (!app.globalData.child_id) return false;
+    //查询孩子课程详细信息
+    db.collection('dm_art_children').where({
+      _id: app.globalData.child_id,
+      status: 1,
+    }).get({
+      success: function (res) {
+        // console.log(res.data);
+        db.collection('dm_art_child_course').where({
+          child_id: res.data[0]._id,
           status: 1,
-          statusColor: 'green',
-          statusName: '已签到',
-        },
-        kidName: '小红',
-        kidGender: 2,
-      },
-      {
-        title: '色彩感知',
-        className: '启蒙C班',
-        lessonInfo: {
-          time: 1,
-          title: '色彩与情感表达',
-          date: '2019/07/17 18:00-19:00',
-          status: 2,
-          statusColor: 'red',
-          statusName: '已请假',
-        },
-        kidName: '小明',
-        kidGender: 1,
-      },
-    ];
+        }).get({
+          success: function (res_c) {
+            // console.log(res.data);
+            db.collection('dm_art_course').where({
+              course_group_id: res_c.data[0].course_group_id,
+            }).get({
+              success: function (res_cc) {
+                for (let i = 0; i < res_cc.data.length; i++) {
+                  if (reDate < res_cc.data[i].date) {
+                    info = res_cc.data[i];
+                    break;
+                  }
+                }
+                let formatDate = app.formatTime(info.date);
+                info.date = '' + formatDate.year + '/' + formatDate.month + '/' + formatDate.day + ' 19:30-21:00';
+                info.kidName = res.data[0].nickname;
+                info.kidGender = res.data[0].gender;
+                info.className = res.data[0].classname;
+                console.log(info);
+                // that.setData({
+                //   courseInfo: info
+                // });
+              }
+            })
+          }
+        })
+      }
+    })
 
-    that.setData({
-      courseInfo: info
-    });
+    // info = [
+    //   {
+    //     title: '文化感知',
+    //     className: '启蒙A班',
+    //     lessonInfo: {
+    //       time: 1,
+    //       title: '宇宙星球',
+    //       date: '2019/07/17 18:00-19:00',
+    //       status: 0,
+    //       statusColor: 'black',
+    //       statusName: '未上课',
+    //     },
+    //     kidName: '小明',
+    //     kidGender: 1,
+    //   },
+    //   {
+    //     title: '文化感知',
+    //     className: '启蒙B班',
+    //     lessonInfo: {
+    //       time: 1,
+    //       title: '蒙德里安的格子——蜘蛛网',
+    //       date: '2019/07/17 18:00-19:00',
+    //       status: 1,
+    //       statusColor: 'green',
+    //       statusName: '已签到',
+    //     },
+    //     kidName: '小红',
+    //     kidGender: 2,
+    //   },
+    //   {
+    //     title: '色彩感知',
+    //     className: '启蒙C班',
+    //     lessonInfo: {
+    //       time: 1,
+    //       title: '色彩与情感表达',
+    //       date: '2019/07/17 18:00-19:00',
+    //       status: 2,
+    //       statusColor: 'red',
+    //       statusName: '已请假',
+    //     },
+    //     kidName: '小明',
+    //     kidGender: 1,
+    //   },
+    // ];
+
+    // that.setData({
+    //   courseInfo: info
+    // });
   },
 
   dateInit: function (setYear, setMonth) {
@@ -195,38 +237,18 @@ Page({
     // console.log(dateArr);
     this.setData({
       dateArr: dateArr,
-    }, function(){
-      // 把课程状态放在对应的日期
-      this.courseTableInit().then((res) => {
-        let num = 0, dateCount = dateArr;
-        // console.log(res)
-
-        for (let i = 0; i < dateCount.length; i++) {
-          let ojb = {
-            isStatus: false,
-            title: '',
-            status: ''
-          }
-
-          if (num < res.length) {
-            if (dateCount[i].isToday == res[num].date) {
-              ojb.isStatus = true;
-              ojb.title = res[num].title;
-              ojb.status = res[num].status;
-              num++;
-            }
-          }
-          dateCount[i].courseTable = ojb;
-        }
-
-        this.setData({
-          dateArr: dateCount
-        });
-        // console.log(res)
-      }).catch((res) => {
-        console.log(res)
-      });
     })
+
+    // 小标课程日期
+    this.courseTableInit().then((res) => {
+      // console.log(res)
+      this.setData({
+        courseTable: res
+      });
+      // console.log(res)
+    }).catch((res) => {
+      console.log(res)
+    });
     
     let nowDate = new Date();
     let nowYear = nowDate.getFullYear();
