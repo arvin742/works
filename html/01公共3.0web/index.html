@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+<title></title>
+<link href="Themes/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="Themes/swiper-4.5.0.min.css" rel="stylesheet" type="text/css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="Themes/style.css" rel="stylesheet" type="text/css" />
+<link href="Themes/main.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-3.3.1.min.js"></script>
+<!--[if lt IE 9]>
+<script src="//cdn.boot.com/html5shiv/r29/html5.min.js"></script>
+<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<header class="header">
+	
+	<nav class="navbar">
+		<div class="container">
+			
+			<div class="navbar-header">
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+					<i class="fa fa-indent"></i>
+				</button>
+				<a class="navbar-brand" href="index.html"><img src="uploadfiles/images/logo.png" alt="" /></a>
+			</div>
+			
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+				<ul id="menu" class="menu navbar-nav">
+					
+					<li class="active"><a href="index.html">Home</a></li>
+					
+					<li class="dropdown">
+						<a href="product.html" class="dropdown-toggle" data-toggle="dropdown">Products</a>
+						<ul class="dropdown-menu">
+							<li><a href="product-info.html">Product-1</a></li>
+							<li><a href="product-info.html">Product-2</a></li>
+							<li><a href="product-info.html">Product-3</a></li>
+							<li><a href="product-info.html">Product-4</a></li>
+						</ul>
+					</li>
+					
+					<li><a href="about.html">About us</a></li>
+					<li><a href="new.html">News</a></li>
+					
+					<li class="dropdown">
+						<a href="contact.html" class="dropdown-toggle" data-toggle="dropdown">Contact us</a>
+						<ul class="dropdown-menu">
+							<li><a href="contact.html">Contact us</a></li>
+							<li><a href="faq.html">FAQs</a></li>
+						</ul>
+					</li>
+					
+				</ul>
+			</div>
+			
+		</div>
+	</nav>
+</header>
+
+<div class="content">
+	
+	<div class="index-banner">
+		
+		<div class="swiper-container swiper-banner hidden-xs">
+	    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="uploadfiles/images/banner.jpg" alt="" /></div>
+	    </div>
+		</div>
+		
+		<div class="pagination-inline pagination-banner">
+  		<a class="prevbtn prevban"><i class="fa fa-angle-left"></i></a>
+    	<a class="nextbtn nextban"><i class="fa fa-angle-right"></i></a>
+  	</div>
+		
+		<div class="swiper-container swiper-small pct-img visible-xs">
+	    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="uploadfiles/images/banner.jpg" alt="" /></div>
+	    </div>
+		</div>
+		
+	</div>
+	
+</div>
+
+<div class="bottom">
+	<ul class="list-inline">
+		<li>
+			<a href="index.html">
+				<img src="uploadfiles/images/bottom-home.png" alt="Home" />
+				<p>Home</p>
+			</a>
+		</li>
+		<li>
+			<a href="tel:0086-0510-83595337">
+				<img src="uploadfiles/images/bottom-tel.png" alt="Tel" />
+				<p>Tel</p>
+			</a>
+		</li>
+		<li>
+			<a href="mailto:">
+				<img src="uploadfiles/images/bottom-mail.png" alt="Email" />
+				<p>Email</p>
+			</a>
+		</li>
+		<li>
+			<a href="/">
+				<img src="uploadfiles/images/bottom-share.png" alt="Share" />
+				<p>Share</p>
+			</a>
+		</li>
+		<li>
+			<a href="contactus.html">
+				<img src="uploadfiles/images/bottom-contact.png" alt="Contact" />
+				<p>Contact</p>
+			</a>
+		</li>
+	</ul>
+</div>
+
+<div class="list-unstyled" id="contact-btn">
+  <p class="contact-us">contact us</p>
+  <img src="uploadfiles/images/contact-email.png" alt="contact-email" data-original="">
+</div>
+
+<div class="a-form">
+	<div id="close-btn" class="btn">
+		<i class="fa fa-times"></i>
+  </div>
+  
+  <div class="cont-aside">
+  	
+    <div class="cont-nav text-center">
+      <div class="cont-header">
+        <img src="uploadfiles/images/logo.png" alt="contact-logo">
+      </div>
+      <div class="cont-right">
+        <p class="h3">DAMS Incorporated</p>
+        <p>We provide customers with quality products and provide high-quality services</p>
+      </div>
+    </div>
+    
+    <div class="cont-form">
+      <form id="SubscribeForm2" action="" class="form">
+        <div class="form-group">
+          <input class="form-control" type="text" id="name" name="name" placeholder="Name*" required />
+        </div>
+        <div class="form-group">
+          <div class="radio">
+            <label>Gender</label>
+            <label><input type="radio" name="Gender" id="optionsRadios1" value="Male" checked> Male</label>
+            <label><input type="radio" name="Gender" id="optionsRadios2" value="Female"> Female</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="email" id="email" name="email" placeholder="Email*" required />
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="text" id="country" name="country" placeholder="Country*" required />
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="text" id="whatsapp" name="whatsapp" placeholder="WhatsAPP" required />
+        </div>
+        <div class="form-group">
+	        <div class="code">
+	        	<input class="form-control" type="text" name="zcode" placeholder="Code*" />
+	        	<img id="imgCode" alt="看不清，请点击我！" src="/web/WebForm3.aspx" mce_src="/web/WebForm3.aspx" onclick="this.src=this.src+'?'" />
+	        </div>
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" id="msg" name="content" rows="3" placeholder="Message*" required></textarea>
+        </div>
+        <div class="form-group">
+	        <button class="btn btn-cont" type="submit" data-toggle="action" data-target="" data-callback="">SUBMIT</button>
+	      </div>
+      </form>
+      
+      <p class="cont-p">If you would like to leave us a comment please go to <a class="cont-h3" href="contact.html">contact us</a></p>
+    </div>
+    
+  </div>
+</div>
+
+<div class="inquiry-back">
+	<div class="inquiry-bg">
+		
+		<a class="btn close"><i class="fa fa-close"></i></a>
+		
+		<div class="inquiry-form">
+			<p class="h4">POPULAR TAGS</p>
+			<p>Check the products of interest</p>
+			
+			<form class="form">
+				<div class="form-group">
+					<ul class="list-inline">
+						<li><label><input type="checkbox" />airpurifier</label></li>
+						<li><label><input type="checkbox" />airpurifier</label></li>
+						<li><label><input type="checkbox" />airpurifier</label></li>
+					</ul>
+				</div>
+				<div class="form-group submit">
+					<input class="form-control" type="text" placeholder="E-mail" required />
+					<button class="btn" type="button">SUBMIT</button>
+				</div>
+			</form>
+			
+		</div>
+		
+	</div>
+</div>
+
+<a class="to-top"><img src="uploadfiles/images/top.png" alt="top" /></a>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper-4.5.0.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+	var swiper_banner = new Swiper ('.swiper-banner', {
+		slidesPerView : 1,
+		speed: 1000,
+    autoplay: {
+    	delay : 7000,
+    	disableOnInteraction : false,
+    },
+    loop: true,
+	  
+    navigation: {
+    	prevEl: '.prevban',
+	    nextEl: '.nextban',
+	  },
+	  
+	  effect : 'coverflow',
+	  centeredSlides: true,
+	  coverflowEffect: {
+	    rotate: 30,
+	    stretch: 10,
+	    depth: 60,
+	    modifier: 2,
+	    slideShadows : true
+	  },
+ 	});
+ 	
+ 	var swiper_small = new Swiper ('.swiper-small', {
+		slidesPerView : 1,
+    autoplay: {
+    	delay : 7000,
+    	disableOnInteraction : false,
+    },
+    loop: true,
+ 	});
+ 	
+	$(function() {
+		$('.to-top').toTop();
+		
+		setTimeout(function(){
+	  	$('.inquiry-back').fadeIn();
+	  }, 20000);
+	  $('.inquiry-back .close').on('click', function(){
+	  	$('.inquiry-back').fadeOut();
+	  });
+	})
+</script>
+
+</body>
+</html>

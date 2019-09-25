@@ -1,0 +1,38 @@
+.choose-mod1 .back{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.choose-mod1 .back .img{
+	margin-bottom: .5rem;
+}
+.choose-mod1 .back .h5{
+	font-weight: 500;
+}
+.choose-mod1 ul.icon-list li{
+	min-height: 2rem;
+	padding-left: 2.5rem;
+	margin-bottom: 1rem;
+	position: relative;
+}
+.choose-mod1 ul.icon-list li img{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+@media (min-width:1200px){
+	/**/
+	.choose-mod1 .back{
+		margin-bottom: 2rem;
+	}
+}
+
+@media (min-width:1440px){
+	/**/
+	.choose-mod1 .back{
+		margin-bottom: 3rem;
+	}
+	.choose-mod1 .back .info{
+		padding-top: 1rem;
+	}
+}

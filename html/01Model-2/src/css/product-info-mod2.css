@@ -1,0 +1,111 @@
+.product-info-mod2{
+	min-height: 100vh;
+	background: #484848;
+	overflow: hidden;
+	position: relative;
+}
+.product-info-mod2 h1{
+	color: #7eb911;
+	text-align: left;
+	margin: 1rem 0;
+}
+.product-info-mod2 h2,
+.product-info-mod2 .title{
+	text-align: left;
+}
+.product-info-mod2 .pro-rt ul li{
+	line-height: 1.875;
+}
+.product-info-mod2 .pro-rt .btn{
+	font-size: .875rem;
+	color: #fff;
+	background: #7eb911;
+	margin-top: .5rem;
+}
+.product-info-mod2 .pro-rt .social-media{
+	margin-top: 1rem;
+}
+.product-info-mod2 .aside.on .aside-scroll .title{
+	display: none;
+}
+.product-info-mod2 .navbar-header button{
+	color: #fff;
+}
+.product-info-mod2 .product-menu a{
+	color: #fff;
+}
+.product-info-mod2 .product-menu .product-form{
+	max-width: 16rem;
+	border: none;
+	padding: 0;
+}
+.product-info-mod2 .product-menu .navbar-collapse{
+	background: none;
+}
+.product-info-mod2 .product-menu .product-nav>li{
+	border: none;
+}
+.product-info-mod2 .product-menu .product-nav>li>a{
+	font-weight: 600;
+	color: #fff;
+	background: none;
+}
+.product-info-mod2 .product-menu .product-nav>li:hover>a,
+.product-info-mod2 .product-menu .product-nav>li.active>a{
+	color: #7eb911;
+}
+.product-info-mod2 .product-menu .product-nav>li ul li{
+	border: none;
+}
+.product-info-mod2 .product-menu .product-nav>li ul li a{
+	font-size: .875rem;
+}
+
+@media (min-width:768px) {
+	/**/
+	.product-info-mod2 h2,
+	.product-info-mod2 .title{
+		font-size: 1.5rem;
+	}
+	.product-info-mod2 .aside-main{
+		min-height: 100vh;
+		background: #fff;
+		padding-top: 7rem;
+		padding-bottom: 7.5rem;
+	}
+	.product-info-mod2 .product-menu{
+		margin-top: 7rem;
+	}
+	.product-info-mod2 .aside.on .aside-scroll{
+		margin-top: 0;
+	}
+}
+
+@media (min-width:768px) and (max-width:991px){
+	/**/
+	.product-info-mod2 .product-menu{
+		display: none;
+	}
+}
+
+@media (min-width:992px) {
+	/**/
+	.product-info-mod2 .aside-main{
+		padding-bottom: 6rem;
+	}
+}
+
+@media (min-width:1440px) {
+	/**/
+	.product-info-mod2 .aside-main{
+		padding-left: 7.5%;
+		padding-right: 7.5%;
+	}
+}
+
+@media (max-width:479px){
+	/**/
+	.product-info-mod2{
+		padding-top: 1rem;
+	}
+}

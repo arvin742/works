@@ -1,0 +1,14 @@
+.project-info-mod1 h2,
+.project-info-mod1 .title{
+	color: #7eb911;
+}
+.project-info-mod1 .swiper-container{
+	margin-bottom: 1rem;
+}
+.project-info-mod1 .swiper-thumbs .swiper-slide{
+	cursor: pointer;
+}
+
+@media (min-width:768px){
+	/**/
+}

@@ -1,0 +1,38 @@
+.contact .info-text{
+	text-align: center;
+	justify-content: center;
+}
+.contact .info-text .back{
+	min-height: 16rem;
+	border: 1px solid #ccc;
+	padding: 1.5rem 1rem 0;
+	margin-bottom: 1rem;
+}
+.contact .info-text i{
+	width: 3.75rem;
+	height: 3.75rem;
+	font-size: 1.5rem;
+	line-height: 3.75rem;
+	color: #fff;
+	background: #7eb911;
+	border-radius: 50%;
+}
+.contact .info-text .h4{
+	font-size: 1.25rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin: 1.25rem 0 1rem;
+}
+
+@media (min-width:768px) {
+	/**/
+	.contact .info-text{
+		margin: 1rem -.5rem 0;
+	}
+	.contact .info-text>div{
+		padding: 0 .5rem;
+	}
+	.contact .info-text .back{
+		padding-top: 2.5rem;
+	}
+}

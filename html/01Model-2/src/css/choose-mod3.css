@@ -1,0 +1,63 @@
+.choose-mod3{
+	padding: .1rem 0;
+}
+.choose-mod3 .cho-list>li{
+	margin-bottom: 1rem;
+	display: flex;
+}
+.choose-mod3 .cho-list>li .img{
+	margin-top: .5rem;
+	margin-right: 1rem;
+}
+.choose-mod3 .cho-list>li .img img{
+	max-width: 4rem;
+}
+.choose-mod3 .cho-list>li .info{
+	align-self: center;
+}
+.choose-mod3 .cho-list>li .h4{
+	font-weight: 600;
+	margin-top: 0;
+}
+
+@media (min-width:768px){
+	/**/
+	.choose-mod3{
+		padding-bottom: 2rem;
+	}
+	.choose-mod3 .cho-list>li .h4{
+		font-size: 1.25rem;
+	}
+}
+
+@media (min-width:1200px){
+	/**/
+	.choose-mod3 .cho-list{
+		margin-top: 3rem;
+	}
+	.choose-mod3 .cho-list>li{
+		margin-bottom: 3rem;
+	}
+	.choose-mod3 .cho-list>li .img img{
+		max-width: 5rem;
+	}
+	.choose-mod3 .cho-list>li .h4{
+		font-size: 1.5rem;
+	}
+}
+
+@media (min-width:1640px){
+	/**/
+	.choose-mod3 .cho-list{
+		margin-top: 5rem;
+	}
+	.choose-mod3 .cho-list>li{
+		margin-bottom: 5rem;
+	}
+	.choose-mod3 .cho-list>li .img{
+		margin-right: 1.5rem;
+	}
+	.choose-mod3 .cho-list>li .img img{
+		max-width: 5.625rem;
+	}
+}

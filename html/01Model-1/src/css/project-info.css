@@ -1,0 +1,18 @@
+.project-info h2{
+	color: #7eb911;
+}
+.project-info .project-text img{
+	margin: 1rem auto;
+}
+.project-info .project-text p{
+	margin-bottom: .5rem;
+}
+
+
+@media (min-width:768px) {
+	/**/
+	.project-info h2,
+	.project-info .title{
+		font-size: 1.5rem;
+	}
+}

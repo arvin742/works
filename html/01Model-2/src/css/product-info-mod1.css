@@ -1,0 +1,30 @@
+.product-info-mod1 .bg-img{
+	position: relative;
+}
+.product-info-mod1 .bg-img .title{
+	color: #7eb911;
+}
+
+@media (min-width:768px) {
+	/**/
+	.product-info-mod1{
+		padding: 1rem 0 2rem;
+	}
+	.product-info-mod1 .bg-img .title{
+		width: 100%;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		z-index: 5;
+	}
+}
+
+@media (min-width:1200px) {
+	/**/
+	.product-info-mod1{
+		padding: 2rem 0 3rem;
+	}
+	.product-info-mod1 .bg-img .title{
+		font-size: 1.75rem;
+	}
+}

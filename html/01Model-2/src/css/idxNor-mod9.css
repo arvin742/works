@@ -1,0 +1,30 @@
+.idxNor-mod9{
+	background: #fcfbf7;
+}
+.idxNor-mod9 .pct-img{
+	margin-bottom: 1rem;
+	display: block;
+}
+
+@media (min-width:768px){
+	/**/
+	.idxNor-mod9 .pct-img{
+		margin-bottom: 2rem;
+	}
+}
+
+@media (min-width:992px){
+	/**/
+}
+
+@media (min-width:1200px){
+	/**/
+}
+
+@media (min-width:1440px){
+	/**/
+}
+
+@media (max-width:767px){
+	/**/
+}

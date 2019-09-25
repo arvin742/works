@@ -1,0 +1,119 @@
+.idxPdt-mod8{
+	padding: .01rem 0 1rem;
+}
+.idxPdt-mod8 .back{
+	padding-bottom: 3.75rem;
+	position: relative;
+}
+.idxPdt-mod8 .img img{
+	border: 1px solid transparent;
+}
+.idxPdt-mod8 .info{
+	width: 100%;
+	height: 3.5rem;
+	color: #fff;
+	background: #7eb911;
+	padding: 0 1rem;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 5;
+	-webkit-transition: all .7s;
+	-moz-transition: all .7s;
+	transition: all .7s;
+}
+.idxPdt-mod8 .info .h4{
+	height: 3rem;
+	font-size: 1rem;
+	font-weight: 700;
+	text-align: center;
+}
+.idxPdt-mod8 .info .h5{
+	font-size: .875rem;
+}
+.idxPdt-mod8 .back:hover .info{
+	height: auto;
+	padding: .5rem 1rem;
+}
+.idxPdt-mod8 .back:hover .info .h4{
+	height: auto;
+	text-align: left;
+}
+.idxPdt-mod8 .back:hover .img img{
+	border-color: #7eb911;
+}
+
+@media (min-width:768px){
+	/**/
+	.idxPdt-mod8{
+		padding: 1rem 0 3rem;
+	}
+	.idxPdt-mod8 .tab-list>li{
+		padding: 0 1.25rem;
+		margin-bottom: 0;
+	}
+	.idxPdt-mod8 .tab-list>li>.btn{
+		font-weight: 600;
+		border: none;
+		padding: .375rem 0;
+		position: relative;
+	}
+	.idxPdt-mod8 .tab-list>li>.btn:after{
+		content: '';
+		width: 1px;
+		height: 1px;
+		background: transparent;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		transition: all .5s;
+	}
+	.idxPdt-mod8 .tab-list>li:hover>.btn,
+	.idxPdt-mod8 .tab-list>li.active>.btn{
+		color: #7eb911 !important;
+		background: none;
+	}
+	.idxPdt-mod8 .tab-list>li:hover>.btn:after,
+	.idxPdt-mod8 .tab-list>li.active>.btn:after{
+		width: 100%;
+		background: #7eb911;
+	}
+}
+
+@media (min-width:992px){
+	/**/
+	.idxPdt-mod8 .info{
+		color: #333;
+		background: transparent;
+	}
+	.idxPdt-mod8 .back:hover .info{
+		color: #fff;
+		background: #7eb911;
+	}
+}
+
+@media (min-width:1200px){
+	/**/
+	.idxPdt-mod8 .pt{
+		justify-content: space-between;
+		align-items: center;
+		display: flex;
+	}
+	.idxPdt-mod8 h2,
+	.idxPdt-mod8 .title,
+	.idxPdt-mod8 .list-tag{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.idxPdt-mod8 .tab-list>li{
+		margin-bottom: 0;
+	}
+}
+
+@media (min-width:1440px) {
+	/**/
+	.idxPdt-mod8 .tab-list>li>.btn{
+		font-size: 1.125rem;
+	}
+}

@@ -1,0 +1,157 @@
+.idxPdt-mod7{
+	padding: 1.5rem 0 1rem;
+}
+.idxPdt-mod7 .tab-list>li>.btn{
+	text-align: left;
+	white-space: normal;
+	padding-left: 4rem;
+	position: relative;
+	z-index: 5;
+}
+.idxPdt-mod7 .tab-list>li>.btn img{
+	position: absolute;
+	top: 0;
+	left: 1.25rem;
+}
+.idxPdt-mod7 .info{
+	border-bottom: 1px solid #7eb911;
+	padding-bottom: .1rem;
+}
+.idxPdt-mod7 .info p{
+	height: 1.5rem;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	overflow: hidden;
+}
+.idxPdt-mod7 .info .h5{
+	height: 4.5rem;
+	-webkit-line-clamp: 3;
+}
+
+@media (min-width:768px) {
+	/**/
+	.idxPdt-mod7{
+		padding: 0;
+	}
+	.idxPdt-mod7 h2,
+	.idxPdt-mod7 .title{
+		text-align: left;
+		margin-bottom: .5rem;
+	}
+	.idxPdt-mod7 .text{
+		text-align: left;
+	}
+	.idxPdt-mod7 .row{
+		background: #f0f3f2;
+	}
+	.idxPdt-mod7 .tab-content{
+		margin-bottom: 2rem;
+	}
+	.idxPdt-mod7 .lt{
+		background: #5a5a5a;
+		padding: 1rem 0;
+	}
+	.idxPdt-mod7 .list-tag{
+		height: 100%;
+		margin: 0;
+		overflow: hidden;
+		align-items: center;
+		display: flex;
+	}
+	.idxPdt-mod7 .tab-list{
+		flex-wrap: wrap;
+	}
+	.idxPdt-mod7 .tab-list>li{
+		margin: 0 0 .5rem;
+		flex-basis: 100%;
+		justify-content: flex-end;
+		display: flex;
+	}
+	.idxPdt-mod7 .tab-list>li:before{
+		content: '';
+		width: 0;
+		height: 0;
+		border-top: 1rem solid transparent;
+		border-right: 1rem solid #f0f3f2;
+		border-bottom: 1rem solid transparent;
+		position: absolute;
+		right: 100%;
+		top: 50%;
+		margin-top: -1rem;
+		z-index: 2;
+		-webkit-transition: all .8s .1s;
+		transition: all .8s .1s;
+	}
+	.idxPdt-mod7 .tab-list>li:after{
+		content: '';
+		width: 100%;
+		height: 100%;
+		background: #7eb911;
+		position: absolute;
+		left: -100%;
+		top: 0;
+		z-index: 1;
+		-webkit-transition: all .7s;
+		transition: all .7s;
+	}
+	.idxPdt-mod7 .tab-list>li>.btn{
+		width: 100%;
+		max-width: 25rem;
+		color: #fff;
+		background: transparent !important;
+		border: none;
+		padding: 1rem 1.25rem 1rem 4rem;
+	}
+	.idxPdt-mod7 .tab-list>li>.btn img{
+		top: 1rem;
+		-webkit-transition: all .7s;
+		transition: all .7s;
+	}
+	.idxPdt-mod7 .tab-list>li:hover:before,
+	.idxPdt-mod7 .tab-list>li.active:before{
+		right: 0;
+	}
+	.idxPdt-mod7 .tab-list>li:hover:after,
+	.idxPdt-mod7 .tab-list>li.active:after{
+		left: 0;
+	}
+	.idxPdt-mod7 .tab-list>li:hover>.btn img,
+	.idxPdt-mod7 .tab-list>li.active>.btn img{
+		transform: rotate(360deg);
+	}
+}
+
+@media (min-width:1200px) {
+	/**/
+	.idxPdt-mod7 .rt{
+		padding: 2rem 2rem;
+	}
+	.idxPdt-mod7 .tab-list>li>.btn{
+		padding: 1.5rem 1.25rem 1.5rem 4rem;
+	}
+	.idxPdt-mod7 .tab-list>li>.btn img{
+		top: 1.5rem;
+	}
+}
+
+@media (min-width:1640px) {
+	/**/
+	.idxPdt-mod7 .lt{
+		-ms-flex: 0 0 30%;
+    flex: 0 0 30%;
+    max-width: 30%;
+	}
+	.idxPdt-mod7 .rt{
+		-ms-flex: 0 0 70%;
+    flex: 0 0 70%;
+    max-width: 70%;
+	}
+}
+
+@media (max-width:767px) {
+	/**/
+	.idxPdt-mod7 .list-tag{
+		margin-bottom: -1rem;
+	}
+}

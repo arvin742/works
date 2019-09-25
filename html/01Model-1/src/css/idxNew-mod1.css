@@ -1,0 +1,128 @@
+.idxNew-mod1{
+	color: #fff;
+	background: #1c3c56;
+	padding: .01rem 0 1rem;
+	margin-bottom: -2rem;
+}
+.idxNew-mod1 h2,
+.idxNew-mod1 .title,
+.idxNew-mod1 a{
+	color: #fff;
+}
+.idxNew-mod1 .title.index span:after{
+	background: #fff;
+}
+.idxNew-mod1 .back a{
+	color: #fff;
+}
+.idxNew-mod1 .back>a{
+	display: block;
+}
+.idxNew-mod1 .info p{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	overflow: hidden;
+}
+.idxNew-mod1 .info .date{
+	font-size: 1.125rem;
+	font-weight: bold;
+	background: rgba(0,117,194,.75);
+	padding: .35rem 1rem;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 5;
+}
+.idxNew-mod1 .info .h4{
+	height: 3rem;
+	margin-top: 1rem;
+	-webkit-line-clamp: 2;
+}
+.idxNew-mod1 .info .h5{
+	height: 4.5rem;
+	-webkit-line-clamp: 3;
+}
+
+@media (min-width:768px) {
+	/**/
+	.idxNew-mod1 .back{
+		margin: 0 .5rem;
+	}
+	.idxNew-mod1{
+		padding: 2rem 0 5rem;
+	}
+	.idxNew-mod1 .back{
+		text-align: center;
+		margin: 0;
+	}
+	.idxNew-mod1 .img{
+		opacity: 0;
+	}
+	.idxNew-mod1 .img img{
+		width: 100%;
+	}
+	.idxNew-mod1 .info{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 9;
+		flex-wrap: wrap;
+		align-content: center;
+		display: flex;
+	}
+	.idxNew-mod1 .info p{
+		padding: 0 1rem;
+		flex-basis: 100%;
+	}
+	.idxNew-mod1 .info .h4{
+		font-size: 1.25rem;
+		font-weight: 600;
+		height: 3.75rem;
+	}
+	.idxNew-mod1 .info .date{
+		background: transparent;
+		border-top: 1px solid #ccc;
+		padding: 1rem 0 0;
+		position: relative;
+	}
+	.idxNew-mod1 .info .date:after{
+		content: '';
+		width: 2rem;
+		height: .1rem;
+		background: #666;
+		position: absolute;
+		left: 50%;
+		bottom: -.1rem;
+		margin-left: -1rem;
+	}
+	.idxNew-mod1 .info .h4{
+		margin: 1rem 0;
+	}
+	.idxNew-mod1 .back:hover .img{
+		opacity: 1;
+	}
+	.idxNew-mod1 .back:hover .info{
+		background: rgba(0,0,0,.5);
+	}
+	.idxNew-mod1 .back:hover .info p{
+		color: #fff;
+	}
+	.idxNew-mod1 .back:hover .date{
+		border: none;
+		padding-bottom: 0;
+		order: 99;
+	}
+	.idxNew-mod1 .back:hover .date:after{
+		display: none;
+	}
+}
+
+@media (max-width:767px) {
+	/**/
+	.idxNew-mod1 .info{
+		padding: 0 1rem;
+	}
+}

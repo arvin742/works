@@ -1,0 +1,38 @@
+.contact-mod2 .info-text{
+	text-align: center;
+}
+.contact-mod2 .info-text .back{
+	min-height: 16rem;
+	background: #f9f9f9;
+	border-radius: .5rem;
+	padding: 1.5rem 1rem 0;
+	margin-bottom: 1rem;
+}
+.contact-mod2 .info-text i{
+	width: 3.75rem;
+	height: 3.75rem;
+	font-size: 1.5rem;
+	line-height: 3.75rem;
+	color: #fff;
+	background: #7eb911;
+	border-radius: 50%;
+}
+.contact-mod2 .info-text .h4{
+	font-size: 1.25rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin: 1.25rem 0 0;
+}
+
+@media (min-width:768px){
+	/**/
+	.contact-mod2 .info-text{
+		margin: 1rem -.5rem 0;
+	}
+	.contact-mod2 .info-text>div{
+		padding: 0 .5rem;
+	}
+	.contact-mod2 .info-text .back{
+		padding-top: 2.5rem;
+	}
+}

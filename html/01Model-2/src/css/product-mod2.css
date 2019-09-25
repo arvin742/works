@@ -1,0 +1,141 @@
+.product-mod2 .text{
+	text-align: left;
+	margin: 0 auto 1rem;
+}
+.product-mod2 .product-menu .product-form{
+	border: none;
+	padding: 0;
+	margin-bottom: 1rem;
+}
+.product-mod2 .product-menu .product-form .form-control{
+	height: calc(2.75rem + 2px);
+	border-radius: 0;
+}
+.product-mod2 .product-menu .product-form .btn{
+	min-width: 2.75rem;
+	border-radius: 0;
+}
+.product-mod2 .pro-list{
+	margin-bottom: 1rem;
+}
+.product-mod2 .pro-list .btn{
+	color: #666;
+	padding: 0;
+}
+.product-mod2 .pro-list .btn .fa:before{
+	padding-right: .3rem;
+}
+.product-mod2 .pro-list li.active .btn{
+	color: #7eb911;
+}
+.product-mod2 .product-con{
+	align-items: stretch;
+}
+.product-mod2 .product-con li{
+	margin-bottom: 1rem;
+	cursor: pointer;
+}
+.product-mod2 .product-con li .back{
+	height: 100%;
+	border: 1px solid #ccc;
+	flex-wrap: wrap;
+	display: flex;
+}
+.product-mod2 .product-con li a{
+	width: 100%;
+	display: block;
+}
+.product-mod2 .product-con .desc{
+	width: 100%;
+	padding: 0 1rem;
+}
+.product-mod2 .product-con .info{
+	width: 100%;
+	font-weight: 600;
+	margin: 1rem 0 .5rem;
+}
+.product-mod2 .product-con .h5{
+	margin: .5rem 0;
+}
+.product-mod2 .product-con .choice{
+	padding: 0 1rem 1rem;
+	margin-top: .75rem;
+	align-self: flex-end;
+}
+.product-mod2 .product-con .btn{
+	color: #7eb911;
+	background: transparent;
+	border: 1px solid #7eb911;
+	border-radius: 0;
+	padding: .2rem 1.25rem;
+}
+.product-mod2 .product-con .btn-default{
+  background: #7eb911;
+  color: #fff;
+  padding: .2rem .5rem;
+}
+.product-mod2 .product-con li:hover .back{
+	border-color: #7eb911;
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,.25);
+	-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,.25);
+}
+.product-mod2 .product-con li:hover .info,
+.product-mod2 .product-con li:hover .info a{
+	color: #7eb911;
+}
+.product-mod2 .product-con .btn:hover{
+	background-color: #7eb911;
+	color: #fff;
+}
+.product-mod2 .product-con.active li{
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+.product-mod2 .product-con.active li img{
+	width: 100%;
+	max-width: 12.5rem;
+	float: left;
+	margin-right: 1.25rem;
+}
+.product-mod2 .product-con.active .info{
+	width: auto;
+	height: 1.5rem;
+	-webkit-line-clamp: 1;
+}
+.product-mod2 .product-con.active .h5{
+	display: -webkit-box !important;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+}
+.product-mod2 .product-con.active .choice{
+	margin-top: 1rem;
+}
+
+@media (min-width:1200px){
+	/**/
+	.product-mod2 .text{
+		margin-bottom: 2rem;
+	}
+	.product-mod2 .product-menu{
+		max-width: 18rem;
+	}
+	.product-mod2 .product-con .info{
+		font-size: 1.125rem;
+	}
+}
+
+@media (min-width:1440px){
+	/**/
+	.product-mod2 .aside.on .aside-main{
+		margin-left: 20.5%;
+	}
+}
+
+@media (min-width:1640px){
+	/**/
+	.product-mod2 .aside.on .aside-main{
+		margin-left: 17.875%;
+	}
+}

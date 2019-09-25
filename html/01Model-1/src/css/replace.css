@@ -1,0 +1,9 @@
+.replace h2{
+	color: #7eb911;
+}
+.replace .swiper-replace-sg{
+	margin-bottom: 1rem;
+}
+.replace .swiper-replace-sg .swiper-slide{
+	cursor: pointer;
+}

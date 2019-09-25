@@ -1,0 +1,39 @@
+.product-info h1{
+	color: #7eb911;
+	text-align: left;
+	margin: 1rem 0;
+}
+.product-info .pro-rt ul li{
+	line-height: 1.875;
+}
+.product-info .pro-rt .btn{
+	font-size: .875rem;
+	color: #fff;
+	background: #7eb911;
+	margin-top: .5rem;
+}
+.product-info .pro-rt .social-media{
+	margin-top: 1rem;
+}
+
+@media (min-width:768px) {
+	/**/
+	.product-info h2,
+	.product-info .title{
+		font-size: 1.5rem;
+	}
+}
+
+@media (min-width:992px) {
+	/**/
+	.product-info h2{
+		margin-top: 0;
+	}
+}
+
+@media (max-width:479px){
+	/**/
+	.product-info{
+		padding-top: 1rem;
+	}
+}

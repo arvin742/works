@@ -1,0 +1,90 @@
+.info-center-mod3{
+	margin: 1rem auto;
+}
+.info-center-mod3 .lt .h4{
+	font-size: 1.25rem;
+	font-weight: 500;
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
+	position: relative;
+}
+.info-center-mod3 .lt .h4:before,
+.info-center-mod3 .lt .h4:after{
+	content: '';
+	width: 12rem;
+	height: 1px;
+	background: #ccc;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.info-center-mod3 .lt .h4:after{
+	width: 5rem;
+	height: .5rem;
+	background: #fff;
+	border: 1px solid #999;
+	bottom: -.25rem;
+}
+.info-center-mod3 .lt .email{
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: #00367c;
+}
+.info-center-mod3 .lt .email a{
+	color: #7eb911;
+}
+.info-center-mod3 form .form-group{
+	position: relative;
+}
+.info-center-mod3 form input,
+.info-center-mod3 form textarea{
+	border-radius: 0;
+}
+.info-center-mod3 form .code input{
+	width: 50%;
+}
+.info-center-mod3 form .code .img{
+	width: 48%;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.info-center-mod3 form .submit .btn{
+	width: 100%;
+	color: #fff;
+	background: #7eb911;
+	border-radius: 0;
+}
+
+@media (min-width:768px){
+	/**/
+	.info-center-mod3{
+		margin: 2rem auto;
+	}
+	.info-center-mod3 form textarea{
+		min-height: 9rem;
+	}
+}
+
+@media (min-width:1200px){
+	/**/
+	.info-center-mod3{
+		margin: 3rem auto;
+	}
+	.info-center-mod3 .lt .h4{
+		margin-bottom: 3rem;
+	}
+	.info-center-mod3 form .form-group{
+		margin-bottom: 2rem;
+	}
+	.info-center-mod3 form input{
+		height: calc(1.5em + 1.25rem + 2px);
+	}
+	.info-center-mod3 form textarea{
+		min-height: 12.5rem;
+	}
+	.info-center-mod3 form .submit .btn{
+		font-size: 1.25rem;
+		padding: .5875rem .75rem;
+	}
+}

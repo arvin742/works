@@ -1,0 +1,53 @@
+.download-mod1 ul{
+	margin: 0 -8px;
+}
+.download-mod1 ul>li{
+	padding: 0 8px;
+	margin-bottom: 1rem;
+}
+.download-mod1 .back{
+	border: 1px solid #ccc;
+	padding: 1rem 2rem 2rem;
+}
+.download-mod1 .back i:before{
+	color: #666;
+	margin-right: .3rem;
+}
+.download-mod1 .back .img{
+	font-size: 3rem;
+	text-align: center;
+}
+.download-mod1 .back .img i:before{
+	margin-right: 0;
+}
+.download-mod1 .back .f-title{
+	font-size: 1.0625rem;
+	font-weight: 600;
+	text-align: center;
+	margin: .5rem 0;
+}
+.download-mod1 .back .f-size,
+.download-mod1 .back .f-time{
+	font-size: .875rem;
+	margin-bottom: .5rem;
+}
+.download-mod1 .back .btn{
+	border: 1px solid #ccc;
+	margin-top: 1rem;
+	display: block;
+}
+.download-mod1 .back:hover{
+	border-color: #7eb911;
+}
+.download-mod1 .back:hover .img i:before,
+.download-mod1 .back:hover .f-title{
+	color: #7eb911;
+}
+.download-mod1 .back:hover .btn{
+	color: #fff;
+	background: #7eb911;
+	border-color: #7eb911;
+}
+.download-mod1 .back:hover .btn i:before{
+	color: #fff;
+}

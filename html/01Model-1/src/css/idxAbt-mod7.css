@@ -1,0 +1,51 @@
+.idxAbt-mod7{
+	color: #fff;
+	background: url(../../uploadfiles/images/idxAbt-mod7.jpg) no-repeat center;
+	background-size: cover;
+	padding: .1rem 0 1rem;
+}
+.idxAbt-mod7 a{
+	color: #fff;
+}
+.idxAbt-mod7 h2,
+.idxAbt-mod7 .title,
+.idxAbt-mod7 .text{
+	color: #fff;
+	text-align: left;
+}
+.idxAbt-mod7 .btn{
+	color: #fff;
+	background: #7eb911;
+	border-radius: 0;
+	margin: .5rem 0 1.25rem;
+}
+
+@media (min-width:768px) {
+	/**/
+	.idxAbt-mod7{
+		padding: 2rem 0 3rem;
+	}
+	.idxAbt-mod7 .btn{
+		margin: 1.5rem 0 2rem;
+	}
+}
+
+@media (min-width:1200px) {
+	/**/
+	.idxAbt-mod7{
+		padding: 6.5rem 0;
+	}
+	.idxAbt-mod7 .col-md-7{
+		padding-left: 6.5rem;
+	}
+	.idxAbt-mod7 .info p:not(.title){
+		margin-bottom: .5rem;
+	}
+	.idxAbt-mod7 .btn{
+		padding: .5rem 1.5rem;
+		margin-top: 2rem;
+	}
+	.idxAbt-mod7 .h4{
+		margin: 2rem 0 1.5rem;
+	}
+}

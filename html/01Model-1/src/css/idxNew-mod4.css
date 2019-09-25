@@ -1,0 +1,78 @@
+.idxNew-mod4{
+	padding: .1rem 0 2rem;
+}
+.idxNew-mod4 .back{
+	margin: .1rem 0;
+	position: relative;
+}
+.idxNew-mod4 .back .hr{
+	height: 1px;
+	background: #666;
+	margin: 1.5rem 0;
+	position: relative;
+}
+.idxNew-mod4 .back .hr:before,
+.idxNew-mod4 .back .hr:after{
+	content: '';
+	border-radius: 50%;
+	position: absolute;
+	left: 1rem;
+	top: 50%;
+}
+.idxNew-mod4 .back .hr:before{
+	width: .5rem;
+	height: .5rem;
+	background: #666;
+	margin-top: -.25rem;
+}
+.idxNew-mod4 .back .hr:after{
+	width: 1rem;
+	height: 1rem;
+	border: 1px solid #666;
+	margin-top: -.5rem;
+	margin-left: -.25rem;
+}
+.idxNew-mod4 .back p{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	overflow: hidden;
+}
+.idxNew-mod4 .back .h4{
+	height: 1.5rem;
+	font-weight: 600;
+}
+.idxNew-mod4 .back .h5{
+	height: 4.5rem;
+	-webkit-box-orient: 3;
+	margin-top: 1rem;
+}
+.idxNew-mod4 .back .btn{
+	color: #666;
+	border: 1px solid #666;
+	border-radius: 0;
+	padding: .05rem 1.75rem;
+	margin-top: 1rem;
+}
+.idxNew-mod4 .back:hover .hr:before{
+	background: #7eb911;
+}
+.idxNew-mod4 .back:hover .hr:after{
+	border-color: #7eb911;
+}
+.idxNew-mod4 .back:hover .h4,
+.idxNew-mod4 .back:hover .date{
+	color: #7eb911;
+}
+.idxNew-mod4 .back:hover .btn{
+	color: #fff;
+	background: #7eb911;
+	border-color: #7eb911;
+}
+
+@media (min-width:768px){
+	/**/
+	.idxNew-mod4{
+		padding: 1rem 0 3rem;
+	}
+}

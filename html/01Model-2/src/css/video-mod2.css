@@ -1,0 +1,90 @@
+.video-mod2 .video-text{
+	box-shadow: 1px 1px 3px 1px rgba(0,0,0,.15);
+	padding: 1rem;
+	margin: 0 0 1rem;
+}
+.video-mod2 .video-text .img{
+	padding: 0;
+}
+.video-mod2 .video-text .img img{
+	width: 100%;
+	height: 100%;
+}
+.video-mod2 .video-text .img .play{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	position: absolute;
+	left: 0;
+	top: 0;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	z-index: 5;
+}
+.video-mod2 .video-text .img .play i{
+	font-size: 3rem;
+	color: #fff;
+}
+.video-mod2 .video-text .info .h4{
+	font-weight: 600;
+}
+.video-mod2 .video-text .info .btn{
+	color: #fff;
+	background: #7eb911;
+	margin-top: 1rem;
+}
+.video-mod2 .video-list{
+	margin-top: 1rem;
+}
+.video-mod2 .video-list li{
+	margin-bottom: 1rem;
+}
+.video-mod2 .video-list .video-play{
+	box-shadow: 1px 1px 3px 1px rgba(0,0,0,.3);
+	position: relative;
+}
+.video-mod2 .video-list .play{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.15);
+	position: absolute;
+	left: 0;
+	top: 0;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	z-index: 5;
+}
+.video-mod2 .video-list .play i{
+	font-size: 3rem;
+	color: #fff;
+}
+.video-mod2 .video-list li .h4{
+	font-size: 1rem;
+	font-weight: 600;
+}
+.video-mod2 .video-list li:hover .h4{
+	color: #1a549f;
+}
+
+@media (min-width:768px){
+	/**/
+	.video-mod2 .video-list{
+		margin-top: 3rem;
+	}
+}
+
+@media (min-width:992px){
+	/**/
+	.video-mod2 .video-text .info{
+		padding-left: 2rem;
+	}
+}
+
+@media (min-width:1440px){
+	/**/
+	.video-mod2 .video-text .info{
+		padding-top: 1rem;
+	}
+}

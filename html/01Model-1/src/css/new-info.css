@@ -1,0 +1,17 @@
+.new-info h2{
+	color: #7eb911;
+}
+.new-info .new-text img{
+	margin: 1rem auto;
+}
+.new-info .new-text p{
+	margin-bottom: .5rem;
+}
+
+@media (min-width:768px) {
+	/**/
+	.new-info h2
+	.new-info .title{
+		font-size: 1.5rem;
+	}
+}

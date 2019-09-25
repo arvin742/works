@@ -1,0 +1,87 @@
+.idxNor-mod7 .container-fluid{
+	padding: 0;
+}
+.idxNor-mod7 .back{
+	position: relative;
+}
+.idxNor-mod7 .info{
+	max-width: 70%;
+	padding: 1rem;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 5;
+}
+.idxNor-mod7 .withe .info p,
+.idxNor-mod7 .withe .info a{
+	color: #fff;
+}
+.idxNor-mod7 .info p{
+	font-weight: 600;
+}
+.idxNor-mod7 .info .h5{
+	font-size: .875rem;
+}
+.idxNor-mod7 .info .btn{
+	padding-left: 0;
+	position: relative;
+}
+.idxNor-mod7 .info .btn:after{
+	content: '\f178';
+	font-family: 'FontAwesome';
+	position: absolute;
+	left: 100%;
+	top: 50%;
+	margin-top: -.75rem;
+	z-index: 5;
+}
+
+@media (min-width:992px){
+	/**/
+	.idxNor-mod7 .info .h4{
+		font-size: 1.5rem;
+	}
+	.idxNor-mod7 .info .h5{
+		font-size: 1rem;
+	}
+}
+
+@media (min-width:1200px){
+	/**/
+	.idxNor-mod7 .info{
+		padding: 2rem;
+	}
+	.idxNor-mod7 .info .h4{
+		font-size: 1.75rem;
+	}
+	.idxNor-mod7 .info .h5{
+		font-size: 1.125rem;
+	}
+	.idxNor-mod7 .info .btn{
+		font-size: 1.125rem;
+		font-weight: 600;
+	}
+	.idxNor-mod7 .info .btn:after{
+		font-size: 1.5rem;
+		margin-left: .5rem;
+		margin-top: -1.125rem;
+	}
+}
+
+@media (min-width:1440px){
+	/**/
+	.idxNor-mod7 .info{
+		max-width: 30rem;
+		padding: 3rem;
+	}
+	.idxNor-mod7 .info .h4{
+		font-size: 2.25rem;
+	}
+	.idxNor-mod7 .info .h5{
+		line-height: 2.5;
+	}
+	.idxNor-mod7 .info .btn{
+		font-size: 1.125rem;
+		font-weight: 600;
+	}
+}

@@ -1,0 +1,39 @@
+.idxPdt-mod1{
+	padding: .1rem 0 1rem;
+}
+.idxPdt-mod1 .pagination-inline .prevbtn,
+.idxPdt-mod1 .pagination-inline .nextbtn{
+	width: 3rem;
+	font-size: 1.25rem;
+	font-weight: 600;
+	border-radius: 50%;
+	margin-top: -3rem;
+}
+
+@media (min-width:768px) {
+	/**/
+	.idxPdt-mod1{
+		padding-bottom: 2rem;
+	}
+}
+
+@media (min-width:992px) {
+	/**/
+	.idxPdt-mod1 .mySwiper{
+		padding: 0 3rem;
+	}
+}
+
+@media (min-width:1200px) {
+	/**/
+	.idxPdt-mod1{
+		padding-bottom: 3rem;
+	}
+}
+
+@media (min-width:1640px) {
+	/**/
+	.idxPdt-mod1{
+		padding: 2rem 0 5rem;
+	}
+}

@@ -1,0 +1,33 @@
+.certificate-mod2{
+	padding: 1rem 0 2rem;
+}
+
+@media (min-width:768px){
+	/**/
+	.certificate-mod2{
+		padding-bottom: 3rem;
+	}
+	.certificate-mod2 .tab-list{
+		margin-bottom: 2rem;
+	}
+	.certificate-mod2 .tab-list>li>.btn{
+		color: #fff;
+		background: #7eb911;
+		border: none;
+	}
+}
+
+@media (min-width:1200px){
+	/**/
+	.certificate-mod2{
+		padding-bottom: 5rem;
+	}
+	.certificate-mod2 .tab-list>li>.btn{
+		font-size: 1.125rem;
+		padding: .5rem 2rem;
+	}
+}
+
+@media (min-width:1440px){
+	/**/
+}

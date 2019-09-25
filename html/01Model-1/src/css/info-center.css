@@ -1,0 +1,58 @@
+.info-center{
+	margin: 1rem auto;
+}
+.info-center form .form-group{
+	position: relative;
+}
+.info-center form input,
+.info-center form textarea{
+	border-radius: 0;
+}
+.info-center form .code input{
+	width: 50%;
+}
+.info-center form .code .img{
+	width: 48%;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.info-center form .submit .btn{
+	width: 100%;
+	color: #fff;
+	background: #7eb911;
+	border-radius: 0;
+}
+
+@media (min-width:768px) {
+	/**/
+	.info-center{
+		margin: 2rem auto;
+	}
+	.info-center form textarea{
+		min-height: 9rem;
+	}
+	.info-center form .submit{
+		order: -1;
+	}
+}
+
+@media (min-width:1200px) {
+	/**/
+	.info-center{
+		margin: 3rem auto;
+	}
+	.info-center form .form-group{
+		margin-bottom: 2rem;
+	}
+	.info-center form input{
+		height: calc(1.5em + 1.5rem + 2px);
+	}
+	.info-center form textarea{
+		min-height: 13.25rem;
+	}
+	.info-center form .submit .btn{
+		font-size: 1.25rem;
+		padding: .5875rem .75rem;
+	}
+}

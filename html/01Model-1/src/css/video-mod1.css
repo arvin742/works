@@ -1,0 +1,22 @@
+.video-mod1 .v-list li{
+	margin-bottom: .5rem;
+}
+.video-mod1 .v-list .scale-img{
+	position: relative;
+}
+.video-mod1 .v-list .scale-img:after{
+	content: '\f01d';
+	width: 100%;
+	height: 100%;
+	font-family: 'FontAwesome';
+	font-size: 3rem;
+	color: #fff;
+	background: rgba(0,0,0,.5);
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 5;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}

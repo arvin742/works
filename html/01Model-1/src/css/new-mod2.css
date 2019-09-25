@@ -1,0 +1,73 @@
+.new-mod2 .new-list{
+	margin-top: 1.25rem;
+}
+.new-mod2 .new-list>li{
+	border: 1px solid #999;
+	margin-bottom: 1.5rem;
+	padding: 1rem;
+	display: block;
+}
+.new-mod2 .new-list>li .text-right{
+	margin: 1.5rem 0 .8rem;
+	display: none;
+}
+.new-mod2 .new-list>li .btn{
+	color: #fff;
+	background: #7eb911;
+	border: 1px solid #7eb911;
+	text-transform: uppercase;
+	padding: .2rem 1.5rem;
+}
+.new-mod2 .new-list>li .h4{
+	font-weight: 600;
+}
+.new-mod2 .new-list>li .h4:hover>a{
+	color: #7eb911;
+}
+.new-mod2 .new-list>li time{
+	margin: .6rem 0;
+	display: flex;
+}
+.new-mod2 .new-list>li time .name{
+	padding-right: 2rem;
+}
+.new-mod2 .new-list>li time i{
+	color: #666;
+}
+.new-mod2 .new-list>li time i:before{
+	margin-right: .3rem;
+}
+
+@media (min-width:576px) {
+	/**/
+	.new-mod2 .new-list>li .img{
+		float: left;
+	}
+	.new-mod2 .new-list>li .img img{
+		max-width: 16rem;
+	}
+	.new-mod2 .new-list>li .info{
+		margin-left: 17.25rem;
+	}
+}
+
+@media (min-width:992px) {
+	/**/
+	.new-mod2 .new-list>li .text-right{
+    display: block;
+	}
+}
+
+@media (max-width:767px){
+	/**/
+	.new-mod2 .new-list>li .h4{
+		margin-top: 1rem;
+	}
+}
+
+@media (max-width:479px){
+	/**/
+	.new-mod2 .new-list{
+		margin-top: 1rem;
+	}
+}

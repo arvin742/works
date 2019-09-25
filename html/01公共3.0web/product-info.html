@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+<title></title>
+<link href="Themes/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="Themes/swiper-4.5.0.min.css" rel="stylesheet" type="text/css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="Themes/etalage.css" rel="stylesheet" type="text/css" />
+<link href="Themes/style.css" rel="stylesheet" type="text/css" />
+<link href="Themes/main.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-3.3.1.min.js"></script>
+<!--[if lt IE 9]>
+<script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div class="banner">
+  <div class="img"><img src="uploadfiles/images/banner-inner.jpg" alt=""/></div>
+</div>
+
+<div class="content">
+	<div class="breadcrumb-div">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li>Home</li>
+        <li><a href="product.html">Products</a></li>
+      </ol>
+    </div>
+  </div>
+  
+  <div class="product-info">
+	  <div class="container">
+	  	
+	  	<div class="row">
+				<div class="pro-lt col-md-7">
+					<ul id="etalage" class="hidden-xs">
+						<li>
+							<img class="etalage_thumb_image" data-original="uploadfiles/images/product-info-1.jpg" src="uploadfiles/images/product-info-1.jpg" />
+							<img class="etalage_source_image" data-original="uploadfiles/images/product-info-1.jpg" src="uploadfiles/images/product-info-1.jpg" />
+						</li>
+						<li>
+							<img class="etalage_thumb_image" data-original="uploadfiles/images/product-info-1.jpg" src="uploadfiles/images/product-info-1.jpg" />
+							<img class="etalage_source_image" data-original="uploadfiles/images/product-info-1.jpg" src="uploadfiles/images/product-info-1.jpg" />
+						</li>
+					</ul>
+	
+					<div class="swiper-container swiper-proinfo all-img visible-xs">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="uploadfiles/images/product-info-1.jpg" alt="" /></div>
+							<div class="swiper-slide"><img src="uploadfiles/images/product-info-1.jpg" alt="" /></div>
+							<div class="swiper-slide"><img src="uploadfiles/images/product-info-1.jpg" alt="" /></div>
+						</div>
+					</div>
+				</div>
+	
+				<div class="pro-rt col-md-5">
+					<h1 class="title">Essential oil diffusers wholesale</h1>
+					
+					<ul class="list-unstyled">
+						<li>China</li>
+					</ul>
+					
+					<button type="button" class="btn">INQUIRE ONLINE</button>
+					<ul class="list-inline social-media bg-color">
+						<li><a class="f" href="">&nbsp;</i></a></li>
+						<li><a class="t" href="">&nbsp;</i></a></li>
+						<li><a class="i" href="">&nbsp;</i></a></li>
+						<li><a class="p" href="">&nbsp;</i></a></li>
+						<li><a class="c" href="">&nbsp;</i></a></li>
+					</ul>
+					
+				</div>
+			</div>
+			
+	  </div>
+  </div>
+  
+  <div class="product-desc">
+	  <div class="container">
+			
+			<p class="head">Description</p>
+			
+	  </div>
+	</div>
+	
+	<div class="related">
+		<div class="container">
+			
+			<p class="head">Related Products</p>
+			
+			<div class="swiper-container swiper-related bordered text-center">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="uploadfiles/images/product-1.jpg" alt="" />
+						<p>005</p>
+					</div>
+					<div class="swiper-slide">
+						<img src="uploadfiles/images/product-1.jpg" alt="" />
+						<p>005</p>
+					</div>
+				</div>
+				<div class="pagination-inline">
+					<a class="prevbtn btn related_lt"><i class="fa fa-angle-left"></i></a>
+					<a class="nextbtn btn related_rt"><i class="fa fa-angle-right"></i></a>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+</div>
+
+<a class="to-top"><img src="uploadfiles/images/top.png" alt="top" /></a>
+
+<script src="js/etalage.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper-4.5.0.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+	if(window.innerWidth > 991 && window.innerWidth < 1199) {
+		$('#etalage').etalage({
+			thumb_image_width: 400,
+			thumb_image_height: 400,
+			source_image_width: 600,
+			source_image_height: 600,
+			zoom_area_width: 400,
+			zoom_area_height: 400,
+			small_thumbs: 4,
+			smallthumbs_position: 'right'
+		})
+	} else if(window.innerWidth > 550 && window.innerWidth < 992 || window.innerWidth > 1200) {
+		$('#etalage').etalage({
+			thumb_image_width: 500,
+			thumb_image_height: 500,
+			source_image_width: 700,
+			source_image_height: 700,
+			zoom_area_width: 500,
+			zoom_area_height: 500,
+			small_thumbs: 4,
+			smallthumbs_position: 'right'
+		})
+	} else {
+		$('#etalage').etalage({
+			thumb_image_width: 300,
+			thumb_image_height: 300,
+			source_image_width: 0,
+			source_image_height: 0,
+			zoom_area_width: 0,
+			zoom_area_height: 0,
+			small_thumbs: 4,
+			smallthumbs_position: 'bottom'
+		});
+	}
+
+	var proinfo = new Swiper('.swiper-proinfo', {
+		slidesPerView: 1,
+		autoplay: 7000,
+		loop: true
+	});
+	
+	var related = new Swiper ('.swiper-related', {
+		slidesPerView : 4,
+		spaceBetween : 15,
+    autoplay: {
+    	delay : 5000,
+    },
+    loop: true,
+    navigation: {
+    	prevEl: '.related_lt',
+	    nextEl: '.related_rt',
+	  },
+    breakpoints: { 
+    	479: { slidesPerView: 1, },
+    	767: { slidesPerView: 2, },
+    	991: { slidesPerView: 3, }
+    },
+    
+ 	});
+ 	
+	$(function() {
+		$('.to-top').toTop();
+	})
+</script>
+
+</body>
+</html>

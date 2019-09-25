@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+<title></title>
+<link href="Themes/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="Themes/swiper-4.5.0.min.css" rel="stylesheet" type="text/css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="Themes/style.css" rel="stylesheet" type="text/css" />
+<link href="Themes/main.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper-4.5.0.min.js"></script>
+<script src="js/main.js"></script>
+<!--[if lt IE 9]>
+<script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<link href="src/css/header-mod2.css" rel="stylesheet" type="text/css" />
+<header class="header header-mod2">
+	
+	<nav class="navbar">
+		<div class="container wide-16">
+			
+			<div class="navbar-header">
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+					<i class="fa fa-indent"></i>
+				</button>
+				<a class="navbar-brand" href="index.html"><img src="uploadfiles/images/logo.png" alt="" /></a>
+			</div>
+			
+			<div class="navbar-right">
+				<div class="soso">
+					<a class="btn btn-search"><img src="uploadfiles/images/search.png" alt="search" /></a>
+					<div class="search">
+						<form class="form">
+							<div class="form-group input">
+								<input type="text" class="form-control" placeholder="search..." />
+								<button type="submit" class="btn"><i class="fa fa-search"></i></button>
+							</div>
+							<div class="form-group center">
+								<a class="btn btn-close">Cancel Search</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+				<ul id="menu" class="menu navbar-nav">
+					
+					<li class="active"><a href="index.html">Home</a></li>
+					
+					<li class="dropdown">
+						<a href="product.html" class="dropdown-toggle" data-toggle="dropdown">Products</a>
+						<ul class="dropdown-menu">
+							<li><a href="product-info.html">Product-1</a></li>
+							<li><a href="product-info.html">Product-2</a></li>
+							<li><a href="product-info.html">Product-3</a></li>
+							<li><a href="product-info.html">Product-4</a></li>
+						</ul>
+					</li>
+					
+					<li><a href="about.html">About us</a></li>
+					<li><a href="project.html">Projects</a></li>
+					<li><a href="new.html">News</a></li>
+					
+					<li class="dropdown">
+						<a href="contact.html" class="dropdown-toggle" data-toggle="dropdown">Contact us</a>
+						<ul class="dropdown-menu">
+							<li><a href="contact.html">Contact us</a></li>
+							<li><a href="faq.html">FAQs</a></li>
+						</ul>
+					</li>
+					
+				</ul>
+			</div>
+			
+		</div>
+	</nav>
+	
+</header>
+
+<div class="content">
+  
+  <div class="widget clearfix" id="sdg12asf5dsd56f">
+  	<link href="src/css/idxBan-mod1.css" rel="stylesheet" type="text/css" />
+  	<div class="idxBan-mod1">
+  		
+			<div class="swiper-container swiper-banner">
+				<div class="swiper-wrapper">
+					
+					<div class="swiper-slide">
+						<img src="uploadfiles/images/idxBan-mod1.jpg" alt="" />
+						<div class="video-play">
+							<video src="http://media.html5media.info/video.mp4" muted loop poster="uploadfiles/images/idxBan-mod1.jpg"></video>
+							<div class="video-sources" data-video="http://media.html5media.info/video.mp4"></div>
+							<a class="play btn">&nbsp;</a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="pagination-inline pagination-banner">
+	  		<a class="prevbtn btn"><i class="fa fa-angle-left"></i></a>
+	    	<a class="nextbtn btn"><i class="fa fa-angle-right"></i></a>
+	  	</div>
+	  	
+		</div>
+		<script>
+			var scripts = document.getElementsByTagName('script'),
+				currentScript = scripts[scripts.length - 1],
+				$node = currentScript.parentNode;
+			while($node.className.indexOf('widget clearfix') < 0){
+				$node = $node.parentNode;
+			}
+			
+			var $swiper = $('#'+$node.id).find('.swiper-container');
+			var idxBan_mod1 = new Swiper ($('#'+$node.id).find('.swiper-container'), {
+				autoplay: {
+		    	delay : 12000,
+		    	disableOnInteraction : false,
+		    },
+		    loop: true,
+		    
+		    navigation: {
+		    	prevEl: $('#'+$node.id).find('.prevbtn'),
+			    nextEl: $('#'+$node.id).find('.nextbtn'),
+			  },
+			  
+			  on: {
+			  	init: function(){
+			  		$swiper.find('.swiper-slide-active video').get(0).play();
+			  	},
+			  	slideChangeTransitionEnd: function(){
+			  		$swiper.find('video').each(function(){
+			  			$(this).get(0).pause();
+			  		});
+			  		$swiper.find('.swiper-slide-active video').get(0).play();
+			  	},
+			  }
+			  
+		 	});
+		 	
+		</script>
+  </div>
+  
+  <div class="widget clearfix" id="dg151ssadfdfg">
+		<link href="src/css/idxBan-mod2.css" rel="stylesheet" type="text/css" />
+		<div class="idxBan-mod2 index-banner">
+			
+			<div class="swiper-container swiper-banner">
+		    <div class="swiper-wrapper">
+	        <div class="swiper-slide"><img src="uploadfiles/images/idxBan-mod2.jpg" alt="" /></div>
+		    </div>
+			</div>
+			<div class="pagination-inline pagination-banner">
+	  		<a class="prevbtn btn"><i class="fa fa-angle-left"></i></a>
+	    	<a class="nextbtn btn"><i class="fa fa-angle-right"></i></a>
+	  	</div>
+			
+		</div>
+		<script>
+			var scripts = document.getElementsByTagName('script'),
+				currentScript = scripts[scripts.length - 1],
+				$node = currentScript.parentNode;
+			while($node.className.indexOf('widget clearfix') < 0){
+				$node = $node.parentNode;
+			}
+			
+			var idxBan_mod2 = new Swiper ($('#'+$node.id).find('.swiper-container'), {
+				slidesPerView : 1,
+				speed: 1000,
+		    autoplay: {
+		    	delay : 7000,
+		    	disableOnInteraction : false,
+		    },
+		    loop: true,
+			  
+		    navigation: {
+		    	prevEl: $('#'+$node.id).find('.prevbtn'),
+			    nextEl: $('#'+$node.id).find('.nextbtn'),
+			  },
+			  
+		 	});
+		</script>
+	</div>
+	
+	<div class="widget clearfix" id="dg151ssagkyhdfdfg">
+		<link href="src/css/idxBan-mod3.css" rel="stylesheet" type="text/css" />
+		<div class="idxBan-mod3">
+			
+			<div class="row">
+				
+				<div class="col-xs-8 lt">
+					
+					<div class="swiper-container pct-img">
+				    <div class="swiper-wrapper">
+			        <div class="swiper-slide">
+			        	<img src="uploadfiles/images/idxBan-mod3-1.jpg" alt="" />
+			        	<div class="info">
+			        		<h1>FIRE WATER SYSTEM</h1>
+			        		<h2>qualified goods descends from here-Xingjin-your best choice for FM200 fire system</h2>
+			        		<a class="btn" href="">Learn More</a>
+			        	</div>
+			        </div>
+				    </div>
+					</div>
+					<div class="pagination-inline pagination-banner">
+			  		<a class="prevbtn btn"><i class="fa fa-angle-left"></i></a>
+			    	<a class="nextbtn btn"><i class="fa fa-angle-right"></i></a>
+			  	</div>
+			  	
+				</div>
+				
+				<div class="col-xs-4 rt">
+					
+					<div class="swiper-container pct-img">
+				    <div class="swiper-wrapper">
+			        <div class="swiper-slide">
+			        	<img src="uploadfiles/images/idxBan-mod3-2.jpg" alt="" />
+			        	<div class="info">
+			        		<h1>FIRE WATER SYSTEM</h1>
+			        		<h2>qualified goods descends from here-Xingjin-your best choice for FM200 fire system</h2>
+			        		<a class="btn" href="">Learn More</a>
+			        	</div>
+			        </div>
+				    </div>
+					</div>
+					<div class="pagination-inline pagination-banner">
+			  		<a class="prevbtn btn"><i class="fa fa-angle-left"></i></a>
+			    	<a class="nextbtn btn"><i class="fa fa-angle-right"></i></a>
+			  	</div>
+					
+				</div>
+				
+			</div>
+		</div>
+		<script>
+			var scripts = document.getElementsByTagName('script'),
+				currentScript = scripts[scripts.length - 1],
+				$node = currentScript.parentNode;
+			while($node.className.indexOf('widget clearfix') < 0){
+				$node = $node.parentNode;
+			}
+			
+			var idxBan_mod3_1 = new Swiper ($('#'+$node.id).find('.lt .swiper-container'), {
+				slidesPerView : 1,
+				speed: 1000,
+		    autoplay: {
+		    	delay : 8000,
+		    	disableOnInteraction : false,
+		    },
+		    loop: true,
+			  
+		    navigation: {
+		    	prevEl: $('#'+$node.id).find('.lt .prevbtn'),
+			    nextEl: $('#'+$node.id).find('.lt .nextbtn'),
+			  },
+			  
+		 	});
+		 	
+			var idxBan_mod3_2 = new Swiper ($('#'+$node.id).find('.rt .swiper-container'), {
+				slidesPerView : 1,
+				speed: 1000,
+		    autoplay: {
+		    	delay : 9000,
+		    	disableOnInteraction : false,
+		    },
+		    loop: true,
+			  
+		    navigation: {
+		    	prevEl: $('#'+$node.id).find('.rt .prevbtn'),
+			    nextEl: $('#'+$node.id).find('.rt .nextbtn'),
+			  },
+			  
+		 	});
+		</script>
+	</div>
+	
+	<div class="widget clearfix" id="dg151ssagkyhdfhdfdfg">
+		<link href="src/css/idxBan-mod4.css" rel="stylesheet" type="text/css" />
+		<div class="idxBan-mod4">
+			
+			<div class="row">
+				
+				<div class="col-xs-8 lt">
+					
+					<div class="swiper-container pct-img">
+				    <div class="swiper-wrapper">
+			        <div class="swiper-slide"><img src="uploadfiles/images/idxBan-mod3-1.jpg" alt="" /></div>
+				    </div>
+					</div>
+					<div class="pagination-inline pagination-banner">
+			  		<a class="prevbtn btn"><i class="fa fa-angle-left"></i></a>
+			    	<a class="nextbtn btn"><i class="fa fa-angle-right"></i></a>
+			  	</div>
+			  	
+				</div>
+				
+				<div class="col-xs-4 rt">
+					
+					<div class="swiper-container pct-img">
+				    <div class="swiper-wrapper">
+			        <div class="swiper-slide"><img src="uploadfiles/images/idxBan-mod3-2.jpg" alt="" /></div>
+				    </div>
+					</div>
+					<div class="pagination-inline pagination-banner">
+			  		<a class="prevbtn btn"><i class="fa fa-angle-left"></i></a>
+			    	<a class="nextbtn btn"><i class="fa fa-angle-right"></i></a>
+			  	</div>
+					
+				</div>
+				
+			</div>
+			
+			<div class="info">
+    		<h1>FIRE WATER SYSTEM</h1>
+    		<h2>qualified goods descends from here-Xingjin-your best choice for FM200 fire system</h2>
+    		<a class="btn" href="">Learn More</a>
+    	</div>
+		</div>
+		<script>
+			var scripts = document.getElementsByTagName('script'),
+				currentScript = scripts[scripts.length - 1],
+				$node = currentScript.parentNode;
+			while($node.className.indexOf('widget clearfix') < 0){
+				$node = $node.parentNode;
+			}
+			
+			var idxBan_mod4_1 = new Swiper ($('#'+$node.id).find('.lt .swiper-container'), {
+				slidesPerView : 1,
+				speed: 1000,
+		    autoplay: {
+		    	delay : 8000,
+		    	disableOnInteraction : false,
+		    },
+		    loop: true,
+			  
+		    navigation: {
+		    	prevEl: $('#'+$node.id).find('.lt .prevbtn'),
+			    nextEl: $('#'+$node.id).find('.lt .nextbtn'),
+			  },
+			  
+		 	});
+		 	
+			var idxBan_mod4_2 = new Swiper ($('#'+$node.id).find('.rt .swiper-container'), {
+				slidesPerView : 1,
+				speed: 1000,
+		    autoplay: {
+		    	delay : 9000,
+		    	disableOnInteraction : false,
+		    },
+		    loop: true,
+			  
+		    navigation: {
+		    	prevEl: $('#'+$node.id).find('.rt .prevbtn'),
+			    nextEl: $('#'+$node.id).find('.rt .nextbtn'),
+			  },
+			  
+		 	});
+		</script>
+	</div>
+  
+	<div class="widget clearfix" id="lkjsdgjklafpos56456">
+		<link href="src/css/idxBan-mod5.css" rel="stylesheet" type="text/css" />
+		<div class="idxBan-mod5">
+			
+			<div class="swiper-container swiper-banner">
+		    <div class="swiper-wrapper">
+	        <div class="swiper-slide">
+	        	<img src="uploadfiles/images/idxBan-mod5.jpg" alt="" />
+	        	<div class="info">
+	        		<h1>ACRYLIC SWIM SPA</h1>
+	        		<h2>MEXDE SPA SINCE 1995</h2>
+	        	</div>
+	        </div>
+		    </div>
+			</div>
+			
+			<div class="pagination-inline pagination-banner">
+	  		<a class="prevbtn btn"><i class="fa fa-angle-left"></i></a>
+	    	<a class="nextbtn btn"><i class="fa fa-angle-right"></i></a>
+	  	</div>
+			
+		</div>
+		<script>
+			var scripts = document.getElementsByTagName('script'),
+				currentScript = scripts[scripts.length - 1],
+				$node = currentScript.parentNode;
+			while($node.className.indexOf('widget clearfix') < 0){
+				$node = $node.parentNode;
+			}
+			
+			var idxBan_mod5 = new Swiper ($('#'+$node.id).find('.swiper-container'), {
+				slidesPerView : 1,
+				speed: 1000,
+		    autoplay: {
+		    	delay : 7000,
+		    	disableOnInteraction : false,
+		    },
+		    loop: true,
+			  
+		    navigation: {
+		    	prevEl: $('#'+$node.id).find('.prevbtn'),
+			    nextEl: $('#'+$node.id).find('.nextbtn'),
+			  },
+			  
+			  effect : 'coverflow',
+			  centeredSlides: true,
+			  coverflowEffect: {
+			    rotate: 30,
+			    stretch: 10,
+			    depth: 60,
+			    modifier: 2,
+			    slideShadows : true
+			  },
+		 	});
+		</script>
+	</div>
+	
+	<div class="widget clearfix" id="hsdgjlsdfg456k65df4g665dfg">
+		<link href="src/css/idxBan-mod6.css" rel="stylesheet" type="text/css" />
+		<div class="idxBan-mod6">
+			
+			<video class="video-js vjs-default-skin vjs-big-play-centered" autoplay muted loop poster="/uploadfiles/images/idxBan-mod5.jpg" data-setup="{}">
+		    <source src="http://media.html5media.info/video.mp4" type='video/mp4' />
+			</video>
+			
+		</div>
+		<script>
+			var scripts = document.getElementsByTagName('script'),
+				currentScript = scripts[scripts.length - 1],
+				$node = currentScript.parentNode;
+			while($node.className.indexOf('widget clearfix') < 0){
+				$node = $node.parentNode;
+			}
+			
+			var ban6_v = (function(){
+				var w = 0, h = 0;
+				var $ban6_v = $('#'+$node.id).find('video');
+				var vw = $ban6_v.width(), vh = $ban6_v.height();
+				
+				var autoSize = function(){
+					var w = $(window).width();
+					var h = w * 9 / 16;
+					$ban6_v.width(w).height(h);
+					$ban6_v.parents('div.video-js').width(w).height(h);
+				};
+				
+				$(window).resize(function(){
+					autoSize();
+				});
+				
+				return {
+					autoSize : autoSize(),
+				}
+			})();
+			
+			ban6_v.autoSize;
+		</script>
+	</div>
+	
+	<div class="widget clearfix" id="dfg56456sd4gf">
+		<div class="index-banner idxBan-mod7">
+			
+			<div class="swiper-container swiper-banner">
+		    <div class="swiper-wrapper">
+	        <div class="swiper-slide"><img src="uploadfiles/images/idxBan-mod7.jpg" alt="" /></div>
+		    </div>
+			</div>
+			<div class="pagination-inline pagination-banner">
+	  		<a class="prevbtn btn"><i class="fa fa-angle-left"></i></a>
+	    	<a class="nextbtn btn"><i class="fa fa-angle-right"></i></a>
+	  	</div>
+			
+		</div>
+		<script>
+			var scripts = document.getElementsByTagName('script'),
+				currentScript = scripts[scripts.length - 1],
+				$node = currentScript.parentNode;
+			while($node.className.indexOf('widget clearfix') < 0){
+				$node = $node.parentNode;
+			}
+			
+			var idxBan_mod7 = new Swiper ($('#'+$node.id).find('.swiper-container'), {
+				slidesPerView : 1,
+				speed: 1000,
+		    autoplay: {
+		    	delay : 7000,
+		    	disableOnInteraction : false,
+		    },
+		    loop: true,
+			  
+		    navigation: {
+		    	prevEl: $('#'+$node.id).find('.prevbtn'),
+			    nextEl: $('#'+$node.id).find('.nextbtn'),
+			  },
+			  
+			  effect : 'coverflow',
+			  centeredSlides: true,
+			  coverflowEffect: {
+			    rotate: 30,
+			    stretch: 10,
+			    depth: 60,
+			    modifier: 2,
+			    slideShadows : true
+			  },
+		 	});
+		</script>
+	</div>
+	
+</div>
+
+<div class="video-popup">
+	<div class="container">
+		<div class="back">
+			<a class="modalnav btn"><i class="fa fa-times"></i></a>
+			<div class="main">&nbsp;</div>
+		</div>
+	</div>
+</div>
+
+<div class="bottom">
+	<ul class="list-inline">
+		<li>
+			<a href="index.html">
+				<img src="uploadfiles/images/bottom-home.png" alt="Home" />
+				<p>Home</p>
+			</a>
+		</li>
+		<li>
+			<a href="tel:0086-0510-83595337">
+				<img src="uploadfiles/images/bottom-tel.png" alt="Tel" />
+				<p>Tel</p>
+			</a>
+		</li>
+		<li>
+			<a href="mailto:">
+				<img src="uploadfiles/images/bottom-mail.png" alt="Email" />
+				<p>Email</p>
+			</a>
+		</li>
+		<li>
+			<a href="/">
+				<img src="uploadfiles/images/bottom-share.png" alt="Share" />
+				<p>Share</p>
+			</a>
+		</li>
+		<li>
+			<a href="contactus.html">
+				<img src="uploadfiles/images/bottom-contact.png" alt="Contact" />
+				<p>Contact</p>
+			</a>
+		</li>
+	</ul>
+</div>
+
+<div class="list-unstyled" id="contact-btn">
+  <p class="contact-us">contact us</p>
+  <img src="uploadfiles/images/contact-email.png" alt="contact-email" data-original="">
+</div>
+
+<div class="a-form">
+	<div id="close-btn" class="btn">
+		<i class="fa fa-times"></i>
+  </div>
+  
+  <div class="cont-aside">
+  	
+    <div class="cont-nav text-center">
+      <div class="cont-header">
+        <img src="uploadfiles/images/logo.png" alt="contact-logo">
+      </div>
+      <div class="cont-right">
+        <p class="h3">DAMS Incorporated</p>
+        <p>We provide customers with quality products and provide high-quality services</p>
+      </div>
+    </div>
+    
+    <div class="cont-form">
+      <form id="SubscribeForm2" action="" class="form">
+        <div class="form-group">
+          <input class="form-control" type="text" id="name" name="name" placeholder="Name*" required />
+        </div>
+        <div class="form-group">
+          <div class="radio">
+            <label>Gender</label>
+            <label><input type="radio" name="Gender" id="optionsRadios1" value="Male" checked> Male</label>
+            <label><input type="radio" name="Gender" id="optionsRadios2" value="Female"> Female</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="email" id="email" name="email" placeholder="Email*" required />
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="text" id="country" name="country" placeholder="Country*" required />
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="text" id="whatsapp" name="whatsapp" placeholder="WhatsAPP" required />
+        </div>
+        <div class="form-group">
+	        <div class="code">
+	        	<input class="form-control" type="text" name="zcode" placeholder="Code*" />
+	        	<img id="imgCode" alt="看不清，请点击我！" src="/web/WebForm3.aspx" mce_src="/web/WebForm3.aspx" onclick="this.src=this.src+'?'" />
+	        </div>
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" id="msg" name="content" rows="3" placeholder="Message*" required></textarea>
+        </div>
+        <div class="form-group">
+	        <button class="btn btn-cont" type="submit" data-toggle="action" data-target="" data-callback="">SUBMIT</button>
+	      </div>
+      </form>
+      
+      <p class="cont-p">If you would like to leave us a comment please go to <a class="cont-h3" href="contact.html">contact us</a></p>
+    </div>
+    
+  </div>
+</div>
+
+<div class="inquiry-back">
+	<div class="inquiry-bg">
+		
+		<a class="btn close"><i class="fa fa-close"></i></a>
+		
+		<div class="inquiry-form">
+			<p class="h4">POPULAR TAGS</p>
+			<p>Check the products of interest</p>
+			
+			<form class="form">
+				<div class="form-group">
+					<ul class="list-inline">
+						<li><label><input type="checkbox" />airpurifier</label></li>
+						<li><label><input type="checkbox" />airpurifier</label></li>
+						<li><label><input type="checkbox" />airpurifier</label></li>
+					</ul>
+				</div>
+				<div class="form-group submit">
+					<input class="form-control" type="text" placeholder="E-mail" required />
+					<button class="btn" type="button">SUBMIT</button>
+				</div>
+			</form>
+			
+		</div>
+		
+	</div>
+</div>
+<script>
+	setTimeout(function(){
+  	$('.inquiry-back').fadeIn();
+  }, 20000);
+  $('.inquiry-back .close').on('click', function(){
+  	$('.inquiry-back').fadeOut();
+  });
+</script>
+
+<a class="to-top"><img src="uploadfiles/images/top.png" alt="top" /></a>
+
+<script>
+	$(function() {
+		$('.to-top').toTop();
+	})
+</script>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+<title></title>
+<link href="Themes/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="Themes/swiper-4.5.0.min.css" rel="stylesheet" type="text/css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="Themes/style.css" rel="stylesheet" type="text/css" />
+<link href="Themes/main.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper-4.5.0.min.js"></script>
+<script src="js/main.js"></script>
+<!--[if lt IE 9]>
+<script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div class="content">
+  
+  <div class="widget clearfix" id="jiokhhfg545sd56f">
+  	<link href="src/css/idxNew-mod6.css" rel="stylesheet" type="text/css" />
+  	<div class="idxNew-mod6">
+  		<div class="container wide-16">
+				
+				<h2>News</h2>
+				
+				<div class="swiper-container pct-img new-list">
+					<div class="swiper-wrapper">
+						
+						<div class="swiper-slide">
+							<div class="back">
+								<a class="img" href=""><img src="uploadfiles/images/new-mod3.jpg" alt=" " /></a>
+								<p class="info">Focus on ventilation products for 30 years, with rich experience in ventilation product development and manufacturing</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="back">
+								<a class="img" href=""><img src="uploadfiles/images/new-mod3.jpg" alt=" " /></a>
+								<p class="info">Focus on ventilation products for 30 years, with rich experience in ventilation product development and manufacturing</p>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				
+				<div class="pagination-inline">
+		  		<a class="prevbtn prevban"><i class="fa fa-caret-left"></i></a>
+		    	<a class="nextbtn nextban"><i class="fa fa-caret-right"></i></a>
+		  	</div>
+				
+			</div>
+		</div>
+		<script>
+			var scripts = document.getElementsByTagName('script'),
+				currentScript = scripts[scripts.length - 1],
+				$node = currentScript.parentNode;
+			while($node.className.indexOf('widget clearfix') < 0){
+				$node = $node.parentNode;
+			}
+			
+			var idxNew_mod6 = new Swiper ($('#'+$node.id).find('.swiper-container'), {
+				slidesPerView : 4,
+				spaceBetween : 15,
+		    autoplay: {
+		    	delay : 9000,
+		    },
+		    loop: true,
+		    
+		    navigation: {
+		    	prevEl: $('#'+$node.id).find('.prevbtn'),
+			    nextEl: $('#'+$node.id).find('.nextbtn'),
+			  },
+			  
+		    breakpoints: { 
+		    	479: { slidesPerView: 1, },
+		    	991: { slidesPerView: 2, },
+		    	1439: { slidesPerView: 3, }
+		    },
+		    
+		 	});
+		</script>
+  </div>
+  
+</div>
+
+<a class="to-top"><img src="uploadfiles/images/top.png" alt="top" /></a>
+
+<script>
+	$(function() {
+		$('.to-top').toTop();
+	})
+</script>
+
+</body>
+</html>

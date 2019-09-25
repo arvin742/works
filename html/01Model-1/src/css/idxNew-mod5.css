@@ -1,0 +1,67 @@
+.idxNew-mod5{
+	padding: .1rem 0 1rem;
+}
+.idxNew-mod5 .img{
+	display: block;
+}
+.idxNew-mod5 .info p{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	overflow: hidden;
+}
+.idxNew-mod5 .h4{
+	height: 1.5rem;
+	font-weight: bold;
+	margin-top: 1rem;
+}
+.idxNew-mod5 .h5{
+	height: 4.5rem;
+	-webkit-line-clamp: 3;
+}
+.idxNew-mod5 .date{
+	background: #f6f6f6;
+	padding: .75rem 1.25rem;
+	margin-top: .5rem;
+	position: relative;
+}
+.idxNew-mod5 .date p{
+	font-weight: bold;
+	line-height: 1.125rem;
+	color: #5a5a5a;
+}
+.idxNew-mod5 .date .day{
+	font-size: 2.25rem;
+	line-height: 2.25rem;
+	float: left;
+	margin-right: 1rem;
+}
+.idxNew-mod5 .date i{
+	position: absolute;
+	top: 50%;
+	right: 1.25rem;
+	margin-top: -.5rem;
+}
+.idxNew-mod5 .back:hover .h4 a{
+	color: #7eb911;
+}
+
+@media (min-width:768px){
+	/**/
+	.idxNew-mod5{
+		padding: 1rem 0 3rem;
+	}
+}
+
+@media (min-width:1440px) {
+	/**/
+	.idxNew-mod5 .info{
+		padding: 0 1rem;
+	}
+	.idxNew-mod5 .h4{
+		margin: 1.75rem 0;
+	}
+	.idxNew-mod5 .date{
+		margin-top: 1.75rem;
+	}
+}

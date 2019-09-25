@@ -1,0 +1,17 @@
+@media (min-width:1200px) {
+	/**/
+	.header-mod1 .menu{
+		margin-left: 10%;
+	}
+}
+
+@media (min-width:1440px) {
+	/**/
+	.header-mod1 .menu{
+		margin-left: 20%;
+	}
+}
+
+@media (max-width:767px) {
+	/**/
+}

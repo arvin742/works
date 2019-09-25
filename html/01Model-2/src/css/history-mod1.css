@@ -1,0 +1,186 @@
+.history-mod1{
+	background: url(../../uploadfiles/images/history-mod1-bg.jpg) no-repeat center;
+	background-size: cover;
+	padding: .1rem 0 1rem;
+}
+.history-mod1 .his-list{
+	position: relative;
+	flex-direction: column;
+	display: flex;
+}
+.history-mod1 .his-list:before{
+	content: '';
+	width: 2.75rem;
+	height: 2.75rem;
+	background: #fff;
+	border: 2px solid #419ed4;
+	border-radius: 50%;
+	position: absolute;
+	left: -.375rem;
+	top: -.125rem;
+	z-index: 4;
+}
+.history-mod1 .item{
+	width: 100%;
+	min-height: 2.5rem;
+	padding-left: 3rem;
+	margin-bottom: 1rem;
+	position: relative;
+}
+.history-mod1 .item:before{
+	content: '';
+	width: 2rem;
+	height: 2rem;
+	background: #fff;
+	border: 2px solid #419ed4;
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	top: .25rem;
+	z-index: 5;
+}
+.history-mod1 .item:first-child:before{
+	border-width: 1px;
+}
+.history-mod1 .item:after{
+	content: '';
+	width: 2px;
+	height: 100%;
+	background: #419ed4;
+	background: -webkit-linear-gradient(#419ed4, #33caa8);
+	background: -moz-linear-gradient(#419ed4, #33caa8);
+	background: linear-gradient(#419ed4, #33caa8);
+	position: absolute;
+	left: 1rem;
+	top: 1.25rem;
+	margin-left: -1px;
+	z-index: 3;
+}
+.history-mod1 .item:last-child:after{
+	display: none;
+}
+.history-mod1 .item:nth-child(8n-6):before{
+	border-color: #33caa8;
+}
+.history-mod1 .item:nth-child(8n-5):before{
+	border-color: #a1ca33;
+}
+.history-mod1 .item:nth-child(8n-4):before{
+	border-color: #d8d33d;
+}
+.history-mod1 .item:nth-child(8n-3):before{
+	border-color: #d8b23d;
+}
+.history-mod1 .item:nth-child(8n-2):before{
+	border-color: #d88d3d;
+}
+.history-mod1 .item:nth-child(8n-1):before{
+	border-color: #d85a3d
+}
+.history-mod1 .item:nth-child(8n):before{
+	border-color: #d83da3;
+}
+.history-mod1 .item:nth-child(8n-6):after{
+	background: #33caa8;
+	background: -webkit-linear-gradient(#33caa8, #a1ca33);
+	background: -moz-linear-gradient(#33caa8, #a1ca33);
+	background: linear-gradient(#33caa8, #a1ca33);
+}
+.history-mod1 .item:nth-child(8n-5):after{
+	background: #33caa8;
+	background: -webkit-linear-gradient(#a1ca33, #d8d33d);
+	background: -moz-linear-gradient(#a1ca33, #d8d33d);
+	background: linear-gradient(#a1ca33, #d8d33d);
+}
+.history-mod1 .item:nth-child(8n-4):after{
+	background: #33caa8;
+	background: -webkit-linear-gradient(#d8d33d, #d8b23d);
+	background: -moz-linear-gradient(#d8d33d, #d8b23d);
+	background: linear-gradient(#d8d33d, #d8b23d);
+}
+.history-mod1 .item:nth-child(8n-3):after{
+	background: #33caa8;
+	background: -webkit-linear-gradient(#d8b23d, #d88d3d);
+	background: -moz-linear-gradient(#d8b23d, #d88d3d);
+	background: linear-gradient(#d8b23d, #d88d3d);
+}
+.history-mod1 .item:nth-child(8n-2):after{
+	background: #33caa8;
+	background: -webkit-linear-gradient(#d88d3d, #d85a3d);
+	background: -moz-linear-gradient(#d88d3d, #d85a3d);
+	background: linear-gradient(#d88d3d, #d85a3d);
+}
+.history-mod1 .item:nth-child(8n-1):after{
+	background: #33caa8;
+	background: -webkit-linear-gradient(#d85a3d, #d83da3);
+	background: -moz-linear-gradient(#d85a3d, #d83da3);
+	background: linear-gradient(#d85a3d, #d83da3);
+}
+.history-mod1 .item:nth-child(8n):after{
+	background: #33caa8;
+	background: -webkit-linear-gradient(#d83da3, #419ed4);
+	background: -moz-linear-gradient(#d83da3, #419ed4);
+	background: linear-gradient(#d83da3, #419ed4);
+}
+.history-mod1 .item .h4{
+	font-weight: 600;
+	margin: 0;
+}
+
+@media (min-width:768px){
+	/**/
+	.history-mod1{
+		padding: 1rem 0 2rem;
+	}
+	.history-mod1 .item{
+		min-height: 3.25rem;
+	}
+}
+
+@media (min-width:992px){
+	/**/
+	.history-mod1 .his-list:before{
+		width: 3.25rem;
+		height: 3.25rem;
+		left: 50%;
+		top: -.375rem;
+		margin-left: -1.625rem;
+	}
+	.history-mod1 .item{
+		max-width: 50%;
+		min-height: 5rem;
+	}
+	.history-mod1 .item:before{
+		width: 2.5rem;
+		height: 2.5rem;
+		top: 0;
+	}
+	.history-mod1 .item:nth-child(odd){
+		text-align: right;
+		padding-left: 0;
+		padding-right: 3rem;
+	}
+	.history-mod1 .item:nth-child(odd):before{
+		left: auto;
+		right: -1.25rem;
+	}
+	.history-mod1 .item:nth-child(odd):after{
+		left: auto;
+		right: 0;
+		margin-left: auto;
+		margin-right: -1px;
+	}
+	.history-mod1 .item:nth-child(even){
+		align-self: flex-end;
+	}
+	.history-mod1 .item:nth-child(even):before{
+		left: -1.25rem;
+	}
+	.history-mod1 .item:nth-child(even):after{
+		left: 0;
+	}
+	.history-mod1 .item .h4{
+		font-size: 1.25rem;
+	}
+}
+

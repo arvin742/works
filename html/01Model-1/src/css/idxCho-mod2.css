@@ -1,0 +1,62 @@
+.idxCho-mod2{
+	padding: .1rem 0 1rem;
+}
+.idxCho-mod2 .cho-list li{
+	margin-bottom: 1rem;
+}
+.idxCho-mod2 .cho-list .back{
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 4.5rem;
+	position: relative;
+}
+.idxCho-mod2 .cho-list .info{
+	width: 100%;
+	height: 3rem;
+	padding: 0 1rem;
+	position: absolute;
+	left: 0;
+	bottom: 1rem;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+.idxCho-mod2 .cho-list .back:hover .info{
+	height: auto;
+	color: #fff;
+	background: #7eb911;
+	padding: 1rem 1rem 2rem;
+	bottom: 0;
+	display: block;
+}
+
+@media (min-width:768px){
+	/**/
+	.idxCho-mod2{
+		padding: 1rem 0 4rem;
+	}
+	.idxCho-mod2 .pagination-inline{
+		margin-top: 2rem;
+		text-align: center;
+		display: block;
+	}
+	.idxCho-mod2 .pagination-inline a{
+		width: 5rem;
+		height: 1.875rem;
+		font-size: 1.25rem;
+		line-height: 1.875rem;
+		color: #fff;
+		background: #333;
+		border-radius: .25rem;
+		margin: 0 .5rem;
+		top: 0;
+		position: relative;
+		display: inline-block;
+	}
+	.idxCho-mod2 .pagination-inline a:hover{
+		color: #7eb911;
+	}
+}

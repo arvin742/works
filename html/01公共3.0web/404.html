@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+<title></title>
+<link href="Themes/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="Themes/swiper-4.5.0.min.css" rel="stylesheet" type="text/css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="Themes/style.css" rel="stylesheet" type="text/css" />
+<link href="Themes/main.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-3.3.1.min.js"></script>
+<!--[if lt IE 9]>
+<script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div class="banner">
+  <div class="img"><img src="uploadfiles/images/banner-inner.jpg" alt=""/></div>
+</div>
+
+<div class="content con_404">
+	<div class="breadcrumb-div">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li>Home</li>
+        <li class="active"><a href="404.html">404</a></li>
+      </ol>
+    </div>
+  </div>
+  
+  <div class="container">
+		<div class="sec01">
+			<div class="img"><img src="uploadfiles/images/404-img.jpg"></div>
+			
+			<div class="bottom-link">
+				<ul class="list-inline">
+					<li>
+						<a href="/"><img src="uploadfiles/images/404-back.png"><span>Back</span></a>
+					</li>
+					<li>
+						<a href="/"><img src="uploadfiles/images/404-home.png"><span>Home</span></a>
+					</li>
+				</ul>
+				<p class="info">Friendly Reminder: You may have entered the wrong URL or the page has been deleted or moved.</p>
+			</div>
+		</div>
+		
+		<div class="sec02">
+			<p class="title">You may also be interested in</p>
+			<p class="text">We recommend other quality products for you</p>
+			
+			<div class="swiper-container swiper-sec2 text-center">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="" alt="" />
+						<p class="h5">Door Lock Cylinder</p>
+					</div>
+					<div class="swiper-slide">
+						<img src="" alt="" />
+						<p class="h5">Door Lock Cylinder</p>
+					</div>
+					<div class="swiper-slide">
+						<img src="" alt="" />
+						<p class="h5">Door Lock Cylinder</p>
+					</div>
+					<div class="swiper-slide">
+						<img src="" alt="" />
+						<p class="h5">Door Lock Cylinder</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="sec03">
+			<p class="title">Contact us</p>
+			<p class="text">Please do not hesitate to contact us</p>
+			
+			<form class="form">
+				<div class="form-group">
+					<input class="form-control" type="text" placeholder="Your Name" required />
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" placeholder="Please input your email here, it is very important!" required />
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" placeholder="Phone" required />
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" placeholder="Company" required />
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" placeholder="Title" required />
+				</div>
+				<div class="form-group">
+					<textarea class="form-control" rows="6" placeholder="Please include details like size, weight, destination port an ect., so that we can quote the best price."></textarea>
+				</div>
+				<div class="form-group text-center">
+					<button class="btn" type="button">Send</button>
+				</div>
+			</form>
+		</div>
+			
+  </div>
+</div>
+
+<a class="to-top"><img src="uploadfiles/images/top.png" alt="top" /></a>
+
+<script src="js/swiper-4.5.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+	var swiper2 = new Swiper ('.swiper-sec2', {
+		slidesPerView : 4,
+		spaceBetween : 15,
+    autoplay: {
+    	delay : 5000,
+    },
+    loop: true,
+    navigation: {
+    	prevEl: '.prevbtn',
+	    nextEl: '.nextbtn',
+	  },
+    breakpoints: { 
+    	479: { slidesPerView: 1, },
+    	767: { slidesPerView: 2, },
+    	991: { slidesPerView: 3, }
+    },
+    
+ 	});
+ 	
+	$(function() {
+		$('.to-top').toTop();
+	})
+</script>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+.footer-mod1{
+	line-height: 1.875;
+	color: #fff;
+	background: #161616;
+	padding-top: 2rem;
+	margin-left: -15px;
+	margin-right: -15px;
+	margin-top: 2rem;
+}
+.footer-mod1 .ftr-info{
+	padding-bottom: 2rem;
+}
+.footer-mod1 a{
+	color: #fff !important;
+}
+.footer-mod1 a:hover{
+	color: #7eb911 !important;
+}
+.footer-mod1 .row{
+	justify-content: space-between;
+}
+.footer-mod1 .cont-list li{
+	border-bottom: 1px dashed #999;
+	padding-left: 2rem;
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
+}
+.footer-mod1 .cont-list li:before{
+	content: '';
+	width: 2rem;
+	font-family: 'FontAwesome';
+	font-size: 1.125rem;
+	color: #f5f5f5;
+	margin-left: -2rem;
+	display: inline-block;
+}
+.footer-mod1 .cont-list li:first-child:before{
+	content: '\f015';
+}
+.footer-mod1 .cont-list li:nth-child(2):before{
+	content: '\f095';
+}
+.footer-mod1 .cont-list li:nth-child(3):before{
+	content: '\f0e0';
+}
+.footer-mod1 .social-media li{
+	padding: 0 .5rem;
+}
+.footer-mod1 .form{
+	margin-top: .5rem;
+}
+.footer-mod1 .form .form-group{
+	position: relative;
+}
+.footer-mod1 .form input{
+	background: transparent;
+	border-radius: 0;
+}
+.footer-mod1 .form label{
+	font-weight: 500;
+	margin-bottom: 0;
+}
+.footer-mod1 .form label input{
+	margin-top: .575rem;
+	margin-right: .2rem;
+	vertical-align: top;
+}
+.footer-mod1 .form .btn{
+	color: #fff;
+	background: #7eb911;
+	border-radius: 0;
+	padding: .35rem 2rem;
+}
+
+@media (min-width:1200px) {
+	/**/
+	.footer-mod1 .ftr-lt,
+	.footer-mod1 .ftr-rt{
+		max-width: 26rem;
+	}
+	.footer-mod1 .ftr-mt{
+		max-width: 10rem;
+	}
+}

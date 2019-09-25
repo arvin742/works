@@ -1,0 +1,7 @@
+.project-mod1 .pro-list>li{
+	margin-bottom: .5rem;
+}
+
+@media (min-width:768px){
+	/**/
+}

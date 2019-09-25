@@ -1,0 +1,23 @@
+.idxPar-mod1{
+	background: url(../../uploadfiles/images/index-8-bg.jpg) no-repeat center;
+	background-size: cover;
+	padding: .1rem 0 1rem;
+}
+
+@media (min-width:768px) {
+	/**/
+	.idxPar-mod1{
+		padding: 1rem 0 3rem;
+	}
+}
+
+@media (min-width:1200px) {
+	/**/
+	.idxPar-mod1{
+		padding: 3rem 0 5rem;
+	}
+	.idxPar-mod1 h2,
+	.idxPar-mod1 .title{
+		margin-bottom: 3rem;
+	}
+}

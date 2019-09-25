@@ -1,0 +1,85 @@
+.idxAbt-mod13{
+	background: #f7f7f7;
+	padding-bottom: 1rem;
+}
+.idxAbt-mod13 .container{
+	margin-top: -1rem;
+	position: relative;
+	z-index: 5;
+}
+.idxAbt-mod13 .back{
+	background: rgba(255,255,255,.75);
+	padding: .1rem 1rem;
+}
+.idxAbt-mod13 .info{
+	max-height: 30.25rem;
+	padding: .1rem;
+	overflow: hidden;
+}
+.idxAbt-mod13 .info .h4{
+	font-weight: 600;
+}
+.idxAbt-mod13 .back .btn{
+	color: #fff;
+	background: #7eb911;
+	border-radius: 1.5rem;
+	padding: .25rem 2rem;
+	margin: .5rem 0 1rem;
+}
+
+@media (min-width:768px){
+	/**/
+	.idxAbt-mod13{
+		padding-bottom: 2rem;
+	}
+	.idxAbt-mod13 .container{
+		margin-top: -5rem;
+	}
+	.idxAbt-mod13 .back{
+		padding: .1rem 2rem 1rem;
+	}
+	.idxAbt-mod13 .info{
+		max-height: none;
+	}
+	.idxAbt-mod13 .info p{
+		line-height: 1.75;
+	}
+	.idxAbt-mod13 .back .btn{
+		margin-top: 1rem;
+	}
+}
+
+@media (min-width:992px) {
+	/**/
+	.idxAbt-mod13 .info .h4{
+		font-size: 1.25rem;
+	}
+}
+
+@media (min-width:1200px) {
+	/**/
+	.idxAbt-mod13{
+		padding-bottom: 5rem;
+	}
+}
+
+@media (min-width:1440px) {
+	/**/
+	.idxAbt-mod13 .container{
+		margin-top: -6.75rem;
+	}
+	.idxAbt-mod13 .back{
+		padding: 1rem 3rem 3rem;
+	}
+	.idxAbt-mod13 .info p:not(.h4){
+		font-size: 1.125rem;
+	}
+	.idxAbt-mod13 .info .h4{
+		font-size: 1.5rem;
+		margin-bottom: 2rem;
+	}
+	.idxAbt-mod13 .back .btn{
+		font-size: 1.125rem;
+		margin-top: 2rem;
+	}
+}

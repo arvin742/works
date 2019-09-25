@@ -1,0 +1,60 @@
+.download-mod2{
+	min-height: 100vh;
+	color: #fff;
+	background: #484848;
+	padding-bottom: .5rem;
+	overflow: hidden;
+	position: relative;
+}
+.download-mod2 h2,
+.download-mod2 .title,
+.download-mod2 a,
+.download-mod2 .text{
+	color: #fff;
+}
+.download-mod2 .product-menu .navbar-collapse{
+	background: none;
+}
+.download-mod2 .product-menu .product-nav>li{
+	border: none;
+}
+.download-mod2 .product-menu .product-nav>li>a{
+	font-weight: 600;
+	color: #fff;
+	background: none;
+}
+.download-mod2 .product-menu .product-nav>li:hover>a,
+.download-mod2 .product-menu .product-nav>li.active>a{
+	color: #7eb911;
+}
+.download-mod2 .product-menu .product-nav>li ul li{
+	border: none;
+}
+.download-mod2 .product-menu .product-nav>li ul li a{
+	font-size: .875rem;
+}
+.download-mod2 ul{
+	margin: 0 -8px;
+}
+.download-mod2 ul>li{
+	padding: 0 8px;
+	margin-bottom: 1rem;
+}
+
+@media (min-width:768px){
+	/**/
+	.download-mod2{
+		padding-bottom: 7.5rem;
+	}
+}
+
+@media (min-width:1440px){
+	/**/
+	.download-mod2{
+		width: 100vw;
+		height: 100vh;
+		align-items: center;
+		display: flex;
+		padding-bottom: 0;
+	}
+}

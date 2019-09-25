@@ -1,0 +1,73 @@
+.idxCho-mod3{
+	padding: .1rem 0 1rem;
+}
+.idxCho-mod3 .info{
+	background: #f5f5f5;
+	padding: .01rem 1rem .5rem;
+}
+.idxCho-mod3 .info p{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	overflow: hidden;
+}
+.idxCho-mod3 .info .h3{
+	margin-top: .5rem;
+}
+.idxCho-mod3 .info .h5{
+	height: 4.5rem;
+	-webkit-line-clamp: 3;
+}
+
+@media (min-width:768px){
+	/**/
+	.idxCho-mod3{
+		padding: 1rem 0 4rem;
+	}
+	.idxCho-mod3 .info .h3{
+		font-size: 2.5rem;
+		margin-bottom: 0;
+	}
+	.idxCho-mod3 .info .h4{
+		font-weight: 500;
+		padding-bottom: .5rem;
+		margin-top: 0;
+		position: relative;
+	}
+	.idxCho-mod3 .info .h4:after{
+		content: '';
+		width: 2rem;
+		height: .15rem;
+		background: #535353;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		z-index: 3;
+	}
+}
+
+@media (min-width:992px){
+	/**/
+	.idxCho-mod3 .back{
+		padding-bottom: 7rem;
+		position: relative;
+		overflow: hidden;
+	}
+	.idxCho-mod3 .info{
+		position: absolute;
+		left: 0;
+		bottom: -5.5rem;
+		z-index: 5;
+		-webkit-transition: all .7s;
+		-moz-transition: all .7s;
+		transition: all .7s;
+	}
+	.idxCho-mod3 .back:hover .info{
+		color: #fff;
+		background: #7eb911;
+		bottom: 0;
+	}
+	.idxCho-mod3 .back:hover .info .h4:after{
+		background: #fff;
+	}
+}

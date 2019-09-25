@@ -1,0 +1,68 @@
+.menu-mod1{
+	display: none;
+}
+.menu-mod1 .btn-menu{
+	font-size: 1.5rem;
+	color: #007571;
+	position: fixed;
+	left: 2%;
+	top: 1rem;
+	z-index: 1200;
+}
+.menu-mod1 .btn-menu i:before{
+	font-size: 2.5rem;
+	margin-right: .5rem;
+}
+.menu-aside{
+	width: 17.5rem;
+	height: 100%;
+	background: rgba(255,255,255,.85);
+	position: fixed;
+	left: -17.5rem;
+	top: 0;
+	z-index: 1500;
+	-webkit-transition: all .7s;
+	-moz-transition: all .7s;
+	transition: all .7s;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.menu-aside .btn-close{
+	font-size: 1.5rem;
+	color: #333;
+	padding: 0 .5rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 5;
+}
+.menu-aside .main{
+	width: 100%;
+	margin-bottom: 5rem;
+}
+.menu-aside .main>li{
+	padding: 1rem 0 1rem 4rem;
+	cursor: pointer;
+}
+.menu-aside .main>li:hover,
+.menu-aside .main>li.active{
+	background: rgba(0,117,113,.2);
+}
+.menu-mod1.active .btn-menu{
+	display: none;
+}
+.menu-mod1.active .menu-aside{
+	left: 0;
+}
+
+@media (min-width:768px){
+	/**/
+	.menu-mod1{
+		display: block;
+	}
+	.menu-mod1.shadow{
+		display: none;
+	}
+}

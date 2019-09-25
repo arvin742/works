@@ -1,0 +1,31 @@
+.idxNew-mod2{
+	padding: .1rem 0 1rem;
+}
+.idxNew-mod2 .info{
+	padding-left: 4rem;
+	position: relative;
+}
+.idxNew-mod2 .info p{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	overflow: hidden;
+}
+.idxNew-mod2 .info .date{
+	font-size: 1.25rem;
+	color: #7eb911;
+	position: absolute;
+	left: 0;
+	top: -.2rem;
+}
+.idxNew-mod2 .info .h5{
+	color: #666;
+	-webkit-line-clamp: 2;
+}
+
+@media (min-width:768px){
+	/**/
+	.idxNew-mod2{
+		padding: 1rem 0 4rem;
+	}
+}

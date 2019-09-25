@@ -1,0 +1,90 @@
+.product .text{
+	text-align: left;
+	margin: 0 auto 1rem;
+}
+.product .pro-list{
+	margin-bottom: 1rem;
+}
+.product .pro-list .btn{
+	color: #666;
+	padding: 0;
+}
+.product .pro-list .btn .fa:before{
+	padding-right: .3rem;
+}
+.product .pro-list li.active .btn{
+	color: #7eb911;
+}
+.product .product-con li{
+	margin-bottom: 1rem;
+	cursor: pointer;
+}
+.product .product-con li a{
+	display: block;
+}
+.product .product-con .info{
+	width: 100%;
+	height: 3rem;
+	font-weight: 500;
+	margin: .5rem 0;
+	display: -webkit-box !important;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.product .product-con .h5{
+	margin-bottom: .5rem;
+	display: none;
+}
+.product .product-con .choice{
+	margin-top: .75rem;
+}
+.product .product-con .btn{
+	color: #7eb911;
+	background: transparent;
+	border: 1px solid #7eb911;
+	padding: .2rem 1.25rem;
+}
+.product .product-con .btn-default{
+  background: #7eb911;
+  color: #fff;
+  padding: .2rem .5rem;
+}
+.product .product-con li:hover img{
+	border-color: #7eb911;
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,.25);
+	-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,.25);
+}
+.product .product-con li:hover .info,
+.product .product-con li:hover .info a{
+	color: #7eb911;
+}
+.product .product-con .btn:hover{
+	background-color: #7eb911;
+	color: #fff;
+}
+.product .product-con.active li{
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+.product .product-con.active li img{
+	width: 100%;
+	max-width: 12.5rem;
+	float: left;
+	margin-right: 1.25rem;
+}
+.product .product-con.active .info{
+	width: auto;
+	height: 1.5rem;
+	-webkit-line-clamp: 1;
+}
+.product .product-con.active .h5{
+	display: -webkit-box !important;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+}
+.product .product-con.active .choice{
+	margin-top: 1rem;
+}

@@ -1,0 +1,38 @@
+.idxNor-mod6{
+	padding: 1rem 0;
+}
+.idxNor-mod6 .text{
+	max-width: 40rem;
+}
+.idxNor-mod6 .col-sm-6{
+	margin-bottom: .5rem;
+}
+.idxNor-mod6 .h4{
+	color: #7eb911;
+}
+.idxNor-mod6 i{
+	margin-right: .5rem;
+}
+
+@media (min-width:1200px) {
+	/**/
+	.idxNor-mod6{
+		padding: 2rem 0;
+	}
+	.idxNor-mod6 .text{
+		font-size: 1.25rem;
+		line-height: 1.8;
+	}
+	.idxNor-mod6 .row{
+		margin-top: 3.5rem;
+		justify-content: space-between;
+	}
+	.idxNor-mod6 .col-sm-6{
+		max-width: 27.5rem;
+		margin-bottom: 1.5rem;
+	}
+	.idxNor-mod6 .h4{
+		font-size: 1.5rem;
+		font-weight: 600;
+	}
+}

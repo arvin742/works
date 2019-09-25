@@ -1,0 +1,67 @@
+.tips-mod1-404{
+	line-height: 2;
+	text-align: center;
+}
+.tips-mod1-404 .img{
+	margin: 5rem 0 2rem;
+}
+.tips-mod1-404 .tips{
+	color: #999;
+	margin-bottom: 2rem;
+}
+.tips-mod1-404 .tab-list>li>.btn{
+	color: #fff;
+	background: #22aae4;
+	border: none;
+	border-radius: .25rem;
+}
+
+.tips-mod1-500{
+	width: 100%;
+	height: 100%;
+	line-height: 2;
+	background: #f5f6fb;
+	text-align: center;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	overflow: auto;
+}
+.tips-mod1-500 .img{
+	margin: 5rem 0 2rem;
+}
+.tips-mod1-500 .h1{
+	font-weight: 900;
+}
+.tips-mod1-500 .h4{
+	font-size: 1.25rem;
+}
+.tips-mod1-500 .tab-list>li>.btn{
+	color: #fff;
+	background: #4055b2;
+	border: none;
+	border-radius: .25rem;
+	margin-top: 2rem;
+}
+
+.tips-mod1-tips{
+	line-height: 2;
+	text-align: center;
+}
+.tips-mod1-tips .img{
+	margin: 5rem 0 3rem;
+}
+.tips-mod1-tips .h4{
+	font-weight: 600;
+}
+.tips-mod1-tips .tips{
+	font-weight: 600;
+	margin: 2rem 0;
+}
+.tips-mod1-tips .tab-list>li>.btn{
+	color: #fff;
+	background: #7eb911;
+	border: none;
+	border-radius: .25rem;
+}

@@ -1,0 +1,143 @@
+.new-mod4{
+	color: #fff;
+	background: #484848;
+	overflow: hidden;
+	position: relative;
+}
+.new-mod4 h2,
+.new-mod4 .title,
+.new-mod4 a,
+.new-mod4 .text{
+	color: #fff;
+}
+.new-mod4 .product-menu .navbar-collapse{
+	background: none;
+}
+.new-mod4 .product-menu .product-nav>li{
+	border: none;
+}
+.new-mod4 .product-menu .product-nav>li>a{
+	font-weight: 600;
+	color: #fff;
+	background: none;
+}
+.new-mod4 .product-menu .product-nav>li:hover>a,
+.new-mod4 .product-menu .product-nav>li.active>a{
+	color: #7eb911;
+}
+.new-mod4 .product-menu .product-nav>li ul li{
+	border: none;
+}
+.new-mod4 .product-menu .product-nav>li ul li a{
+	font-size: .875rem;
+}
+.new-mod4 .pro-list>li{
+	margin-bottom: .5rem;
+}
+.new-mod4 .new-list{
+	margin-top: 1.25rem;
+}
+.new-mod4 .new-list>li{
+	padding-bottom: 0;
+	margin: 0 0 1rem;
+	display: block;
+}
+.new-mod4 .new-list>li .info{
+	padding-left: 4rem;
+	position: relative;
+}
+.new-mod4 .new-list>li .date{
+	font-size: 1.25rem;
+	position: absolute;
+	left: 0;
+	top: -.15rem;
+}
+.new-mod4 .new-list>li .h4{
+	font-weight: 600;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+.new-mod4 .new-list>li .h4:hover>a{
+	color: #7eb911;
+}
+.new-mod4 .new-list>li .h5{
+	color: #999;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+.new-mod4 .new-list>li .btn{
+	color: #999;
+	position: absolute;
+	left: .5rem;
+	bottom: 1rem;
+}
+.new-mod4 .new-list>li:hover .btn{
+	color: #7eb911;
+}
+
+@media (min-width:768px) {
+	/**/
+	.new-mod4{
+		width: 100vw;
+		height: 100vh;
+		align-items: center;
+		display: flex;
+	}
+	.new-mod4 .new-list>li .info{
+		padding-left: 5rem;
+	}
+}
+
+@media (min-width:992px) {
+	/**/
+	.new-mod4 .new-list>li .text-right{
+    display: block;
+	}
+}
+
+@media (min-width:992px) and (max-width:1199px){
+	/**/
+	.new-mod4 .new-list>li .h4,
+	.new-mod4 .new-list>li .h5{
+		-webkit-line-clamp: 1;
+	}
+}
+
+@media (min-width:1200px) and (max-width:1439px){
+	/**/
+	.new-mod4 .container{
+		max-width: 100%;
+	}
+	.new-mod4 .new-list>li{
+		max-width: 25%;
+	}
+}
+
+@media (min-width:1440px){
+	/**/
+	.new-mod4 h2,
+	.new-mod4 .title{
+		margin-bottom: 0;
+	}
+	.new-mod4 .product-menu{
+		-ms-flex: 0 0 36%;
+		flex: 0 0 36%;
+		max-width: 36%;
+	}
+	.new-mod4 .pro-rt{
+		-ms-flex: 0 0 64%;
+		flex: 0 0 64%;
+		max-width: 64%;
+	}
+}
+
+@media (max-width:479px){
+	/**/
+	.new-mod4 .new-list{
+		margin-top: .5rem;
+	}
+}

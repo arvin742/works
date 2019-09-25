@@ -1,0 +1,146 @@
+.solution-mod1{
+	color: #fff;
+	background: #333;
+	padding: 1rem 0;
+}
+.solution-mod1 h2,
+.solution-mod1 .title,
+.solution-mod1 .text,
+.solution-mod1 a{
+	color: #fff;
+}
+.solution-mod1 h2{
+	text-align: left;
+}
+.solution-mod1 .h3{
+	font-size: 1.25rem;
+	font-weight: 600;
+	margin-top: .5rem;
+}
+.solution-mod1 .h4{
+	font-weight: 600;
+	border-left: 1px solid #fff;
+	padding-left: 1rem;
+}
+.solution-mod1 .subtitle{
+	font-weight: 700;
+	background: #7eb911;
+	text-align: center;
+	border-radius: .5rem;
+	padding: .5rem 1rem;
+	margin: .5rem 0;
+}
+.solution-mod1 .subtitle:after{
+	content: '\f019';
+	font-family: "FontAwesome";
+	margin-left: 1rem;
+}
+.solution-mod1 .dow-list>li{
+	margin-bottom: .5rem;
+}
+.solution-mod1 .dow-list .btn{
+	color: #333;
+	background: #fff;
+	border-radius: .5rem;
+	display: block;
+}
+.solution-mod1 .dow-list .btn:after{
+	content: '\f1c1';
+	font-family: "FontAwesome";
+	margin-left: 1rem;
+}
+.solution-mod1 .pagination-block>span{
+	background: #fff;
+	opacity: 1;
+}
+.solution-mod1 .pagination-block>.swiper-pagination-bullet-active{
+	background: #7eb911;
+}
+
+@media (min-width:768px){
+	/**/
+	.solution-mod1{
+		padding: 3rem 0 2rem;
+		margin-top: -1rem;
+	}
+	.solution-mod1 h2,
+	.solution-mod1 .title{
+		margin: .5rem 0;
+	}
+	.solution-mod1 .h3{
+		font-size: 1.5rem;
+	}
+	.solution-mod1 .subtitle{
+		margin: 3rem 0 1rem;
+	}
+	.solution-mod1 .dow-list>li{
+		margin-bottom: 1rem;
+	}
+	.solution-mod1 .subtitle{
+		font-size: 1.25rem;
+		padding: 1rem 1rem;
+	}
+	.solution-mod1 .dow-list .btn{
+		padding: 1rem .5rem;
+	}
+}
+
+@media (min-width:992px) {
+	/**/
+	.solution-mod1 h2,
+	.solution-mod1 .title{
+		font-size: 2rem;
+	}
+}
+@media (min-width:1200px) {
+	/**/
+	.solution-mod1{
+		padding: 5rem 0 4rem;
+	}
+	.solution-mod1 h2{
+		font-size: 2.5rem;
+		line-height: 1.1;
+		margin: 1rem 0;
+	}
+	.solution-mod1 .h3{
+		font-size: 1.75rem;
+		margin: 2rem 0 0;
+	}
+	.solution-mod1 .h4{
+		font-size: 1.5rem;
+		margin: 1rem 0;
+	}
+	.solution-mod1 .h5{
+		font-size: 1.125rem;
+		margin-top: 0;
+	}
+	.solution-mod1 .subtitle{
+		font-size: 1.5rem;
+		margin-top: 1rem;
+	}
+	.solution-mod1 .dow-list .btn{
+		font-size: 1.125rem;
+	}
+	.solution-mod1 .dow-list .btn:after{
+		font-size: 1.5rem;
+	}
+}
+
+@media (min-width:1440px) {
+	/**/
+	.solution-mod1 .row{
+		justify-content: space-between;
+	}
+	.solution-mod1 .lt{
+		max-width: 55rem;
+	}
+	.solution-mod1 .subtitle{
+		margin: 1.5rem 0;
+	}
+	.solution-mod1 .dow-list>li{
+		margin-bottom: 1.5rem;
+	}
+	.solution-mod1 .dow-list>li:last-child{
+		margin-bottom: 0;
+	}
+}

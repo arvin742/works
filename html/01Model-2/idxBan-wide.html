@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+<title></title>
+<link href="Themes/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="Themes/swiper-4.5.0.min.css" rel="stylesheet" type="text/css" />
+<link href="Themes/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="Themes/style.css" rel="stylesheet" type="text/css" />
+<link href="Themes/main.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper-4.5.0.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/main.js"></script>
+<!--[if lt IE 9]>
+<script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div class="widget clearfix" id="qwfzxyfg546f">
+	<link href="src/css/header-mod7.css" rel="stylesheet" type="text/css" />
+	<header class="header header-mod7">
+		
+		<nav class="navbar">
+			<div class="container wide-16">
+				
+				<div class="navbar-header">
+					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+						<i class="fa fa-indent"></i>
+					</button>
+					<a class="navbar-brand" href="index.html"><img src="uploadfiles/images/logo-mod7.png" alt="" /></a>
+				</div>
+				
+				<div class="navbar-right">
+					<ul class="list-inline social-media bg-color">
+						<li><a class="f" href="">&nbsp;</a></li>
+						<li><a class="g" href="">&nbsp;</a></li>
+						<li><a class="t" href="">&nbsp;</a></li>
+						<li><a class="i" href="">&nbsp;</a></li>
+						<li><a class="y" href="">&nbsp;</a></li>
+					</ul>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="navbar-collapse">
+					<ul id="menu" class="menu navbar-nav">
+						
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="">Company</a></li>
+						
+						<li class="dropdown">
+							<a href="product.html" class="dropdown-toggle" data-toggle="dropdown">Products</a>
+							<ul class="dropdown-menu">
+								<li><a href="product-info.html">Product-1</a></li>
+								<li><a href="product-info.html">Product-2</a></li>
+								<li><a href="product-info.html">Product-3</a></li>
+								<li><a href="product-info.html">Product-4</a></li>
+							</ul>
+						</li>
+						
+						<li><a href="about.html">References</a></li>
+						<li><a href="new.html">News</a></li>
+						<li><a href="">Catalogues</a></li>
+						
+						<li class="dropdown">
+							<a href="contact.html" class="dropdown-toggle" data-toggle="dropdown">Contact us</a>
+							<ul class="dropdown-menu">
+								<li><a href="contact.html">Contact us</a></li>
+								<li><a href="faq.html">FAQs</a></li>
+							</ul>
+						</li>
+						
+					</ul>
+				</div>
+				
+			</div>
+		</nav>
+		
+	</header>
+</div>
+
+<div class="content">
+  
+  <div class="widget clearfix" id="drfyasfyfg546f">
+  	<link href="src/css/idxBan-mod8.css" rel="stylesheet" type="text/css" />
+  	<div class="idxBan-mod8">
+  		<div class="container wide-16">
+  			
+  			<div class="swiper-container swiper-banner hidden-xs">
+			    <div class="swiper-wrapper">
+		        <div class="swiper-slide"><img src="uploadfiles/images/idxBan-mod7.jpg" alt="" /></div>
+		        <div class="swiper-slide"><img src="uploadfiles/images/idxBan-mod7.jpg" alt="" /></div>
+		        <div class="swiper-slide"><img src="uploadfiles/images/idxBan-mod7.jpg" alt="" /></div>
+			    </div>
+				</div>
+				<div class="pagination-block">&nbsp;</div>
+				<div class="pagination-inline pagination-banner">
+		  		<a class="prevbtn btn"><i class="fa fa-angle-left"></i></a>
+		    	<a class="nextbtn btn"><i class="fa fa-angle-right"></i></a>
+		  	</div>
+		  	<div class="swiper-container swiper-small visible-xs">
+			    <div class="swiper-wrapper">
+		        <div class="swiper-slide"><img src="uploadfiles/images/idxBan-mod8.jpg" alt="" /></div>
+			    </div>
+				</div>
+				
+			</div>
+			<script>
+				var scripts = document.getElementsByTagName('script'),
+					currentScript = scripts[scripts.length - 1],
+					$node = currentScript.parentNode;
+				while($node.className.indexOf('widget clearfix') < 0){
+					$node = $node.parentNode;
+				}
+				
+				idxBan_mod8_ban = new Swiper ($('#'+$node.id).find('.swiper-banner'), {
+					slidesPerView : 1,
+					speed: 1000,
+			    autoplay: {
+			    	delay : 7000,
+			    	disableOnInteraction : false,
+			    },
+			    loop: true,
+			    
+			    pagination: {
+			    	el: $('#'+$node.id).find('.pagination-block'),
+			    	clickable: true,
+			    },
+				  
+			    navigation: {
+			    	prevEl: $('#'+$node.id).find('.prevbtn'),
+				    nextEl: $('#'+$node.id).find('.nextbtn'),
+				  },
+				  
+				});
+				
+				idxBan_mod8_small = new Swiper ($('#'+$node.id).find('.swiper-small'), {
+					slidesPerView : 1,
+					speed: 1000,
+			    autoplay: {
+			    	delay : 7000,
+			    	disableOnInteraction : false,
+			    },
+			    loop: true,
+				});
+			</script>
+  			
+  	</div>
+  </div>
+  
+</div>
+
+<div class="widget clearfix" id="radgffyfg546f">
+	<link href="src/css/footer-mod4.css" rel="stylesheet" type="text/css" />
+	<footer class="footer-mod4">
+		<div class="container wide-16">
+			
+			<div class="ftr-filing">
+				<p class="copyright">Copyright ©2019 Easton Hotel Supplies · The Global Hotel Room Total Solution Provider Make Your Purchasing to Become Simpler</p>
+				<ul class="list-inline hidden-xs">
+					<li><i class="fa fa-phone"></i>+86 20 34900437</li>
+					<li><i class="fa fa-envelope-o"></i>info@eastonhk.com</li>
+					<li>
+						<i class="fa fa-wechat"></i>
+						<a class="fancybox" href="uploadfiles/images/footer-mod4-wechat.jpg" data-fancybox-group="gallery" title="">
+							<img src="uploadfiles/images/footer-mod4-wechat.jpg" alt="" />
+						</a>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+	</footer>
+	<script>
+		var scripts = document.getElementsByTagName('script'),
+			currentScript = scripts[scripts.length - 1],
+			$node = currentScript.parentNode;
+		while($node.className.indexOf('widget clearfix') < 0){
+			$node = $node.parentNode;
+		}
+		
+		$('#'+$node.id).find('.fancybox').fancybox();
+	</script>
+</div>
+
+<a class="to-top"><img src="uploadfiles/images/top.png" alt="top" /></a>
+
+<script>
+	$(function() {
+		$('.to-top').toTop();
+	})
+</script>
+
+</body>
+</html>

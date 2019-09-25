@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+<title></title>
+<link href="Themes/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="Themes/swiper-4.5.0.min.css" rel="stylesheet" type="text/css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="Themes/style.css" rel="stylesheet" type="text/css" />
+<link href="Themes/main.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper-4.5.0.min.js"></script>
+<script src="js/main.js"></script>
+<!--[if lt IE 9]>
+<script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div class="banner">
+  <div class="img"><img src="uploadfiles/images/banner-inner.jpg" alt=""/></div>
+</div>
+
+<div class="content">
+	<div class="breadcrumb-div">
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="index.html">Home</a></li>
+				<li class="active"><a href="project.html">Projects</a></li>
+			</ol>
+		</div>
+	</div>
+	
+	<div class="widget clearfix" id="hdfgxdasd5dg564sd">
+		<link href="src/css/project-info-mod1.css" rel="stylesheet" type="text/css" />
+		<div class="project-info-mod1">
+			<div class="container">
+				<h1 class="title">Sand bowl</h1>
+				
+				<div class="replace-text">
+					
+					<div class="swiper-container swiper-thumbs pct-img">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="uploadfiles/images/project-info-mod1-thumbs.jpg" alt="" /></div>
+							<div class="swiper-slide"><img src="uploadfiles/images/project-info-mod1-thumbs.jpg" alt="" /></div>
+						</div>
+					</div>
+					
+					<div class="swiper-container swiper-gallery pct-img">
+						<div class="swiper-wrapper swiper-no-swiping">
+							<div class="swiper-slide"><img src="uploadfiles/images/project-info-mod1-gallery.jpg" alt="" /></div>
+							<div class="swiper-slide"><img src="uploadfiles/images/project-info-mod1-gallery.jpg" alt="" /></div>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+		<script>
+			var scripts = document.getElementsByTagName('script'),
+				currentScript = scripts[scripts.length - 1],
+				$node = currentScript.parentNode;
+			while($node.className.indexOf('widget clearfix') < 0){
+				$node = $node.parentNode;
+			}
+			
+			var project_info_mod1_thumbs = new Swiper ($('#'+$node.id).find('.swiper-thumbs'), {
+				slidesPerView : 7,
+				spaceBetween : 20,
+		    autoplay: {
+		    	delay : 7000,
+		    	disableOnInteraction : false,
+		    },
+		    
+		    breakpoints : {
+					991 : { slidesPerView : 5, },
+					1199 : { slidesPerView : 6, },
+				},
+		 	});
+		 	
+			var project_info_mod1_gallery = new Swiper ($('#'+$node.id).find('.swiper-gallery'), {
+				slidesPerView : 1,
+				spaceBetween : 15,
+				noSwiping : true,
+		    effect : 'fade',
+		 	});
+			
+			$('#'+$node.id).find('.swiper-thumbs .swiper-slide').click(function(){
+				var idx = $(this).index();
+				project_info_mod1_gallery.slideTo(idx);
+			});
+		</script>
+	</div>
+	
+	<nav>
+		<ul class="pager">
+			<li><a href="">Kitchen 01</a></li>
+			<li><a href="">Kitchen 03</a></li>
+		</ul>
+	</nav>
+</div>
+
+<a class="to-top"><img src="uploadfiles/images/top.png" alt="top" /></a>
+
+<script>
+	$(function() {
+		$('.to-top').toTop();
+	})
+</script>
+
+</body>
+</html>

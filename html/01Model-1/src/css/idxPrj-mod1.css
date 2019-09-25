@@ -1,0 +1,20 @@
+.idxPrj-mod1{
+	padding-bottom: 1rem;
+}
+
+@media (min-width:768px) {
+	/**/
+	.idxPrj-mod1{
+		padding-bottom: 2rem;
+	}
+	.idxPrj-mod1 .h5{
+		font-size: 1.125rem;
+	}
+}
+
+@media (min-width:1200px) {
+	/**/
+	.idxPrj-mod1{
+		padding: 1.5rem 0 3rem;
+	}
+}

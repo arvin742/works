@@ -1,0 +1,43 @@
+.idxAbt-mod10{
+	background: url(../../uploadfiles/images/idxAbt-mod10.jpg) no-repeat center;
+	background-size: cover;
+}
+.idxAbt-mod10 .back{
+	background: rgba(255,255,255,.9);
+	padding: .5rem 1rem;
+}
+.idxAbt-mod10 .back .btn{
+	max-width: 5rem;
+	margin: .5rem auto;
+	display: block;
+}
+
+@media (min-width:768px){
+	/**/
+	.idxAbt-mod10{
+		padding-top: 10rem;
+	}
+	.idxAbt-mod10 .back{
+		padding: .5rem 2rem 1.5rem;
+	}
+	.idxAbt-mod10 .back .btn{
+		margin-top: 1rem;
+	}
+}
+
+@media (min-width:1200px) {
+	/**/
+	.idxAbt-mod10{
+		padding-top: 15rem;
+	}
+	.idxAbt-mod10 .back{
+		padding: .5rem 7rem 2.5rem;
+	}
+}
+
+@media (max-width:767px) {
+	/**/
+	.idxAbt-mod10 .container{
+		padding: 0;
+	}
+}

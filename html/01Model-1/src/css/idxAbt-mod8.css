@@ -1,0 +1,59 @@
+.idxAbt-mod8{
+	color: #fff;
+	background: url(../../uploadfiles/images/idxAbt-mod8-bg.jpg) no-repeat center;
+	background-size: cover;
+	padding: .1rem 0 1rem;
+}
+.idxAbt-mod8 h2,
+.idxAbt-mod8 .title,
+.idxAbt-mod8 .text,
+.idxAbt-mod8 a{
+	color: #fff;
+}
+.idxAbt-mod8 .info{
+	max-width: 60rem;
+	text-align: center;
+	margin: 1rem auto;
+}
+.idxAbt-mod8 .info p{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 7;
+	overflow: hidden;
+}
+.idxAbt-mod8 .row .h4{
+	font-weight: bold;
+}
+
+@media (min-width:768px) {
+	/**/
+	.idxAbt-mod8{
+		padding-bottom: 2rem;
+	}
+	.idxAbt-mod8 .swiper-container{
+		margin: 1.25rem 0;
+	}
+	.idxAbt-mod8 .row .h4{
+		font-size: 1.25rem;
+	}
+}
+
+@media (min-width:1200px) {
+	/**/
+	.idxAbt-mod8{
+		padding: 2rem 0 3rem;
+	}
+	.index .sec02 .info{
+		padding: 1rem 0;
+		line-height: 1.75;
+	}
+	.idxAbt-mod8 .info{
+		font-size: 1.125rem;
+	}
+	.idxAbt-mod8 .swiper-container{
+		margin: 2.5rem 0;
+	}
+	.idxAbt-mod8 .row .h4{
+		font-size: 1.5rem;
+	}
+}

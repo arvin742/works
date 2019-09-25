@@ -1,0 +1,58 @@
+.idxNor-mod4{
+	padding: 1rem 0;
+}
+.idxNor-mod4 .text{
+	max-width: 40rem;
+}
+.idxNor-mod4 .row>div{
+	margin-bottom: 1rem;
+}
+.idxNor-mod4 .back{
+	height: 100%;
+	background: #f6fbf9;
+	padding: 1rem;
+}
+.idxNor-mod4 .h4{
+	width: 100%;
+	color: #7eb911;
+	position: relative;
+}
+.idxNor-mod4 .h4:after{
+	content: '\f061';
+	font-family: 'FontAwesome';
+	color: #7eb911;
+	opacity: .5;
+	position: absolute;
+	right: -2.5rem;
+}
+.idxNor-mod4 .row>div:last-of-type .h4:after{
+	display: none;
+}
+.idxNor-mod4 .h5{
+	margin-top: 0;
+}
+.idxNor-mod4 .img img{
+	max-width: 6.25rem;
+}
+
+@media (min-width:768px) {
+	/**/
+}
+
+@media (min-width:1200px) {
+	/**/
+	.idxNor-mod4{
+		padding: 2rem 0 5rem;
+	}
+	.idxNor-mod4 .row{
+		margin-top: 3rem;
+	}
+	.idxNor-mod4 .h4{
+		font-size: 1.5rem;
+		font-weight: 600;
+		margin-bottom: 1.5rem;
+	}
+	.idxNor-mod4 .h5{
+		margin-bottom: 1rem;
+	}
+}

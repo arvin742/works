@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+<title></title>
+<link href="Themes/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="Themes/style.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-3.3.1.min.js"></script>
+<!--[if lt IE 9]>
+<script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<style>
+.back ul{
+	margin-top: .5rem;
+	margin-bottom: .5rem;
+}
+.back ul li{
+	cursor: pointer;
+}
+.back .result{
+	font-size: 1.25rem;
+	color: #009688;
+}
+.back .goback{
+	color: #fff;
+	background: #c91523;
+	margin-top: 1rem;
+}
+.back .next{
+	color: #fff;
+	background: #009688;
+	margin-left: 1rem;
+	margin-top: 1rem;
+}
+.ajaxFir{
+	padding-top: 2rem;
+}
+.ajaxFir i{
+	font-size: 5rem;
+	color: #666;
+	margin-bottom: 1rem;
+}
+.ajaxFir ul li{
+	margin-bottom: 1rem;
+}
+.ajaxTir{
+	max-width: 40rem;
+	padding-top: 2rem;
+	margin: auto;
+}
+.ajaxTir .form-group{
+	display: flex;
+}
+.ajaxTir .form-group label{
+	white-space: nowrap;
+	padding-top: .5rem;
+	margin-right: .5rem;
+}
+.ajaxTir ul li{
+	margin-bottom: .5rem;
+}
+.ajaxTir label{
+	font-weight: 400;
+	display: flex;
+}
+.ajaxTir input[type=radio]{
+	width: 1rem;
+	height: 1rem;
+	margin-top: .25rem;
+	margin-right: .5rem;
+	display: inline-block;
+}
+.info-pwd{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 1800;
+	display: none;
+}
+.info-pwd .pwd{
+	max-width: 30rem;
+	width: 100%;
+	background: #fff;
+	border-radius: .25rem;
+	box-shadow: 1px 1px 3px 1px rgba(0,0,0,.15);
+	text-align: center;
+	padding: 2rem 3rem;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 5;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.info-pwd .h3{
+	margin-top: 0;
+	margin-bottom: 2rem;
+}
+.info-pwd .close-btn{
+	font-size: 2rem;
+	font-weight: 900;
+	line-height: 1;
+	color: #00367C;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 5;
+}
+.info-pwd .form-group{
+	margin-bottom: 2rem;
+}
+.info-pwd .form .btn{
+	min-width: 8rem;
+	color: #fff;
+	background: #00367C;
+}
+</style>
+
+<body>
+
+<div class="bida">
+	<div class="container">
+		
+		<div class="back"></div>
+		
+		<div class="info-pwd">
+			<div class="pwd">
+				<p class="h3">修改密码</p>
+				<a class="btn close-btn">×</a>
+				<form class="form">
+					<div class="form-group">
+						<input class="form-control" name="oldpwd" type="password" placeholder="旧密码" />
+					</div>
+					<div class="form-group">
+						<input class="form-control" name="newpwd" type="password" placeholder="新密码" />
+					</div>
+					<button class="btn" type="button">提交</button>
+				</form>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+<script src="js/bootstrap.min.js"></script>
+<script>
+	function ajaxAuto($dom){
+		$.ajax({
+			url: "http://bida.xjqyc.cn/Ashx/Api.ashx",
+			type: "POST",
+			dataType: "json",
+			data: {type: "logintip"},
+			success: function(r){
+				if(r.status = "succeed"){
+					$dom.fadeIn();
+				}	else{
+					alert("数据错误！");
+				}
+			},
+		});
+	}
+	
+	function ajaxFir($dom){
+		var icon = ["truck", "file-excel-o", "strikethrough", "th-large", "wrench", "user-times", "commenting-o", "tag"];
+		$.ajax({
+			url: "http://bida.xjqyc.cn/Ashx/Api.ashx",
+			type: "POST",
+			dataType: "json",
+			data: {type: "selectquestiontype"},
+			success: function(r){
+				if(r.status = "succeed"){
+					var html = '<div class="ajaxFir text-center"><ul class="list-unstyled row">';
+					for(var i = 0; i < r.obj.length; i++){
+						html += '<li class="col-xs-6 col-sm-3" data-id="' + r.obj[i].QuestionTypeId + '" data-type="' + r.obj[i].Type + '">' + 
+							'<div class="img"><i class="fa fa-' + icon[i] + '"></i></div>' + 
+							'<p class="h4">' + r.obj[i].TypeName + '</p>' + 
+						'</li>';
+					}
+					html += '</ul></div>';
+					$dom.empty().append(html);
+				}	else{
+					alert("数据错误！");
+				}
+			},
+		});
+	}
+	
+	function ajaxSec($dom){
+		$.ajax({
+			url: "http://bida.xjqyc.cn/Ashx/Api.ashx",
+			type: "POST",
+			dataType: "json",
+			data: {type: "selectcategory"},
+			success: function(r){
+				if(r.status = "succeed"){
+					var html = '<div class="ajaxSec text-center"><ul class="list-unstyled row">';
+					for(var i = 0; i < r.obj.length; i++){
+						html += '<li class="col-xs-6 col-sm-3" data-id="' + r.obj[i].CategoryId + '" data-type="' + r.obj[i].Type + '">' + 
+							'<div class="img"><img src="' + r.obj[i].CategoryImg + '" /></div>' + 
+							'<p class="h4">' + r.obj[i].CategoryName + '</p>' + 
+						'</li>';
+					}
+					html += '</ul><div class="text-center"><a class="btn goback">上一步</a></div></div>';
+					$dom.empty().append(html);
+				}	else{
+					alert("数据错误！");
+				}
+			}
+		});
+	}
+	
+	function ajaxTir($dom, id){
+		$.ajax({
+			url: "http://bida.xjqyc.cn/Ashx/Api.ashx",
+			type: "POST",
+			dataType: "json",
+			data: {type: "selectquestionitem", QuestionTypeId: id},
+			success: function(r){
+				if(r.status = "succeed"){
+					var html = '<div class="ajaxTir"><ul class="list-unstyled">';
+					for(var i = 0; i < r.obj.length; i++){
+						if(r.obj[i].Type == 0){
+							$text = '<div class="form-group"><label>' + r.obj[i].Title + '</label><input class="form-control" type="text" placeholder="请输入你遇到的问题" /></div>';
+						}	else{
+							$text = '<div class="radio"><label><input class="form-control" type="radio" name="radio" value="' + r.obj[i].Title + '" />' + r.obj[i].Title + '</label></div>'
+						}
+						html += '<li data-id="' + r.obj[i].QuestionItemId + '" data-type="' + r.obj[i].Type + '">' + $text + '</li>';
+					}
+					html += '</ul>';
+					html += '<div class="text-center"><a class="btn goback">上一步</a><a class="btn next">下一步</a></div></div>';
+					$dom.empty().append(html);
+				}	else{
+					alert("数据错误！");
+				}
+			},
+		});
+	}
+	
+	var init = (function(){
+		var $dom = $('.bida .back'), opts = {};
+		var $pwd_dom = $('.bida .info-pwd');
+		
+		ajaxFir($dom);
+		ajaxAuto($pwd_dom);
+		
+		$pwd_dom.find('.close-btn').on('click', function(){
+			$pwd_dom.fadeOut();
+		});
+		
+		$pwd_dom.find('.form .btn').on('click', function(){
+			var data = {};
+			data.oldpass = $pwd_dom.find('input[name="oldpwd"]').val();
+			data.newspass = $pwd_dom.find('input[name="newpwd"]').val();
+			
+			$.ajax({
+				url: "http://bida.xjqyc.cn/Ashx/Api.ashx",
+				type: "POST",
+				dataType: "json",
+				data: {type: "editpass", oldpass: data.oldpass, newspass: data.newspass,},
+				success: function(r){
+					if(r.status = "succeed"){
+						$pwd_dom.fadeOut();
+						alert("修改密码成功！");
+					}	else{
+						alert("数据错误！");
+					}
+				},
+			});
+		});
+		
+		$dom.on('click', '.ajaxFir ul>li', function(){
+			opts.FirId = $(this).data('id'), 
+			opts.FirName = $(this).find('.h4').text(),
+			type = $(this).data('type');
+			
+			if(type == 0){
+				ajaxSec($dom);
+			}	else{
+				//弹
+			}
+		});
+		
+		//返回第一步
+		$dom.on('click', '.ajaxSec .goback', function(){
+			ajaxFir($dom);
+			opts = {};
+		});
+		
+		$dom.on('click', '.ajaxSec ul>li', function(){
+			opts.SecId = $(this).data('id'), 
+			opts.SecName = $(this).find('.h4').text(),
+			type = $(this).data('type');
+			
+			if(type == 0){
+				ajaxTir($dom, opts.FirId);
+			}	else{
+				//弹
+			}
+		});
+		
+		//返回第二步
+		$dom.on('click', '.ajaxTir .goback', function(){
+			ajaxSec($dom);
+			opts.SecId = '', opts.SecName = '';
+		});
+		
+		$dom.on('click', '.ajaxTir .next', function(){
+			var $input = [], $null = false;
+			$('.ajaxTir input[type="text"]').each(function(i){
+				if(!$(this).val()){
+					$null = true;
+					return false;
+				}
+				$input[i] = $(this).prev().text() + $(this).val();
+			});
+			
+			var $radio = $('.ajaxTir input[type="radio"]:checked').val();
+			$null = (!$radio || $null) ? true : false;
+			
+			if($null){
+				alert("请把信息填完整！");
+			}	else{
+				//弹
+			}
+//			console.log($input, $radio);
+		});
+		
+	})();
+</script>
+
+</body>
+</html>

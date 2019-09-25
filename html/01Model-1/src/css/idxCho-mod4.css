@@ -1,0 +1,72 @@
+.idxCho-mod4{
+	background: url(../../uploadfiles/images/idxCho-mod4-bg.jpg) no-repeat left bottom;
+	padding: .1rem 0 1rem;
+	position: relative;
+}
+.idxCho-mod4 h2,
+.idxCho-mod4 .title,
+.idxCho-mod4 .text{
+	text-align: left;
+}
+.idxCho-mod4 .h5{
+	font-weight: 700;
+}
+.idxCho-mod4 .img{
+	margin: 1rem 0;
+}
+.idxCho-mod4 .img .pct-img:hover img{
+	-webkit-transform: rotateY(360deg);
+	transform: rotateY(360deg);
+	-webkit-transition: all .7s;
+	transition: all .7s;
+}
+.idxCho-mod4 .info img{
+	margin: 1rem 0;
+}
+.idxCho-mod4 .info .btn{
+	color: #fff;
+	background: #7eb911;
+	border-radius: 0;
+	padding: .35rem 2rem;
+	margin-top: 1rem;
+}
+
+@media (min-width:768px) and (max-width:991px) {
+	/**/
+	.idxCho-mod4{
+		background-position: left bottom 10rem;
+	}
+}
+
+@media (min-width:992px) {
+	/**/
+	.idxCho-mod4{
+		padding: 2rem 0;
+	}
+	.idxCho-mod4 h2,
+	.idxCho-mod4 .title{
+		margin: 1rem 0;
+	}
+	.idxCho-mod4 .row{
+		justify-content: flex-end;
+		align-items: center;
+	}
+	.idxCho-mod4 .img{
+		padding: 0;
+		order: 9;
+	}
+}
+
+@media (min-width:1440px) {
+	/**/
+	.idxCho-mod4 h2,
+	.idxCho-mod4 .title{
+		margin-bottom: 2rem;
+	}
+	.idxCho-mod4 .h5{
+		font-size: 1.125rem;
+	}
+	.idxCho-mod4 .info .btn{
+		margin: 2rem 0 1rem;
+	}
+}

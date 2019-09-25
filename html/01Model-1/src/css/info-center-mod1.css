@@ -1,0 +1,116 @@
+.info-center-mod1{
+	margin-bottom: 1rem;
+}
+.info-center-mod1 .h4{
+	font-weight: 600;
+	padding-bottom: .5rem;
+	position: relative;
+}
+.info-center-mod1 .h4:before,
+.info-center-mod1 .h4:after{
+	content: '';
+	width: 50%;
+	height: 1px;
+	background: #ccc;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.info-center-mod1 .h4:after{
+	width: 3rem;
+	background: #777;
+	z-index: 5;
+}
+.info-center-mod1 .v-map iframe{
+	width: 100% !important;
+	height: 150px !important;
+	margin: 1rem 0;
+	display: block;
+}
+.info-center-mod1 .address{
+	padding-left: 1.5rem;
+	position: relative;
+}
+.info-center-mod1 .address:before{
+	content: '\f041';
+	font-family: 'FontAwesome';
+	font-size: 1.5rem;
+	color: #666;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.info-center-mod1 .pct-img{
+	margin-top: 1rem;
+}
+.info-center-mod1 form .form-group{
+	position: relative;
+}
+.info-center-mod1 form input,
+.info-center-mod1 form textarea{
+	border-radius: 0;
+}
+.info-center-mod1 form .code{
+	display: flex;
+}
+.info-center-mod1 form .code img{
+	width: 7.5rem;
+	margin-left: 1rem;
+}
+.info-center-mod1 form .submit .btn{
+	color: #fff;
+	background: #7eb911;
+	border-radius: 0;
+	padding: .35rem 1.75rem;
+}
+.info-center-mod1 form .submit .btn i{
+	margin-left: .25rem;
+}
+
+@media (min-width:768px){
+	/**/
+	.info-center-mod1{
+		margin: 2rem auto;
+	}
+	.info-center-mod1 .h4{
+		font-size: 1.25rem;
+	}
+	.info-center-mod1 .v-map iframe{
+		height: 350px !important;
+	}
+	.info-center-mod1 form .submit .btn{
+		padding: .35rem 2.5rem;
+	}
+}
+
+@media (min-width:992px){
+	/**/
+	.info-center-mod1 .v-map iframe{
+		height: 450px !important;
+	}
+	.info-center-mod1 .h5{
+		margin: 1.5rem 0;
+	}
+}
+
+@media (min-width:1200px){
+	/**/
+	.info-center-mod1{
+		margin: 3rem auto;
+	}
+	.info-center-mod1 .h4{
+		font-size: 1.5rem;
+		padding-bottom: 1rem;
+		margin-bottom: 1rem;
+	}
+	.info-center-mod1 .h5{
+		font-size: 1.125rem;
+	}
+}
+
+@media (min-width:1640px){
+	/**/
+	.info-center-mod1 form textarea{
+		min-height: 8rem;
+	}
+}

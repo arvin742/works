@@ -1,0 +1,26 @@
+.idxCtf-mod1{
+	background: url(../../uploadfiles/images/index-8-bg.jpg) no-repeat center;
+	background-size: cover;
+	padding: .01rem 0 1rem;
+}
+
+@media (min-width:768px) {
+	/**/
+	.idxCtf-mod1{
+		padding-bottom: 2rem;
+	}
+}
+
+@media (min-width:1200px) {
+	/**/
+	.idxCtf-mod1{
+		padding: 1rem 0 5rem;
+	}
+	.idxCtf-mod1 h2,
+	.idxCtf-mod1 .title{
+		margin-bottom: 5rem;
+	}
+	.idxCtf-mod1 .pagination-block{
+		margin-top: 2rem;
+	}
+}

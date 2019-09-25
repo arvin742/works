@@ -1,0 +1,55 @@
+.idxNor-mod2{
+	color: #fff;
+	background: #2a6690;
+	padding: 1rem 0;
+}
+.idxNor-mod2 h2,
+.idxNor-mod2 .title,
+.idxNor-mod2 a{
+	color: #fff;
+}
+.idxNor-mod2 .back{
+	margin: .5rem 0;
+	position: relative;
+}
+.idxNor-mod2 .info{
+	max-width: 40rem;
+	margin: auto;
+}
+.idxNor-mod2 .btn{
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 0;
+}
+.idxNor-mod2 .btn:hover{
+	background: #7eb911;
+	border-color: #7eb911;
+}
+
+@media (min-width:768px) {
+	/**/
+	.idxNor-mod2{
+		padding: 2rem 0;
+	}
+}
+
+@media (min-width:1200px) {
+	/**/
+	.idxNor-mod2{
+		padding: 3rem 0;
+	}
+	.idxNor-mod2 .h4{
+		font-size: 1.5rem;
+		margin: 1.5rem 0 1rem;
+	}
+	.idxNor-mod2 .btn{
+		margin-top: 1rem;
+	}
+}
+
+@media (min-width:1640px) {
+	/**/
+	.idxNor-mod2{
+		padding: 5rem 0;
+	}
+}

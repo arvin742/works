@@ -1,0 +1,44 @@
+.choose-mod2{
+	padding: 1rem 0;
+}
+.choose-mod2 .back{
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+@media (min-width:768px){
+	/**/
+	.choose-mod2{
+		padding-top: 2rem;
+	}
+	.choose-mod2 .back{
+		margin-bottom: 2rem;
+	}
+	.choose-mod2 .back:nth-of-type(even) .img{
+		order: 9;
+	}
+}
+
+@media (min-width:1200px){
+	/**/
+	.choose-mod2{
+		padding-top: 3rem;
+	}
+	.choose-mod2 .back{
+		margin-bottom: 3rem;
+	}
+}
+
+@media (min-width:1440px){
+	/**/
+	.choose-mod2 .back .info{
+		padding: 0 7.5%;
+	}
+}
+
+@media (max-width:767px){
+	/**/
+	.choose-mod2 .back .img{
+		margin-bottom: .5rem;
+	}
+}

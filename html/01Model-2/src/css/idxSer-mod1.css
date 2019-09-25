@@ -1,0 +1,66 @@
+.idxSer-mod1{
+	padding: .1rem 0 1rem;
+}
+.idxSer-mod1 .back{
+	box-shadow: 1px 1px 3px 1px rgba(0,0,0,.125);
+	padding: 1rem;
+	margin: .25rem;
+	-webkit-transition: all .25s;
+	-moz-transition: all .25s;
+	transition: all .25s;
+}
+.idxSer-mod1 .back .img{
+	min-height: 2.5rem;
+	margin-bottom: 1rem;
+}
+.idxSer-mod1 .back .h4{
+	font-weight: 600;
+	padding-bottom: 1rem;
+	position: relative;
+}
+.idxSer-mod1 .back .h4:after{
+	content: '';
+	width: 3rem;
+	height: 1px;
+	background: #666;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 5;
+}
+.idxSer-mod1 .back:hover .h4{
+	color: #7eb911;
+}
+.idxSer-mod1 .back:hover .h4:after{
+	background: #7eb911;
+}
+
+@media (min-width:768px){
+	/**/
+	.idxSer-mod1 .back p:not(.h4){
+		max-height: 6rem;
+		overflow: hidden;
+	}
+}
+
+@media (min-width:992px) {
+	/**/
+	.idxSer-mod1 .back{
+		box-shadow: none;
+	}
+	.idxSer-mod1 .back:hover{
+		box-shadow: 1px 1px 3px 1px rgba(0,0,0,.125);
+	}
+}
+
+@media (max-width:767px) {
+	/**/
+	.idxSer-mod1 .back .img,
+	.idxSer-mod1 .back .h4{
+		text-align: center;
+	}
+	.idxSer-mod1 .back .h4:after{
+		left: 50%;
+		margin-left: -1.5rem;
+	}
+}

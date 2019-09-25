@@ -1,0 +1,28 @@
+.contact-mod1 .info-text .back{
+	color: #222;
+	margin-bottom: 1.5rem;
+}
+.contact-mod1 .info-text .back p{
+	margin-bottom: .5rem;
+}
+
+@media (min-width:768px){
+	/**/
+	.contact-mod1 .info-text .back{
+		margin-top: 1rem;
+	}
+}
+
+@media (min-width:1200px){
+	/**/
+	.contact-mod1 .info-text .back p{
+		margin-bottom: 1rem;
+	}
+}
+
+@media (min-width:1640px){
+	/**/
+	.contact-mod1 .info-text .back p{
+		font-size: 1.125rem;
+	}
+}

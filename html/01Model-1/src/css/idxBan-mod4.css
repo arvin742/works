@@ -1,0 +1,90 @@
+.idxBan-mod4{
+	background: #000;
+	overflow: hidden;
+	position: relative;
+}
+.idxBan-mod4 .row{
+	margin: 0;
+}
+.idxBan-mod4 .row .lt,
+.idxBan-mod4 .row .rt{
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+}
+.idxBan-mod4 .row .swiper-container{
+	width: 100%;
+	position: absolute;
+}
+.idxBan-mod4 .row .swiper-container-initialized{
+	position: relative;
+}
+.idxBan-mod4 .info{
+	max-width: 45rem;
+	color: #fff;
+	position: absolute;
+	left: 5%;
+	bottom: 5%;
+	z-index: 9;
+}
+.idxBan-mod4 .info a{
+	color: #fff;
+}
+.idxBan-mod4 .info h1{
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+.idxBan-mod4 .info h2{
+	font-size: 1.125rem;
+	text-align: left;
+	margin-top: .5rem;
+}
+.idxBan-mod4 .info .btn{
+	color: #fff;
+	background: #7eb911;
+	border-radius: 0;
+	margin-top: .5rem;
+}
+
+@media (min-width:992px) {
+	/**/
+	.idxBan-mod4 .lt:hover .pagination-banner a,
+	.idxBan-mod4 .rt:hover .pagination-banner a{
+		display: block;
+	}
+}
+
+@media (min-width:1200px) {
+	/**/
+	.idxBan-mod4 .info h1{
+		font-size: 2rem;
+	}
+	.idxBan-mod4 .info h2{
+		font-size: 1.5rem;
+	}
+}
+
+@media (min-width:1640px) {
+	/**/
+	.idxBan-mod4 .info h1{
+		font-size: 2rem;
+	}
+	.idxBan-mod4 .info h2{
+		font-size: 1.5rem;
+	}
+	.idxBan-mod4 .info .btn{
+		padding: .35rem 1.5rem;
+	}
+}
+
+@media (max-width: 479px) {
+	/**/
+	.idxBan-mod4 .lt{
+		display: none;
+	}
+	.idxBan-mod4 .rt{
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}

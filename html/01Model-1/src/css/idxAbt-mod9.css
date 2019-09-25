@@ -1,0 +1,69 @@
+.idxAbt-mod9{
+	background: url(../../uploadfiles/images/idxAbt-mod9-bg.png) no-repeat left bottom;
+	position: relative;
+}
+.idxAbt-mod9 h2,
+.idxAbt-mod9 .title,
+.idxAbt-mod9 .text{
+	text-align: left;
+}
+.idxAbt-mod9 .h5{
+	font-weight: 700;
+}
+.idxAbt-mod9 .img img{
+	width: 100%;
+}
+.idxAbt-mod9 .info img{
+	margin: 1rem 0;
+}
+.idxAbt-mod9 .info .btn{
+	color: #fff;
+	background: #7eb911;
+	border-radius: 0;
+	padding: .35rem 2rem;
+	margin: 1rem 0;
+}
+
+@media (min-width:768px) and (max-width:991px) {
+	/**/
+	.idxAbt-mod9 .img{
+		display: none;
+	}
+}
+
+@media (min-width:992px) {
+	/**/
+	.idxAbt-mod9 h2,
+	.idxAbt-mod9 .title{
+		margin: 1rem 0;
+	}
+	.idxAbt-mod9 .row{
+		justify-content: flex-end;
+		align-items: center;
+	}
+	.idxAbt-mod9 .info{
+		max-width: 35rem;
+		padding-right: 3rem;
+	}
+	.idxAbt-mod9 .img{
+		padding: 0;
+		order: 9;
+	}
+}
+
+@media (min-width:1440px) {
+	/**/
+	.idxAbt-mod9 .info{
+		max-width: 43.75rem;
+	}
+	.idxAbt-mod9 h2,
+	.idxAbt-mod9 .title{
+		margin-bottom: 2rem;
+	}
+	.idxAbt-mod9 .h5{
+		font-size: 1.125rem;
+	}
+	.idxAbt-mod9 .info .btn{
+		margin: 2rem 0 1rem;
+	}
+}

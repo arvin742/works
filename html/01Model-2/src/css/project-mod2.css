@@ -1,0 +1,50 @@
+.project-mod2 .pro-list>li{
+	margin-bottom: .5rem;
+}
+.project-mod2 .pro-list>li .back{
+	position: relative;
+}
+.project-mod2 .pro-list>li .info p,
+.project-mod2 .pro-list>li .info .btn{
+	display: none;
+}
+.project-mod2 .pro-list>li .info .h4{
+	display: block;
+}
+
+@media (min-width:768px){
+	/**/
+	.project-mod2 .pro-list>li{
+		margin-bottom: 1rem;
+	}
+	.project-mod2 .pro-list>li .info{
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,.5);
+		padding: 0 1rem;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 5;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+		display: none;
+	}
+	.project-mod2 .pro-list>li .info p{
+		width: 100%;
+		color: #fff;
+		display: block;
+	}
+	.project-mod2 .pro-list>li .info .btn{
+		color: #fff;
+		border: 1px solid #fff;
+		border-radius: 2.5rem;
+		padding: .25rem 1.5rem;
+		margin-top: 1rem;
+		display: block;
+	}
+	.project-mod2 .pro-list>li .back:hover .info{
+		display: flex;
+	}
+}

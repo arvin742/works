@@ -1,0 +1,16 @@
+
+@media (min-width:992px) {
+	/**/
+	.about-mod2 .img {
+		max-width: 50%;
+		float: left;
+		margin-right: 1rem;
+	}
+}
+
+@media (min-width:1440px) {
+	/**/
+	.about-mod2 .img{
+		max-width: 100%;
+	}
+}

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+<title></title>
+<link href="Themes/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="Themes/swiper-4.5.0.min.css" rel="stylesheet" type="text/css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="Themes/style.css" rel="stylesheet" type="text/css" />
+<link href="Themes/main.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper-4.5.0.min.js"></script>
+<script src="js/main.js"></script>
+<!--[if lt IE 9]>
+<script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div class="widget clearfix" id="lkjsdnsdgklgjklafpos56456">
+	<link href="src/css/menu-mod1.css" rel="stylesheet" type="text/css" />
+	<div class="menu-mod1">
+		<a class="btn btn-menu"><i class="fa fa-bars">MENU</i></a>
+		
+		<div class="menu-aside">
+			<a class="btn btn-close"><i class="fa fa-times"></i></a>
+			<div class="logo"><img src="uploadfiles/images/logo-1.png" alt="" /></div>
+			<ul class="list-unstyled main">
+				<li><a href="">HOME</a></li>
+				<li><a href="">PRODUCTS</a></li>
+				<li><a href="">PROJECTS</a></li>
+				<li><a href="">ABOUT US</a></li>
+				<li><a href="">NEWS</a></li>
+				<li><a href="">CONTACT US</a></li>
+			</ul>
+			
+			<ul class="list-inline social-media bg-color">
+				<li><a class="f" href="">&nbsp;</a></li>
+				<li><a class="t" href="">&nbsp;</a></li>
+				<li><a class="i" href="">&nbsp;</a></li>
+				<li><a class="p" href="">&nbsp;</a></li>
+				<li><a class="c" href="">&nbsp;</a></li>
+			</ul>
+		</div>
+	</div>
+	<script>
+		$(function(){
+			$('header').addClass('htr-index');
+			$('.menu-mod1 .btn-menu').on('click', function(){
+				$('.menu-mod1').addClass('active');
+			});
+			$('.menu-mod1 .btn-close').on('click', function(){
+				$('.menu-mod1').removeClass('active');
+			});
+			
+			$(window).scroll(function(){
+				var top = $(this).scrollTop();
+					
+				if($(window).width() < 768)	return false;
+				
+				if(top > 0) {
+					$('.menu-mod1').addClass('shadow');
+				}	else{
+					$('.menu-mod1').removeClass('shadow');
+				}
+				
+			});
+		});
+	</script>
+</div>
+
+<div class="widget clearfix" id="lkjsdgjklafp41s56dgos56456">
+	<link href="src/css/header-mod4.css" rel="stylesheet" type="text/css" />
+	<header class="header header-mod4">
+		
+		<nav class="navbar">
+			<div class="container wide-16">
+				
+				<div class="navbar-header">
+					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+						<i class="fa fa-indent"></i>
+					</button>
+					<a class="navbar-brand" href="index.html"><img src="uploadfiles/images/logo-1.png" alt="" /></a>
+				</div>
+				
+				<div class="navbar-right">
+					<form class="form">
+						<input class="form-control" type="text" placeholder="Search..." required />
+						<button class="btn" type="button"><i class="fa fa-search"></i></button>
+					</form>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="navbar-collapse">
+					<ul id="menu" class="menu navbar-nav">
+						
+						<li class="active"><a href="index.html">Home</a></li>
+						
+						<li class="dropdown pro-li">
+							<a href="product.html" class="dropdown-toggle" data-toggle="dropdown">Products</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href=""><img src="uploadfiles/images/header-hover.jpg" alt=""/></a>
+									<a href="product-info.html">Swim Spa</a>
+								</li>
+								<li>
+									<a href=""><img src="uploadfiles/images/header-hover.jpg" alt=""/></a>
+									<a href="product-info.html">Swim Spa</a>
+								</li>
+								<li>
+									<a href=""><img src="uploadfiles/images/header-hover.jpg" alt=""/></a>
+									<a href="product-info.html">Swim Spa</a>
+								</li>
+								<li>
+									<a href=""><img src="uploadfiles/images/header-hover.jpg" alt=""/></a>
+									<a href="product-info.html">Swim Spa</a>
+								</li>
+								<li>
+									<a href=""><img src="uploadfiles/images/header-hover.jpg" alt=""/></a>
+									<a href="product-info.html">Swim Spa</a>
+								</li>
+								<li>
+									<a href=""><img src="uploadfiles/images/header-hover.jpg" alt=""/></a>
+									<a href="product-info.html">Swim Spa</a>
+								</li>
+							</ul>
+						</li>
+						
+						<li><a href="project.html">Project</a></li>
+						<li><a href="about.html">About us</a></li>
+						<li><a href="new.html">News</a></li>
+						
+						<li class="dropdown">
+							<a href="contact.html" class="dropdown-toggle" data-toggle="dropdown">Contact us</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href=""><img src="uploadfiles/images/header-hover.jpg" alt=""/></a>
+									<a href="contact.html">Contact us</a>
+								</li>
+								<li>
+									<a href=""><img src="uploadfiles/images/header-hover.jpg" alt=""/></a>
+									<a href="faq.html">FAQs</a>
+								</li>
+							</ul>
+						</li>
+						
+					</ul>
+				</div>
+				
+			</div>
+		</nav>
+		
+	</header>
+</div>
+
+<div class="content">
+	
+	<div style="height: 500px;"></div>
+	
+</div>
+
+<div class="widget clearfix" id="sdgitysdf">
+	<link href="src/css/footer-mod1.css" rel="stylesheet" type="text/css" />
+	<footer class="footer footer-mod1">
+		<div class="container wide-16 ftr-info">
+			
+			<div class="row">
+				
+				<div class="ftr-lt col-sm-5">
+					<p class="h3">Contact Us</p>
+					<ul class="list-unstyled cont-list">
+						<li>Office Add:No.6 Culture Creative Industry Park CongYun Road BaiYun Avenue North Baiyun District Guangzhou China</li>
+						<li>+86-020-81686132</li>
+						<li>sales@jindieli.com</li>
+					</ul>
+					
+					<ul class="list-inline social-media">
+						<li><a class="f" href="">&nbsp;</a></li>
+						<li><a class="t" href="">&nbsp;</a></li>
+						<li><a class="i" href="">&nbsp;</a></li>
+						<li><a class="p" href="">&nbsp;</a></li>
+						<li><a class="c" href="">&nbsp;</a></li>
+					</ul>
+				</div>
+				
+				<div class="ftr-mt col-sm-2">
+					<p class="h3">Category</p>
+					<ul class="list-unstyled">
+						<li><a href="">> Home</a></li>
+						<li><a href="">> About us</a></li>
+						<li><a href="">> Products</a></li>
+						<li><a href="">> News</a></li>
+						<li><a href="">> Project</a></li>
+						<li><a href="">> Contact Us</a></li>
+					</ul>
+				</div>
+				
+				<div class="ftr-rt col-sm-5">
+					<p class="h3">Follow Us</p>
+					<p class="h5">Select the products which you are interested, and then submit your info below toreceive our next update.</p>
+					
+					<form class="form">
+						<div class="form-group">
+							<input class="form-control" type="text" placeholder="enter your email address" required />
+						</div>
+						<div class="form-group">
+							<p>which one are you most interested in?</p>
+							<ul class="list-unstyled row">
+								<li class="col-lg-6"><label><input type="checkbox" />Air Diffuser</label></li>
+								<li class="col-lg-6"><label><input type="checkbox" />Round Duct Machine</label></li>
+								<li class="col-lg-6"><label><input type="checkbox" />Other Duct Machine</label></li>
+								<li class="col-lg-6"><label><input type="checkbox" />Square Duct Machine</label></li>
+							</ul>
+						</div>
+						<div class="form-group">
+							<button class="btn" type="button">Submit</button>
+						</div>
+					</form>
+				</div>
+				
+			</div>
+			
+		</div>
+		<p class="ftr-filing">Copyright © 2016. JAZZI Pool & Spa Products Co., Ltd. Technical Support: Guangzhou Jumi Network 粤ICP备16015834号-1</p>
+	</footer>
+</div>
+
+<div class="widget clearfix" id="sdgio465sd5f6s6">
+	<link href="src/css/footer-mod2.css" rel="stylesheet" type="text/css" />
+	<footer class="footer-mod2">
+		<div class="container wide-16 ftr-info">
+			
+			<div class="row">
+				
+				<div class="ftr-lt col-sm-6 col-md-4">
+					<p class="h3">Contact Us</p>
+					<ul class="list-unstyled cont-list">
+						<li>No.4 Jinye Second Road, Xinan Industry, Sanshui, Foshan, China, 528100</li>
+						<li>+86-757-8774 4989</li>
+						<li>intlsales@shenglu.com</li>
+					</ul>
+				</div>
+				
+				<div class="ftr-mt col-sm-2 col-md-4 hidden-sm text-center">
+					<p class="logo"><img src="uploadfiles/images/logo-bottom.png" alt="" /></p>
+					<p class="h5">Copyright © 2013 Guangdong Shenglu Telecommunication Tech.co,.Ltd </p>
+					<ul class="list-inline social-media bg-color">
+						<li><a class="f" href="">&nbsp;</i></a></li>
+						<li><a class="t" href="">&nbsp;</i></a></li>
+						<li><a class="i" href="">&nbsp;</i></a></li>
+						<li><a class="p" href="">&nbsp;</i></a></li>
+						<li><a class="c" href="">&nbsp;</i></a></li>
+						<li><a class="y" href="">&nbsp;</i></a></li>
+					</ul>
+				</div>
+				
+				<div class="ftr-rt col-sm-6 col-md-4">
+					<p class="h3">Follow Us</p>
+					<p class="h5">Select the products which you are interested, and then submit your info below toreceive our next update.</p>
+					<a class="btn">Contact Us</a>
+				</div>
+				
+			</div>
+			
+		</div>
+		<p class="ftr-bt visible-xs">Copyright © 2016 by Guangdong Nedfon Air System Co., Ltd </p>
+	</footer>
+</div>
+
+<a class="to-top"><img src="uploadfiles/images/top.png" alt="top" /></a>
+
+<script>
+	$(function(){
+		$('.to-top').toTop();
+	})
+</script>
+
+</body>
+</html>

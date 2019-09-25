@@ -1,0 +1,82 @@
+.idxNew-mod3{
+	color: #fff;
+	background: #00367C;
+	padding: .1rem 0 2rem;
+}
+.idxNew-mod3 a,
+.idxNew-mod3 h2,
+.idxNew-mod3 .title,
+.idxNew-mod3 .text{
+	color: #fff;
+}
+.idxNew-mod3 .back{
+	margin: .1rem 0;
+	position: relative;
+}
+.idxNew-mod3 .back .hr{
+	height: 1px;
+	background: #999;
+	margin: 1.5rem 0;
+	position: relative;
+}
+.idxNew-mod3 .back .hr:before,
+.idxNew-mod3 .back .hr:after{
+	content: '';
+	border-radius: 50%;
+	position: absolute;
+	left: 1rem;
+	top: 50%;
+}
+.idxNew-mod3 .back .hr:before{
+	width: .5rem;
+	height: .5rem;
+	background: #999;
+	margin-top: -.25rem;
+}
+.idxNew-mod3 .back .hr:after{
+	width: 1rem;
+	height: 1rem;
+	border: 1px solid #999;
+	margin-top: -.5rem;
+	margin-left: -.25rem;
+}
+.idxNew-mod3 .back p{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	overflow: hidden;
+}
+.idxNew-mod3 .back .h4{
+	height: 1.5rem;
+	font-weight: 600;
+}
+.idxNew-mod3 .back .h5{
+	height: 4.5rem;
+	-webkit-box-orient: 3;
+	margin-top: 1rem;
+}
+.idxNew-mod3 .back .btn{
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 0;
+	padding: .05rem 1.75rem;
+	margin-top: 1rem;
+}
+.idxNew-mod3 .back:hover .hr:before{
+	background: #fff;
+}
+.idxNew-mod3 .back:hover .hr:after{
+	border-color: #fff;
+}
+.idxNew-mod3 .back:hover .btn{
+	color: #00367C;
+	background: #fff;
+	border-color: #fff;
+}
+
+@media (min-width:768px){
+	/**/
+	.idxNew-mod3{
+		padding: 1rem 0 3rem;
+	}
+}

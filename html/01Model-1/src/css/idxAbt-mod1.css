@@ -1,0 +1,55 @@
+.idxAbt-mod1{
+	color: #fff;
+	background: #2a6690;
+	padding: .1rem 0 1rem;
+}
+.idxAbt-mod1 h2,
+.idxAbt-mod1 .title,
+.idxAbt-mod1 a{
+	color: #fff;
+}
+.idxAbt-mod1 .img{
+	margin-bottom: 1rem;
+}
+.idxAbt-mod1 .info p{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+}
+.idxAbt-mod1 .btn{
+	color: #fff;
+	background: #7eb911;
+	border-radius: 0;
+	padding: 0.15rem .75rem;
+	margin-top: 1rem;
+}
+
+@media (min-width:768px) {
+	/**/
+	.idxAbt-mod1{
+		padding-bottom: 2rem;
+	}
+	.idxAbt-mod1 .info p{
+		-webkit-line-clamp: 5;
+	}
+}
+
+@media (min-width:1200px) {
+	/**/
+	.idxAbt-mod1{
+		padding-bottom: 3rem;
+	}
+}
+
+@media (min-width:1640px) {
+	/**/
+	.idxAbt-mod1{
+		padding: 2rem 0 5rem;
+	}
+	.idxAbt-mod1 .info p{
+		font-size: 1.125rem;
+		line-height: 1.75;
+		-webkit-line-clamp: 8;
+	}
+}

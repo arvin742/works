@@ -1,0 +1,33 @@
+.product-desc-mod1 .info{
+	margin-bottom: 1rem;
+}
+.product-desc-mod1 .row>div{
+	margin-bottom: 1rem;
+}
+
+@media (min-width:768px) {
+	/**/
+	.product-desc-mod1 .info{
+		margin: 1rem 0;
+	}
+}
+
+@media (min-width:1200px) {
+	/**/
+	.product-desc-mod1 .tab-list{
+		margin-bottom: 2rem;
+	}
+	.product-desc-mod1 .info{
+		margin: 2rem 0;
+	}
+	.product-desc-mod1 .row>div{
+		margin-bottom: 2rem;
+	}
+}
+
+@media (max-width:767px) {
+	/**/
+	.product-desc-mod1{
+		padding-top: 2rem;
+	}
+}

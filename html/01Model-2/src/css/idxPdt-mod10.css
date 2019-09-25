@@ -1,0 +1,79 @@
+.idxPdt-mod10{
+	padding: .1rem 0 1rem;
+}
+.idxPdt-mod10 .back{
+	overflow: hidden;
+	position: relative;
+	display: block;
+}
+.idxPdt-mod10 .info{
+	height: 3.5rem;
+	padding: 0rem 1rem;
+	overflow: hidden;
+}
+.idxPdt-mod10 .h4{
+	height: 3rem;
+	font-weight: 600;
+	margin-top: 0;
+	overflow: hidden;
+}
+.idxPdt-mod10 .info i{
+	font-size: 1.5rem;
+}
+.idxPdt-mod10 .back:hover .h4{
+	color: #7eb911;
+}
+
+@media (min-width:768px) {
+	/**/
+	.idxPdt-mod10{
+		padding: 1rem 0 3rem;
+	}
+	.idxPdt-mod10 .tab-list{
+		flex-wrap: wrap;
+	}
+	.idxPdt-mod10 .tab-list>li>.btn{
+		color: #fff;
+		background: #666;
+		border-color: #666;
+	}
+	.idxPdt-mod10 .tab-list>li:hover>.btn,
+	.idxPdt-mod10 .tab-list>li.active>.btn{
+		background: #7eb911;
+		border-color: #7eb911;
+	}
+}
+
+@media (min-width:992px) {
+	/**/
+	.idxPdt-mod10 .back{
+		padding-bottom: 3.5rem;
+	}
+	.idxPdt-mod10 .back .info{
+		width: 100%;
+		height: auto;
+		position: absolute;
+		left: 0;
+		bottom: -1.75rem;
+		z-index: 5;
+		-webkit-transition: all .7s;
+		-moz-transition: all .7s;
+		transition: all .7s;
+	}
+	.idxPdt-mod10 .back:hover .info{
+		background: #7eb911;
+		padding: 2rem 1rem;
+		bottom: 0;
+	}
+	.idxPdt-mod10 .back:hover .info p,
+	.idxPdt-mod10 .back:hover .info i{
+		color: #fff;
+	}
+}
+
+@media (min-width:1200px) {
+	/**/
+	.idxPdt-mod10{
+		padding: 2rem 0 4rem;
+	}
+}

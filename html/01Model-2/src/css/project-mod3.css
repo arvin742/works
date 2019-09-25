@@ -1,0 +1,67 @@
+.project-mod3{
+	color: #fff;
+	background: #484848;
+	overflow: hidden;
+	position: relative;
+}
+.project-mod3 h2,
+.project-mod3 .title,
+.project-mod3 a,
+.project-mod3 .text{
+	color: #fff;
+}
+.project-mod3 .product-menu .navbar-collapse{
+	background: none;
+}
+.project-mod3 .product-menu .product-nav>li{
+	border: none;
+}
+.project-mod3 .product-menu .product-nav>li>a{
+	font-weight: 600;
+	color: #fff;
+	background: none;
+}
+.project-mod3 .product-menu .product-nav>li:hover>a,
+.project-mod3 .product-menu .product-nav>li.active>a{
+	color: #7eb911;
+}
+.project-mod3 .product-menu .product-nav>li ul li{
+	border: none;
+}
+.project-mod3 .product-menu .product-nav>li ul li a{
+	font-size: .875rem;
+}
+.project-mod3 .pro-list>li{
+	margin-bottom: .5rem;
+}
+
+@media (min-width:768px){
+	/**/
+	.project-mod3{
+		width: 100vw;
+		height: 100vh;
+		align-items: center;
+		display: flex;
+	}
+}
+
+@media (min-width:1200px) and (max-width:1439px){
+	/**/
+	.project-mod3 .pro-list>li{
+		max-width: 25%;
+	}
+}
+
+@media (min-width:1440px){
+	/**/
+	.project-mod3 .product-menu{
+		-ms-flex: 0 0 33.333333%;
+		flex: 0 0 33.333333%;
+		max-width: 33.333333%;
+	}
+	.project-mod3 .pro-rt{
+		-ms-flex: 0 0 66.666666%;
+		flex: 0 0 66.666666%;
+		max-width: 66.666666%;
+	}
+}
