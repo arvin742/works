@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+<title></title>
+<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="../css/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+<link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="../css/admin.css" rel="stylesheet" type="text/css" />
+<script src="../js/jquery-1.11.3.min.js"></script>
+<!--[if lt IE 9]>
+<script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div class="warp">
+		
+	<header class="header">
+		<div class="container">
+			
+			<div class="nav-header">
+				
+				<button type="button" class="nav-btn">
+					<i class="fa fa-bars"></i>
+				</button>
+				<a href="index.html" class="nav-brand">
+					<img src="../images/logo-sys.png" alt="logo" />
+					<p class="nav-text">金牌E-learning管理系统</p>
+				</a>
+				
+			</div>
+			
+			<div class="nav-right">
+				<ul class="list-inline">
+					<li>
+						<i class="fa fa-user">
+							<cite>
+								超级管理员<br />
+								admin
+							</cite>
+						</i>
+					</li>
+					<li>
+						<a class="btn btn-out">
+							<i class="fa fa-sign-out">
+								<cite>登出/切换</cite>
+							</i>
+						</a>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+		
+		<div class="menu">
+			<div class="container">
+				
+				<div class="nav-htr">
+					<a class="nav-brand" href="/">
+						<img src="../images/logo-sys.png" alt="" />
+					</a>
+				</div>
+				
+				<ul class="nav-menu">
+		      <li class="nav-item">
+		        <a class="nav-link" href="index.html">
+		        	<i class="fa fa-th-large"></i>
+		        	<cite>课程管理</cite>
+		        </a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="examine.html">
+		        	<i class="fa fa-pie-chart"></i>
+		        	<cite>考核管理</cite>
+		        </a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="exam-edit.html">
+		        	<i class="fa fa-pie-chart"></i>
+		        	<cite>试卷管理</cite>
+		        </a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="grade.html">
+		        	<i class="fa fa-pencil-square-o"></i>
+		        	<cite>评价管理</cite>
+		        </a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="account.html">
+		        	<i class="fa fa-user"></i>
+		        	<cite>账号管理</cite>
+		        </a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="system.html">
+		        	<i class="fa fa-cog"></i>
+		        	<cite>系统管理</cite>
+		        </a>
+		      </li>
+		    </ul>
+				
+			</div>
+	  </div>
+	</header>
+	
+	<div class="content index">
+		
+		<p class="title">课程管理</p>
+		
+		<div class="nav-htr">
+			<ul class="list-inline">
+				<li><a class="btn fiexd-btn">创建课程</a></li>
+				<li><a class="btn">删除</a></li>
+			</ul>
+		</div>
+		
+		<div class="nav-back">
+			<div class="table-responsive">
+				<table class="table check-all">
+					
+					<thead>
+						<tr>
+							<td>
+								<span class="all">
+									<i class="fa fa-square-o"></i>
+									<cite>全选</cite>
+								</span>
+							</td>
+							<td>名称</td>
+							<td>状态</td>
+							<td>上架时间</td>
+							<td>操作</td>
+						</tr>
+					</thead>
+					
+					<tbody>
+						<tr>
+							<td>
+								<p class="check"><input type="checkbox" /></p>
+							</td>
+							<td><p class="name">考研资料</p></td>
+							<td><p>已上架</p></td>
+							<td><p>201-01-04</p></td>
+							<td>
+								<ul class="list-inline oprate">
+									<li><a class="btn"><i class="fa fa-minus-circle"></i></a></li>
+									<li class="update"><a class="btn fiexd-btn">修改</a></li>
+									<li><a class="btn" href="courseware.html">编辑课件</a></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="check"><input type="checkbox" /></p>
+							</td>
+							<td><p class="name">考研资料</p></td>
+							<td><p>已上架</p></td>
+							<td><p>201-01-04</p></td>
+							<td>
+								<ul class="list-inline oprate">
+									<li><a class="btn"><i class="fa fa-minus-circle"></i></a></li>
+									<li><a class="btn fiexd-btn">修改</a></li>
+									<li><a class="btn" href="courseware.html">编辑课件</a></li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+					
+				</table>
+			</div>
+		</div>
+		
+	</div>
+	
+	<div class="nav-fiexd nav-div">
+		<div class="back">
+			
+			<div class="main">
+				<div class="htr">
+					<p class="h4">创建课程</p>
+					<a class="btn btn-close"><i class="fa fa-close"></i></a>
+				</div>
+				
+				<div class="form">
+					<div class="form-group">
+						<input class="form-control" type="text" placeholder="标题" required />
+					</div>
+					<div class="form-group">
+						<textarea class="form-control" rows="5" placeholder="描述"></textarea>
+					</div>
+					<div class="form-group file">
+						<input class="form-control" type="file" placeholder="点击添加图片" required />
+						<input class="form-control" type="text" placeholder="点击添加图片" required />
+					</div>
+					<div class="form-group">
+						<p>状态：</p>
+						<label><input class="form-control" type="radio" name="r1" /><cite>上架</cite></label>
+						<label><input class="form-control" type="radio" name="r1" /><cite>未上架</cite></label>
+					</div>
+					<div class="form-group">
+						<p>开放对象：</p>
+						<label><input class="form-control" type="radio" name="r2" /><cite>普通用户</cite></label>
+						<label><input class="form-control" type="radio" name="r2" /><cite>批发商</cite></label>
+						<label><input class="form-control" type="radio" name="r2" /><cite>代理商</cite></label>
+					</div>
+					<div class="form-group submit text-right">
+						<button class="btn btn-close" type="button">取消</button>
+						<button class="btn btn-con" type="submit">确定</button>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+</div>
+
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.dataTables.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/admin.js"></script>
+<script>
+	$(function() {
+		$('.to-top').toTop();
+	});
+</script>
+</body>
+
+</html>

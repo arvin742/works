@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+<title></title>
+<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="../css/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+<link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="../css/admin.css" rel="stylesheet" type="text/css" />
+<script src="../js/jquery-1.11.3.min.js"></script>
+<!--[if lt IE 9]>
+<script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div class="warp">
+		
+	<header class="header">
+		<div class="container">
+			
+			<div class="nav-header">
+				
+				<button type="button" class="nav-btn">
+					<i class="fa fa-bars"></i>
+				</button>
+				<a href="index.html" class="nav-brand">
+					<img src="../images/logo-sys.png" alt="logo" />
+				</a>
+				
+				<p class="nav-text">金牌E-learning管理系统</p>
+			
+			</div>
+			
+		</div>
+		
+		<div class="menu">
+			<div class="container">
+				
+				<div class="nav-htr">
+					<a class="nav-brand" href="/">
+						<img src="../images/logo-sys.png" alt="" />
+					</a>
+				</div>
+				
+				<ul class="nav-menu">
+		      <li class="nav-item">
+		        <a class="nav-link" href="index.html">
+		        	<i class="fa fa-th-large"></i>
+		        	<cite>课程管理</cite>
+		        </a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="examine.html">
+		        	<i class="fa fa-pie-chart"></i>
+		        	<cite>考核管理</cite>
+		        </a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="grade.html">
+		        	<i class="fa fa-pencil-square-o"></i>
+		        	<cite>评价管理</cite>
+		        </a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="account.html">
+		        	<i class="fa fa-user"></i>
+		        	<cite>账号管理</cite>
+		        </a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="system.html">
+		        	<i class="fa fa-cog"></i>
+		        	<cite>系统管理</cite>
+		        </a>
+		      </li>
+		    </ul>
+				
+			</div>
+	  </div>
+	</header>
+	
+	<div class="content courseware">
+		<div class="nav-crumbs">
+			<ol class="breadcrumb">
+				<li><a href="javascript: window.history.back(-1);"><i class="fa fa-chevron-left"></i></a></li>
+				<li><a href="javascript: location.reload();"><i class="fa fa-refresh"></i></a></li>
+				<li><a href="index.html">课程管理</a></li>
+				<li><a href="courseware.html">编辑课件</a></li>
+			</ol>
+		</div>
+		
+		<p class="title">编辑课件</p>
+		
+		<div class="nav-htr">
+			<ul class="list-inline">
+				<li><a class="btn" href="courseware-edit.html">添加课件</a></li>
+				<li><a class="btn">删除</a></li>
+			</ul>
+		</div>
+		
+		<div class="nav-back">
+			<div class="table-responsive">
+				<table class="table check-all">
+					
+					<thead>
+						<tr>
+							<td>
+								<span class="all">
+									<i class="fa fa-square-o"></i>
+									<cite>全选</cite>
+								</span>
+							</td>
+							<td>名称</td>
+							<td>状态</td>
+							<td>上架时间</td>
+							<td>操作</td>
+						</tr>
+					</thead>
+					
+					<tbody>
+						<tr>
+							<td>
+								<p class="check"><input type="checkbox" /></p>
+							</td>
+							<td><p class="name">考研资料</p></td>
+							<td><p>已上架</p></td>
+							<td><p>201-01-04</p></td>
+							<td>
+								<ul class="list-inline oprate">
+									<li><a class="btn"><i class="fa fa-minus-circle"></i></a></li>
+									<li><a class="btn" href="courseware-edit.html">修改</a></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="check"><input type="checkbox" /></p>
+							</td>
+							<td><p class="name">考研资料</p></td>
+							<td><p>已上架</p></td>
+							<td><p>201-01-04</p></td>
+							<td>
+								<ul class="list-inline oprate">
+									<li><a class="btn"><i class="fa fa-minus-circle"></i></a></li>
+									<li><a class="btn" href="courseware-edit.html">修改</a></li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+					
+				</table>
+			</div>
+		</div>
+		
+	</div>
+
+</div>
+
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.dataTables.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/admin.js"></script>
+<script>
+	$(function() {
+		$('.to-top').toTop();
+	});
+</script>
+</body>
+
+</html>

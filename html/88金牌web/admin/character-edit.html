@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+<title></title>
+<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="../css/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+<link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="../css/admin.css" rel="stylesheet" type="text/css" />
+<script src="../js/jquery-1.11.3.min.js"></script>
+<!--[if lt IE 9]>
+<script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div class="warp">
+		
+	<header class="header">
+		<div class="container">
+			
+			<div class="nav-header">
+				
+				<button type="button" class="nav-btn">
+					<i class="fa fa-bars"></i>
+				</button>
+				<a href="index.html" class="nav-brand">
+					<img src="../images/logo-sys.png" alt="logo" />
+				</a>
+				
+				<p class="nav-text">金牌E-learning管理系统</p>
+			
+			</div>
+			
+		</div>
+		
+		<div class="menu">
+			<div class="container">
+				
+				<div class="nav-htr">
+					<a class="nav-brand" href="/">
+						<img src="../images/logo-sys.png" alt="" />
+					</a>
+				</div>
+				
+				<ul class="nav-menu">
+		      <li class="nav-item">
+		        <a class="nav-link" href="index.html">
+		        	<i class="fa fa-th-large"></i>
+		        	<cite>课程管理</cite>
+		        </a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="examine.html">
+		        	<i class="fa fa-pie-chart"></i>
+		        	<cite>考核管理</cite>
+		        </a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="grade.html">
+		        	<i class="fa fa-pencil-square-o"></i>
+		        	<cite>评价管理</cite>
+		        </a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="account.html">
+		        	<i class="fa fa-user"></i>
+		        	<cite>账号管理</cite>
+		        </a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="system.html">
+		        	<i class="fa fa-cog"></i>
+		        	<cite>系统管理</cite>
+		        </a>
+		      </li>
+		    </ul>
+				
+			</div>
+	  </div>
+	</header>
+	
+	<div class="content acc character-edit">
+		<div class="nav-crumbs">
+			<ol class="breadcrumb">
+				<li><a href="javascript: window.history.back(-1);"><i class="fa fa-chevron-left"></i></a></li>
+				<li><a href="javascript: location.reload();"><i class="fa fa-refresh"></i></a></li>
+				<li><a href="account.html">账号管理</a></li>
+				<li><a href="character.html">角色管理</a></li>
+				<li><a href="character-edit.html">添加角色</a></li>
+			</ol>
+		</div>
+		
+		<p class="title">添加角色</p>
+		
+		<div class="nav-back">
+			<form class="form">
+				<div class="form-group">
+					<span>*角色名称：</span>
+					<input class="form-control" type="text" placeholder="角色名称" required />
+				</div>
+				<div class="form-group radio">
+					<span>*角色类型：</span>
+					<label><input class="form-control" type="radio" name="r1" /><cite>批发商</cite></label>
+					<label><input class="form-control" type="radio" name="r1" /><cite>代理商</cite></label>
+					<label><input class="form-control" type="radio" name="r1" /><cite>普通用户</cite></label>
+				</div>
+				<div class="form-group radio">
+					<span>*状态：</span>
+					<label><input class="form-control" type="radio" name="r2" /><cite>启用</cite></label>
+					<label><input class="form-control" type="radio" name="r2" /><cite>禁用</cite></label>
+				</div>
+				<div class="form-group radio">
+					<span>*角色权限：</span>
+					<div class="check-all">
+						<p class="all">
+							<i class="fa fa-square-o"></i>
+							<cite>页面管理</cite>
+						</p>
+						<ul class="list-inline check">
+							<li><label><input class="form-control" type="checkbox" /><cite>我的课程</cite></label></li>
+							<li><label><input class="form-control" type="checkbox" /><cite>我的考核</cite></label></li>
+							<li><label><input class="form-control" type="checkbox" /><cite>解答中心</cite></label></li>
+						</ul>
+					</div>
+					<div class="check-all">
+						<p class="all">
+							<i class="fa fa-square-o"></i>
+							<cite>账号管理</cite>
+						</p>
+						<ul class="list-inline check">
+							<li><label><input class="form-control" type="checkbox" /><cite>账号审核</cite></label></li>
+							<li><label><input class="form-control" type="checkbox" /><cite>角色管理</cite></label></li>
+							<li><label><input class="form-control" type="checkbox" /><cite>账号管理</cite></label></li>
+						</ul>
+					</div>
+					<div class="check-all">
+						<p class="all">
+							<i class="fa fa-square-o"></i>
+							<cite>课程管理</cite>
+						</p>
+						<ul class="list-inline check">
+							<li><label><input class="form-control" type="checkbox" /><cite>添加/修改课程</cite></label></li>
+							<li><label><input class="form-control" type="checkbox" /><cite>删除课程</cite></label></li>
+							<li><label><input class="form-control" type="checkbox" /><cite>课程上/下架</cite></label></li>
+						</ul>
+					</div>
+					<div class="check-all">
+						<p class="all">
+							<i class="fa fa-square-o"></i>
+							<cite>考核管理</cite>
+						</p>
+						<ul class="list-inline check">
+							<li><label><input class="form-control" type="checkbox" /><cite>浏览考核管理</cite></label></li>
+						</ul>
+					</div>
+					<div class="check-all">
+						<p class="all">
+							<i class="fa fa-square-o"></i>
+							<cite>评价管理</cite>
+						</p>
+						<ul class="list-inline check">
+							<li><label><input class="form-control" type="checkbox" /><cite>更改评分</cite></label></li>
+							<li><label><input class="form-control" type="checkbox" /><cite>回复评分</cite></label></li>
+						</ul>
+					</div>
+				</div>
+				<div class="form-group submit">
+					<button class="btn" type="submit">确认</button>
+				</div>
+			</form>
+		</div>
+		
+	</div>
+	
+</div>
+
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.dataTables.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/admin.js"></script>
+<script>
+	$(function() {
+		$('.to-top').toTop();
+	});
+</script>
+</body>
+
+</html>

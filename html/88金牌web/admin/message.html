@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+<title></title>
+<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="../css/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+<link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="../css/admin.css" rel="stylesheet" type="text/css" />
+<script src="../js/jquery-1.11.3.min.js"></script>
+<!--[if lt IE 9]>
+<script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div class="warp">
+		
+	<header class="header">
+		<div class="container">
+			
+			<div class="nav-header">
+				
+				<button type="button" class="nav-btn">
+					<i class="fa fa-bars"></i>
+				</button>
+				<a href="index.html" class="nav-brand">
+					<img src="../images/logo-sys.png" alt="logo" />
+				</a>
+				
+				<p class="nav-text">金牌E-learning管理系统</p>
+			
+			</div>
+			
+		</div>
+		
+		<div class="menu">
+			<div class="container">
+				
+				<div class="nav-htr">
+					<a class="nav-brand" href="/">
+						<img src="../images/logo-sys.png" alt="" />
+					</a>
+				</div>
+				
+				<ul class="nav-menu">
+		      <li class="nav-item">
+		        <a class="nav-link" href="index.html">
+		        	<i class="fa fa-th-large"></i>
+		        	<cite>课程管理</cite>
+		        </a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="examine.html">
+		        	<i class="fa fa-pie-chart"></i>
+		        	<cite>考核管理</cite>
+		        </a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="grade.html">
+		        	<i class="fa fa-pencil-square-o"></i>
+		        	<cite>评价管理</cite>
+		        </a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="account.html">
+		        	<i class="fa fa-user"></i>
+		        	<cite>账号管理</cite>
+		        </a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="system.html">
+		        	<i class="fa fa-cog"></i>
+		        	<cite>系统管理</cite>
+		        </a>
+		      </li>
+		    </ul>
+				
+			</div>
+	  </div>
+	</header>
+	
+	<div class="content comment message">
+		
+		<p class="title">评价管理</p>
+		
+		<ul class="nav nav-tabs">
+	    <li class="nav-item">
+	      <a class="nav-link" href="grade.html">课程</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="message.html">留言板</a>
+	    </li>
+	  </ul>
+		
+		<div class="nav-back">
+			<div class="clearfix">
+				<div class="float-left">
+					<p><strong>TIPS：</strong> 回复信息将于每日24:00发送，如有修改请在每日24:00之前修改</p>
+				</div>
+				<ul class="list-inline float-right">
+					<li><a class="btn">已回复</a></li>
+					<li><a class="btn">未回复</a></li>
+				</ul>
+			</div>
+			
+			<div class="table-responsive">
+				
+				<table class="table">
+					<tbody>
+						
+						<tr>
+							<td>
+								<div class="info">
+									<p class="img"><img src="../uploadfiles/images/Head-portrait.jpg" alt="" /></p>
+									<p class="h4">John</p>
+								</div>
+							</td>
+							<td>
+								<div class="reply">
+									<p class="h4">《宏观经济》里的四部门经济的关系式是什么？</p>
+									<div class="form">
+										<textarea class="form-control" rows="5"></textarea>
+										<div class="text-right"><button class="btn btn-com" type="button">发送</button></div>
+									</div>
+								</div>
+							</td>
+							<td class="end">
+								<ul class="list-inline oprate">
+									<li><a class="btn btn-mod">回复</a></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="info">
+									<p class="img"><img src="../uploadfiles/images/Head-portrait.jpg" alt="" /></p>
+									<p class="h4">John</p>
+								</div>
+							</td>
+							<td>
+								<div class="reply">
+									<p class="h4">《宏观经济》里的四部门经济的关系式是什么？</p>
+									<div class="form">
+										<textarea class="form-control" rows="5"></textarea>
+										<div class="text-right"><button class="btn btn-com" type="button">发送</button></div>
+									</div>
+								</div>
+							</td>
+							<td class="end">
+								<ul class="list-inline oprate">
+									<li><a class="btn btn-mod">回复</a></li>
+								</ul>
+							</td>
+						</tr>
+						
+					</tbody>
+				</table>
+				
+			</div>
+		</div>
+		
+	</div>
+
+</div>
+
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.dataTables.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/admin.js"></script>
+<script>
+	$(function() {
+		$('.to-top').toTop();
+	});
+	
+//	alert(window.location.protocol + '//' + window.location.host + window.location.pathname);
+</script>
+</body>
+
+</html>
