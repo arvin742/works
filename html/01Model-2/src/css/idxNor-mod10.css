@@ -1,0 +1,20 @@
+.idxNor-mod10{
+	padding: .1rem 0 1rem;
+}
+.idxNor-mod10 .h4{
+	font-weight: 600;
+}
+
+@media (min-width:768px){
+	/**/
+	.idxNor-mod10{
+		padding-bottom: 2rem;
+	}
+}
+
+@media (max-width:767px){
+	/**/
+	.idxNor-mod10 .h4{
+		font-size: 1rem;
+	}
+}

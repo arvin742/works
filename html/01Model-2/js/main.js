@@ -254,6 +254,14 @@ $(function () {
 			$video_popup.find('.main').empty();
 		});
 		
+		var $store = $('.store-popup');
+		$store.find('.on').on('click', function(){
+			$store.addClass('active');
+		});
+		$store.find('.off').on('click', function(){
+			$store.removeClass('active');
+		});
+		
 		$(".faq dl>dt").append("<i class='fa'></i>");
 		$(".faq dl>dt").on('click', function(){
 			$(".faq dl").removeClass('active');

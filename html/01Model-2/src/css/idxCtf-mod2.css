@@ -1,0 +1,42 @@
+.idxCtf-mod2{
+	background: url(../../uploadfiles/images/idxCtf-mod2-bg.jpg) no-repeat center;
+	background-size: cover;
+	padding: .01rem 0 1rem;
+}
+.idxCtf-mod2 .pagination-block>span{
+	border-radius: 0;
+}
+
+@media (min-width:768px) {
+	/**/
+	.idxCtf-mod2 .tab-list>li>a{
+		min-width: 8rem;
+		font-family: "times new roman";
+		font-weight: 600;
+		color: #fff;
+		background: #333;
+		border: none;
+	}
+}
+
+@media (min-width:1200px) {
+	/**/
+	.idxCtf-mod2{
+		padding: 1rem 0 5rem;
+	}
+	.idxCtf-mod2 .tab-list{
+		margin-bottom: 2rem;
+	}
+	.idxCtf-mod2{
+		padding-bottom: 2rem;
+	}
+	.idxCtf-mod2 .tab-list>li{
+		margin: 0 1rem .6rem;
+	}
+	.idxCtf-mod2 .tab-list>li>a{
+		font-size: 1.125rem;
+	}
+	.idxCtf-mod2 .pagination-block{
+		margin-top: 2rem;
+	}
+}

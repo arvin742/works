@@ -70,6 +70,9 @@
 }
 .product-mod4 .product-con .btn-default{
   background: #7eb911;
+  background: -webkit-linear-gradient(to right, #4dc3fe, #1889c2);
+  background: -moz-linear-gradient(to right, #4dc3fe, #1889c2);
+  background: linear-gradient(to right, #4dc3fe, #1889c2);
   color: #fff;
   padding: .2rem .5rem;
 }

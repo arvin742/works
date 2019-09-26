@@ -1,0 +1,51 @@
+.idxPdt-mod14{
+	padding: .1rem 0 1rem;
+}
+.idxPdt-mod14 .back{
+	margin-bottom: .5rem;
+}
+.idxPdt-mod14 .main{
+	overflow: hidden;
+	position: relative;
+	display: block;
+}
+
+@media (min-width:768px) {
+	/**/
+	.idxPdt-mod14{
+		padding: 1rem 0 3rem;
+	}
+}
+
+@media (min-width:992px) {
+	/**/
+	.idxPdt-mod14 .main{
+		margin-bottom: 30px;
+	}
+	.idxPdt-mod14 .info{
+		width: 100%;
+		color: #fff;
+		background: #7eb911;
+		padding: .5rem 1rem 1rem;
+		position: absolute;
+		bottom: 0;
+		z-index: 5;
+		opacity: 0;
+		-webkit-transition: all .7s;
+		-moz-transition: all .7s;
+		transition: all .7s;
+	}
+	.idxPdt-mod14 .info p{
+		color: #fff;
+	}
+	.idxPdt-mod14 .back:hover .info{
+		opacity: 1;
+	}
+}
+	
+@media (min-width:1200px) {
+	/**/
+	.idxPdt-mod14{
+		padding: 2rem 0 4rem;
+	}
+}

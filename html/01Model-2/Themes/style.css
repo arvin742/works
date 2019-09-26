@@ -951,6 +951,43 @@ h2.bg span,
 	z-index: 5;
 }
 
+.store-popup{
+	position: fixed;
+	right: -18.75rem;
+	bottom: 0;
+	z-index: 9;
+	display: block !important;
+	transition: all .7s;
+}
+.store-popup .btn{
+	border-radius: 0;
+	position: absolute;
+	z-index: 5;
+	opacity: 1;
+}
+.store-popup .btn.on{
+	color: #fff;
+	background: #7eb911;
+	left: -3rem;
+	bottom: 1.5rem;
+}
+.store-popup .back{
+	position: relative;
+}
+.store-popup .back .btn.off{
+	font-size: 1.5rem;
+	color: #333;
+	padding: 0 .5rem;
+	right: 0;
+	top: 0;
+}
+.store-popup.active{
+	right: 0;
+}
+.store-popup.active .on{
+	display: none;
+}
+
 .card-form{
 	width: 2.5rem;
 	height: 2.5rem;
